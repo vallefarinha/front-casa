@@ -1,6 +1,5 @@
 import Router from "./configuration/Router.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import "./App.css";
 import Navbar from "./components/navbar/Navbar.jsx";
 
 const App = () => {

@@ -1,7 +1,8 @@
 const Home = () => {
   return (
     <>  
-   <h1>HOME</h1>
+   <h1>ES ESLA HOME HOME</h1>
+
 
     </>
   )

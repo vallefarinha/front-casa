@@ -93,7 +93,7 @@ const Navbar = () => {
                   } bg-white pt-2 pb-4 border border-gray-200 rounded-md text-md font-normal text-start z-10 left-0 md:left-auto`}
                 >
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <a className="block px-4 py-2  text-LetterColor hover:bg-gray-100">
                       Quiénes Somos
                     </a>
                   </li>
@@ -121,12 +121,12 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
+                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 ">
                   Colabora
                 </a>
               </li>
               <li>
-                <a className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
+                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 ">
                   Noticias
                 </a>
               </li>
