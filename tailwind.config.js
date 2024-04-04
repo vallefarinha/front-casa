@@ -8,7 +8,14 @@ export default {
     extend: {
       boxShadow: {
         'xl': '5px 5px 5px rgba(0, 0, 0, 0.3)',
-      }
+      },
+      colors: {
+        'LetterColor' : '#073B4C', 
+        'primaryColor' : '#EF476F', 
+        'secondaryColor' : '#FFCF5E',
+        'tertiaryColor' : '#06D6A0', 
+        'quarteryColor' : '#118AB2',
+      },
     },
   },
   plugins: [
