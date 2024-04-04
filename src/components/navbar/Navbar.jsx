@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import LogoNav from "../../assets/images/LogoSanta.svg";
 import { FaChevronDown } from "react-icons/fa";
@@ -22,12 +22,12 @@ const Navbar = () => {
     <>
       <nav className="bg-white fixed w-full z-20 top-0 start-0">
         <div className="max-w-screen-xl flex md:text-sm lg:text-base items-center justify-between mx-auto p-4">
-          <a className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={LogoNav} className="h-16" alt="Logo" />
-          </a>
+          </Link>
           <div className="flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
-            <PrimaryBtn data={"Dona"}></PrimaryBtn>
-            <PrimaryBtn data={"Hazte Sócio"}></PrimaryBtn>
+            <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
+            <PrimaryBtn data={"Hazte Sócio"} go="form"></PrimaryBtn>
             <button
               onClick={toggleMenu}
               type="button"
@@ -73,62 +73,78 @@ const Navbar = () => {
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border bg-white md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
               <li>
-                <a
+                <Link
+                  to="/"
                   className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
                   aria-current="page"
                 >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li className="relative m-auto" onClick={toggleDropdown}>
-                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
+                <Link 
+                className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
                   <div className="flex gap-2 items-center">
                     <span>Sobre Nosotros</span>{" "}
                     {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                   </div>
-                </a>
+                </Link>
                 <ul
                   className={`md:absolute ${
                     isDropdownOpen ? "block" : "hidden"
                   } bg-white pt-2 pb-4 border border-gray-200 rounded-md text-md font-normal text-start z-10 left-0 md:left-auto`}
                 >
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <Link 
+                    to="/about"
+                    className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
                       Quiénes Somos
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <Link 
+                    to="/work"
+                    className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
                       Qué Hacemos
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <Link 
+                    to="/history"
+                    className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
                       Nuestra Historia
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <Link 
+                    to="/house"
+                    className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
                       Nuestra Casa
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
+                    <Link 
+                    to="/petra"
+                    className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
                       Beata Petra
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-                <a className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
+                <Link 
+                to="/partnership"
+                className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
                   Colabora
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
+                <Link 
+                to="/blog"
+                className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
                   Noticias
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
