@@ -5,7 +5,15 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'LetterColor' : '#073B4C', 
+        'primaryColor' : '#EF476F', 
+        'secondaryColor' : '#FFCF5E',
+        'tertiaryColor' : '#06D6A0', 
+        'quarteryColor' : '#118AB2',
+      },
+    },
   },
   plugins: [
     require('flowbite/plugin')
