@@ -5,7 +5,11 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'xl': '5px 5px 5px rgba(0, 0, 0, 0.3)',
+      }
+    },
   },
   plugins: [
     require('flowbite/plugin')
