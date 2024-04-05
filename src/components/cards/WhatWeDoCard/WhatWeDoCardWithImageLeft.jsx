@@ -1,19 +1,18 @@
-import heartBelly from "../../../assets/images/heartBelly.png";
-
-function WhatWeDoCardWithImage() {
+function WhatWeDoCardWithImageLeft({img, title, text, shadowColor}) {
   return (
-    <div className="flex flex-col h-56 md:flex-row bg-white rounded-lg shadow-xl shadow-pink-700 justify-between hover:bg-gray-100">
-    <div className="w-full md:w-1/2">
-      <img className="object-cover w-full md:h-full rounded-t-lg md:rounded-l-lg md:rounded-r-none" src={heartBelly} alt="belly" />
-    </div>
-    <div className="w-full md:w-1/2 p-4 md:p-6">
-      <div className="flex flex-col justify-center h-full">
-        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Maternidade consciente</h5>
-        <p className="font-normal text-gray-700 dark:text-gray-400">Favorecer el progreso de una maternidad consciente.</p>
-      </div>
-    </div>
+    <>
+<div className={`flex flex-col w-full bg-white bg-bgColor shadow-xl ${shadowColor} md:h-48 rounded-lg md:flex-row hover:bg-gray-100`}>
+  <div className="flex flex-col w-full md:w-1/2">
+  <img className="object-cover w-full rounded md:h-full md:rounded-none md:rounded-s-lg" src={img} alt=""/>
   </div>
+  
+    <div className="flex flex-col justify-center text-center p-4 leading-normal w-full md:w-1/2">
+        <h5 className="mb-2 text-xl font-poppinsBlack tracking-tight text-LetterColor dark:text-white">{title}</h5>
+        <p className="mb-3 font-normal font-poppinsRegular text-LetterColor">{text}</p>
+    </div>
+</div>
+</>
 );
 }
 
-export default WhatWeDoCardWithImage;
+export default WhatWeDoCardWithImageLeft;

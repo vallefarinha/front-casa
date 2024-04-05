@@ -15,6 +15,7 @@ export default {
         'secondaryColor' : '#FFCF5E',
         'tertiaryColor' : '#06D6A0', 
         'quarteryColor' : '#118AB2',
+        'bgColor': '#FAFAFA'
       },
       fontFamily:{
         poppinsBlack: ["Poppins-Black", "sans-serif"],
