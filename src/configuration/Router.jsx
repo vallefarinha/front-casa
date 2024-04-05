@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 import Home from "../pages/Home";
 import AboutUs from "../pages/AboutUs";
 import WhatWeDo from "../pages/WhatWeDo";
@@ -15,7 +15,6 @@ import ThanksForSignIn from "../pages/ThanksForSignIn";
 
 export default function Router() {
     return (
-      <BrowserRouter>
       <Routes>
           <Route path="/" element={<Home/>}></Route> 
           <Route path="/about" element={<AboutUs/>}></Route> 
@@ -26,9 +25,7 @@ export default function Router() {
           <Route path="/blog" element={<OurBlog/>}></Route> 
           <Route path="/partnership" element={<BecameAPartner/>}></Route> 
           <Route path="/form" element={<PartnerForm/>}></Route> 
-          <Route path="/thanks" element={<ThanksForSignIn/>}></Route> 
-
+          <Route path="/thanks" element={<ThanksForSignIn/>}></Route>
       </Routes>
-  </BrowserRouter>
     )
   }
