@@ -109,9 +109,24 @@ const HouseGallery = () => {
         renderRightNav={(onClick, disabled) => (
           <CustomRightNav onClick={onClick} disabled={disabled} />
         )}
+        renderItem={renderItem}
       />
     </div>
   );
 };
 
 export default HouseGallery;
+
+const renderItem = (item) => {
+  return (
+    <div className="image-gallery-image">
+      <img
+        src={item.original}
+        alt={item.originalAlt}
+        srcSet={item.srcSet}
+        sizes={item.sizes}
+        style={{ objectFit: 'cover', objectPosition: 'center', maxWidth: '100%', maxHeight: '100%' }}
+      />
+    </div>
+  );
+};
