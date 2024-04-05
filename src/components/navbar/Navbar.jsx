@@ -83,10 +83,10 @@ const Navbar = () => {
                   Inicio
                 </Link>
               </li>
-              <li className="relative m-auto" onClick={toggleDropdown}>
+              <li className="relative" onClick={toggleDropdown}>
                 <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
                   <div className="flex gap-2 items-center">
-                    <span>Sobre Nosotros</span>{" "}
+                    <span>Sobre Nosotros</span>
                     {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                   </div>
                 </a>
