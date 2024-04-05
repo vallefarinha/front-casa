@@ -80,10 +80,10 @@ const Navbar = () => {
                   Inicio
                 </Link>
               </li>
-              <li className="relative m-auto" onClick={toggleDropdown}>
+              <li className="relative" onClick={toggleDropdown}>
                 <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
                   <div className="flex gap-2 items-center">
-                    <span>Sobre Nosotros</span>{" "}
+                    <span>Sobre Nosotros</span>
                     {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
                   </div>
                 </a>
@@ -93,11 +93,7 @@ const Navbar = () => {
                   } bg-white pt-2 pb-4 border border-gray-200 rounded-md text-md font-normal text-start z-10 left-0 md:left-auto`}
                 >
                   <li>
-<<<<<<< HEAD
-                    <a className="block px-4 py-2  text-LetterColor hover:bg-gray-100">
-=======
                     <Link to="/about" className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
->>>>>>> 2c2beb72c0d631d6417f366f8f0e1e72675a9f57
                       Quiénes Somos
                     </Link>
                   </li>
@@ -125,20 +121,12 @@ const Navbar = () => {
               </li>
 
               <li>
-<<<<<<< HEAD
-                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 ">
-=======
                 <Link  to="/partnership" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
->>>>>>> 2c2beb72c0d631d6417f366f8f0e1e72675a9f57
                   Colabora
                 </Link>
               </li>
               <li>
-<<<<<<< HEAD
-                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 ">
-=======
                 <Link  to="/blog" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
->>>>>>> 2c2beb72c0d631d6417f366f8f0e1e72675a9f57
                   Noticias
                 </Link>
               </li>
