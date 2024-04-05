@@ -22,7 +22,7 @@ const images = [
 
 const HomeBannerSlider = () => {
     return (
-      <div className="w-full relative overflow-hidden"> {/* Utilizamos relative para permitir que el ImageGallery ocupe el ancho completo */}
+      <div className="w-full relative overflow-hidden">
         <ImageGallery
           items={images}
           showPlayButton={false}
@@ -31,7 +31,7 @@ const HomeBannerSlider = () => {
           showNav={false}
           showBullets={true}
           autoPlay={true}
-          style={{ width: "100%" }} // Establecemos el ancho al 100%
+          style={{ width: "100%" }}
           renderItem={renderItem}
         />
       </div>

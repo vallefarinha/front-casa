@@ -4,7 +4,7 @@ import HomeBannerSlider from "../components/sliders/HomeBannerSlider";
 
 function Home() {
   return (
-    <div className="lg:mt-[100px]">
+    <div className="mt-[88px] md:mt-[98px]  lg:mt-[97px]">
       <div className="w-full">
         <HomeBannerSlider />
       </div>

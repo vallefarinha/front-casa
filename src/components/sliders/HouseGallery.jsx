@@ -2,13 +2,13 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ArrowButton from '../arrowbuttons/ArrowButton';
-import casa1 from '../../assets/images/casa/20240402_201015.png';
+import casa1 from '../../assets/images/casa/IMG_6282.png';
 import casa2 from '../../assets/images/casa/IMG_6272.png';
 import casa4 from '../../assets/images/casa/IMG_6274.png';
 import casa5 from '../../assets/images/casa/IMG_6275.png';
 import casa6 from '../../assets/images/casa/IMG_6277.png';
 import casa7 from '../../assets/images/casa/IMG_6279.png';
-import casa8 from '../../assets/images/casa/IMG_6282.png';
+import casa8 from '../../assets/images/casa/20240402_201015.png';
 import casa9 from '../../assets/images/casa/IMG_6286.png';
 import casa10 from '../../assets/images/casa/IMG_6291.png';
 import casa11 from '../../assets/images/casa/IMG_6292.png';
@@ -103,6 +103,7 @@ const HouseGallery = () => {
         items={images}
         showNav={true}
         showBullets={false}
+        thumbnailPosition='left'
         renderLeftNav={(onClick, disabled) => (
           <CustomLeftNav onClick={onClick} disabled={disabled} />
         )}
