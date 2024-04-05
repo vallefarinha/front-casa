@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import InstagramAPI from "../../services/InstagramAPI";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const InstagramPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -13,14 +16,37 @@ const InstagramPosts = () => {
     fetchData();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // Mostrar 3 publicaciones a la vez
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2, // Cambiar a 2 publicaciones a la vez en pantallas medianas
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1, // Cambiar a 1 publicación a la vez en pantallas pequeñas
+        },
+      },
+    ],
+  };
+
+
   return (
     <div className="container mx-auto">
       <h1 className="text-2xl font-bold mb-4">Últimos posts de Instagram</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <Slider {...settings}>
         {posts.map((post) => (
           <div
             key={post.id}
-            className="relative overflow-hidden rounded-lg group w-auto h-[70%] bg-inherit shadow-xl shadow-LetterColor"
+            className="relative overflow-hidden rounded-lg group w-auto h-[400px] bg-inherit shadow-xl shadow-LetterColor"
           >
             {post.media_type === "IMAGE" && (
               <div className="relative w-full h-full flex justify-around">
@@ -66,7 +92,7 @@ const InstagramPosts = () => {
             
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };
