@@ -2,31 +2,77 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ArrowButton from '../arrowbuttons/ArrowButton';
+import casa1 from '../../assets/images/casa/20240402_201015.png';
+import casa2 from '../../assets/images/casa/IMG_6272.png';
+import casa4 from '../../assets/images/casa/IMG_6274.png';
+import casa5 from '../../assets/images/casa/IMG_6275.png';
+import casa6 from '../../assets/images/casa/IMG_6277.png';
+import casa7 from '../../assets/images/casa/IMG_6279.png';
+import casa8 from '../../assets/images/casa/IMG_6282.png';
+import casa9 from '../../assets/images/casa/IMG_6286.png';
+import casa10 from '../../assets/images/casa/IMG_6291.png';
+import casa11 from '../../assets/images/casa/IMG_6292.png';
+import casa12 from '../../assets/images/casa/IMG_6293.png';
+import casa13 from '../../assets/images/casa/IMG_6295.png';
+import casa14 from '../../assets/images/casa/IMG_6297.png';
+import casa15 from '../../assets/images/casa/IMG_6299.png';
 
 const images = [
   {
-    original: 'https://picsum.photos/id/1018/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+    original: casa1,
+    thumbnail: casa1,
   },
   {
-    original: 'https://picsum.photos/id/1015/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+    original: casa2,
+    thumbnail: casa2,
   },
   {
-    original: 'https://picsum.photos/id/1019/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+    original: casa4,
+    thumbnail:casa4,
   },
   {
-    original: 'https://picsum.photos/id/1020/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1020/250/150/',
+    original: casa5,
+    thumbnail: casa5,
   },
   {
-    original: 'https://picsum.photos/id/1021/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1021/250/150/',
+    original: casa6,
+    thumbnail: casa6,
   },
   {
-    original: 'https://picsum.photos/id/1022/1000/600/',
-    thumbnail: 'https://picsum.photos/id/1022/250/150/',
+    original: casa7,
+    thumbnail: casa7,
+  },
+  {
+    original: casa8,
+    thumbnail: casa8,
+  },
+  {
+    original: casa9,
+    thumbnail: casa9,
+  },
+  {
+    original: casa10,
+    thumbnail: casa10,
+  },
+  {
+    original: casa11,
+    thumbnail: casa11,
+  },
+  {
+    original: casa12,
+    thumbnail: casa12,
+  },
+  {
+    original: casa13,
+    thumbnail: casa13,
+  },
+  {
+    original: casa14,
+    thumbnail: casa14,
+  },
+  {
+    original: casa15,
+    thumbnail: casa15,
   },
 ];
 
