@@ -6,11 +6,13 @@ import InstagramPosts from "../components/sliders/InstagramPosts";
 function Home() {
   return (
     <div className="mt-[88px] md:mt-[98px]  lg:mt-[97px] w-full">
-      <div className="w-full">
+      <div className="w-full mb-5">
         <HomeBannerSlider />
       </div>
-      <InstagramPosts/>
-      <Earings/>
+      <Earings />
+      <section>
+        <InstagramPosts />
+      </section>
       <Help />
     </div>
   );

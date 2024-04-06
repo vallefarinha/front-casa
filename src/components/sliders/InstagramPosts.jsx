@@ -59,7 +59,8 @@ const InstagramPosts = () => {
 
   return (
     <div className="container mx-auto mt-10 mb-16">
-      <h1 className="text-2xl font-bold mb-4">Últimos posts de Instagram</h1>
+      <h3 className="text-sm text-LetterColor pl-3 ">Nuestras redes sociales</h3>
+      <h1 className="text-xl md:text-3xl text-LetterColor font-poppinsSemiBold mb-5 text-start pl-3">Acompaña nuestras <span className="text-primaryColor font-poppinsBold">actividades</span></h1>
       <Slider {...settings}>
         {posts.map((post) => (
           <div

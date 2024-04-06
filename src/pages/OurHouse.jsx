@@ -5,7 +5,7 @@ function OurHouse() {
   return (
     <div className="mt-[88px] md:mt-[98px]  lg:mt-[97px]">
       <div className="lg:w-[65%] mx-auto my-8">
-      <h1 className="text-3xl md:text-5xl font-poppinsSemiBold mt-3 mb-5 text-start pl-3">Nuestra <span className="text-primaryColor font-poppinsBold">Casa</span></h1>
+      <h1 className="text-3xl md:text-5xl text-LetterColor font-poppinsSemiBold mt-3 mb-5 text-start pl-3">Nuestra <span className="text-primaryColor font-poppinsBold">Casa</span></h1>
         <HouseGallery></HouseGallery>
       </div>
       <Help />
