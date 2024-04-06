@@ -3,6 +3,7 @@ import InstagramAPI from "../../services/InstagramAPI";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ArrowButton from '../arrowbuttons/ArrowButton';
 
 const InstagramPosts = () => {
   const [posts, setPosts] = useState([]);
@@ -16,37 +17,55 @@ const InstagramPosts = () => {
     fetchData();
   }, []);
 
+  const CustomPrevArrow = ({ onClick }) => (
+    <div onClick={onClick} className="prev-arrow absolute bottom-[-45px] left-[40%] lg:left-[46%] z-10">
+      <ArrowButton rotate="left" />
+    </div>
+  );
+
+  const CustomNextArrow = ({ onClick }) => (
+    <div onClick={onClick} className="next-arrow absolute bottom-[-45px] right-[40%] lg:right-[46%] z-10">
+      <ArrowButton />
+    </div>
+  );
+
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Mostrar 3 publicaciones a la vez
+    slidesToShow: 3, 
     slidesToScroll: 1,
+    prevArrow: <CustomPrevArrow />,
+    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2, // Cambiar a 2 publicaciones a la vez en pantallas medianas
+          slidesToShow: 2, 
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Cambiar a 1 publicación a la vez en pantallas pequeñas
+          slidesToShow: 1, 
         },
       },
     ],
   };
 
+  const handlePostClick = (permalink) => {
+    window.open(permalink, "_blank"); 
+  };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mt-10 mb-16">
       <h1 className="text-2xl font-bold mb-4">Últimos posts de Instagram</h1>
       <Slider {...settings}>
         {posts.map((post) => (
           <div
             key={post.id}
-            className="relative overflow-hidden rounded-lg group w-auto h-[400px] bg-inherit shadow-xl shadow-LetterColor"
+            className="relative overflow-hidden rounded-lg group w-auto h-[400px] bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
+            onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
               <div className="relative w-full h-full flex justify-around">
@@ -55,7 +74,7 @@ const InstagramPosts = () => {
                   alt={post.caption}
                   className="object-cover w-full h-full"
                 />
-                <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center">
+                <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center p-4">
                   <p className="text-white text-center">{post.caption}</p>
                 </div>
               </div>
@@ -72,7 +91,7 @@ const InstagramPosts = () => {
                   <source src={post.media_url} type="video/mp4" />
                   Tu navegador no soporta este video.
                 </video>
-                <div className="absolute top-1/4 left-0 right-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90">
+                <div className="absolute top-1/4 left-0 right-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 p-4">
                   <p className="text-white text-center">{post.caption}</p>
                 </div>
               </div>
@@ -84,7 +103,7 @@ const InstagramPosts = () => {
                   alt={post.caption}
                   className="object-cover w-auto h-[100%]"
                 />
-                <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center">
+                <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center p-4">
                   <p className="text-white text-center">{post.caption}</p>
                 </div>
               </div>
