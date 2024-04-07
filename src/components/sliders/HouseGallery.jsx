@@ -16,6 +16,26 @@ import casa12 from '../../assets/images/casa/IMG_6293.png';
 import casa13 from '../../assets/images/casa/IMG_6295.png';
 import casa14 from '../../assets/images/casa/IMG_6297.png';
 import casa15 from '../../assets/images/casa/IMG_6299.png';
+import casa16 from '../../assets/images/casa/IMG_6300.png';
+import casa17 from '../../assets/images/casa/IMG_6304.png';
+import casa18 from '../../assets/images/casa/IMG_6305.png';
+import casa19 from '../../assets/images/casa/IMG_6311.png';
+import casa20 from '../../assets/images/casa/IMG_6314.png';
+import casa21 from '../../assets/images/casa/IMG_6315.png';
+import casa22 from '../../assets/images/casa/IMG_6320.png';
+import casa23 from '../../assets/images/casa/IMG_6323.png';
+import casa24 from '../../assets/images/casa/IMG_6325.png';
+import casa25 from '../../assets/images/casa/IMG_6332.png';
+import casa26 from '../../assets/images/casa/IMG_6337.png';
+import casa27 from '../../assets/images/casa/IMG_6362.png';
+import casa28 from '../../assets/images/casa/IMG_6368.png';
+import casa29 from '../../assets/images/casa/IMG_6374.png';
+import casa30 from '../../assets/images/casa/IMG_6380.png';
+import casa31 from '../../assets/images/casa/IMG_6383.png';
+import casa32 from '../../assets/images/casa/IMG_6385.png';
+import casa33 from '../../assets/images/casa/IMG_6392.png';
+import casa34 from '../../assets/images/casa/IMG_6393.png';
+import casa35 from '../../assets/images/casa/IMG_6394.png';
 
 const images = [
   {
@@ -73,6 +93,86 @@ const images = [
   {
     original: casa15,
     thumbnail: casa15,
+  },
+  {
+    original: casa16,
+    thumbnail: casa16,
+  },
+  {
+    original: casa17,
+    thumbnail: casa17,
+  },
+  {
+    original: casa18,
+    thumbnail: casa18,
+  },
+  {
+    original: casa19,
+    thumbnail: casa19,
+  },
+  {
+    original: casa20,
+    thumbnail: casa20,
+  },
+  {
+    original: casa21,
+    thumbnail: casa21,
+  },
+  {
+    original: casa22,
+    thumbnail: casa22,
+  },
+  {
+    original: casa23,
+    thumbnail: casa23,
+  },
+  {
+    original: casa24,
+    thumbnail: casa24,
+  },
+  {
+    original: casa25,
+    thumbnail: casa25,
+  },
+  {
+    original: casa26,
+    thumbnail: casa26,
+  },
+  {
+    original: casa27,
+    thumbnail: casa27,
+  },
+  {
+    original: casa28,
+    thumbnail: casa28,
+  },
+  {
+    original: casa29,
+    thumbnail: casa29,
+  },
+  {
+    original: casa30,
+    thumbnail: casa30,
+  },
+  {
+    original: casa31,
+    thumbnail: casa31,
+  },
+  {
+    original: casa32,
+    thumbnail: casa32,
+  },
+  {
+    original: casa33,
+    thumbnail: casa33,
+  },
+  {
+    original: casa34,
+    thumbnail: casa34,
+  },
+  {
+    original: casa35,
+    thumbnail: casa35,
   },
 ];
 
