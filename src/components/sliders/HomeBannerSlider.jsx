@@ -2,8 +2,8 @@ import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import casa1 from "../../assets/images/homeBannerSlider.svg";
-import casa2 from "../../assets/images/casa/IMG_6272.png";
-import casa3 from "../../assets/images/casa/IMG_6274.png";
+import casa2 from "../../assets/images/BannerMadrePetra.svg";
+import casa3 from "../../assets/images/BannerHomeCasa.svg";
 
 const images = [
   {
@@ -31,6 +31,7 @@ const HomeBannerSlider = () => {
           showNav={false}
           showBullets={true}
           autoPlay={true}
+          slideInterval={4000}
           style={{ width: "100%" }}
           renderItem={renderItem}
         />
