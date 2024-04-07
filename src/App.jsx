@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import Router from "./configuration/Router.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Navbar from "./components/navbar/Navbar.jsx";
+import ComponenteTres from "./components/form/formBlue.jsx"
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <Router />
         </div>
         <Footer />
+        <ComponenteTres />
       </div>
       </BrowserRouter>
   );
