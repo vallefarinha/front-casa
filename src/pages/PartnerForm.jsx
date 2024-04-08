@@ -1,7 +1,12 @@
+import FormBlue from "./components/form/formBlue";
+
 function PartnerForm() {
   return (
-    <div>PartnerForm</div>
+    <div>
+      <FormBlue />
+    </div>
   )
 }
+
 
 export default PartnerForm
