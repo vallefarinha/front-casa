@@ -5,8 +5,7 @@ function PartnerForm() {
     <div>
       <FormBlue />
     </div>
-  )
+  );
 }
 
-
-export default PartnerForm
+export default PartnerForm;
