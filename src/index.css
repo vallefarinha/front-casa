@@ -45,4 +45,8 @@
         font-weight: 600;
         font-style: italic;
       } 
+
+      .capitalize-first::first-letter {
+        text-transform: uppercase;
+      }
   }

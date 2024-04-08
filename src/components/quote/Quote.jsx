@@ -1,4 +1,4 @@
-function Title({ wordBlue, wordPink }) {
+function Quote({ wordBlue, wordPink }) {
     return (
       <h1 className="my-4 text-left text-6xl font-poppinsMedium w-full">
         <span className="text-LetterColor">{wordBlue}</span>{" "}
@@ -9,4 +9,4 @@ function Title({ wordBlue, wordPink }) {
     );
   }
   
-export default Title
+export default Quote
