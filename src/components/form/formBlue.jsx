@@ -16,7 +16,8 @@ const BoxBlue = ({ titleBox, squareBlue }) => {
 
 const FormBlue = () => {
   return (
-<div className="relative w-full h-full flex flex-wrap" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
+<div className="flex items-center justify-center">
+<div className="relative w-1/2 h-1/2 flex flex-wrap m-10" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
             <div className="w-full sm:w-1/2 p-4">
         <BoxBlue titleBox="Nombre *" squareBlue="Ingrese su nombre" />
         <BoxBlue titleBox="DNI/NIE *" squareBlue="Ingrese su DNI/NIE" />
@@ -31,6 +32,7 @@ const FormBlue = () => {
         <BoxBlue titleBox="Provincia" squareBlue="Ingrese su provincia" />
         <BoxBlue titleBox="País" squareBlue="Ingrese su país" />
       </div>
+    </div>
     </div>
   );
 };
