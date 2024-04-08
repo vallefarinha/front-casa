@@ -14,7 +14,7 @@ const InputField = ({ label, placeholder }) => {
   );
 };
 
-const ComponenteTres = () => {
+const FormBlue = () => {
   return (
 <div className="relative w-full h-full flex flex-wrap" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
             <div className="w-full sm:w-1/2 p-4">
@@ -35,4 +35,4 @@ const ComponenteTres = () => {
   );
 };
 
-export default ComponenteTres;
+export default FormBlue;
