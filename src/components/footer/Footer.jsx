@@ -22,7 +22,7 @@ const Footer = () => (
     </Link>
       
     </div>
-    <div className="w-2/3 md:w-1/2">
+    <div className="w-2/3 md:w-1/2 flex flex-col items-end">
       <div className="text-primaryColor text-xl font-semibold font-poppinsBold">
         Información de contacto
       </div>
