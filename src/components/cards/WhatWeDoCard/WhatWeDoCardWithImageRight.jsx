@@ -1,6 +1,6 @@
 function WhatWeDoCardWithImageRight({ img, title, text, shadowColor }) {
   return (
-    <div className={`flex flex-col w-full bg-white bg-bgColor shadow-xl ${shadowColor} md:h-48 rounded-lg md:flex-row hover:bg-gray-100`}>
+    <div className={`flex flex-col w-full bg-bgColorWithOpacity  shadow-xl ${shadowColor} md:h-48 rounded-lg md:flex-row hover:bg-gray-100`}>
       <div className="flex flex-col w-full md:w-1/2 order-2 md:order-1">
         <div className="h-full">
           <img className="object-cover w-full rounded-t-lg md:h-full md:rounded-none md:rounded-s-lg" src={img} alt="" />
