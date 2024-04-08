@@ -1,4 +1,4 @@
-import FormBlue from "./components/form/formBlue";
+import FormBlue from "../components/form/formBlue";
 
 function PartnerForm() {
   return (
