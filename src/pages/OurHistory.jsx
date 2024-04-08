@@ -3,6 +3,7 @@ import ImgCruz from "../assets/images/imagenCruz.png";
 import ImgCasa1963 from "../assets/images/imagenCasa1963.png";
 import ImgCasa1968 from "../assets/images/imagenCasa1968.png";
 import ImgCasa2006 from "../assets/images/imagenCasa2006.png";
+import imgprueba from "../assets/images/studying.png";
 import ArrowButton from "../components/arrowbuttons/ArrowButton";
 
 const OurHistory = () => {
@@ -151,7 +152,7 @@ const OurHistory = () => {
         </div>
       </div>
 
-      <div className=" bg-quarteryColor bg-opacity-60 py-4 lg:py-2 px-4 lg:px-7">
+      <div className=" bg-quarteryColor bg-opacity-60 py-4 lg:py-8 px-4 lg:px-7">
         <div className="w-full flex justify-center pb-2">
           <ArrowButton rotate={"up"} />
         </div>
@@ -256,7 +257,6 @@ const OurHistory = () => {
         </div>
       </div>
 
-
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 190 1440 60">
         <path
           fill="#118AB2"
@@ -311,7 +311,57 @@ const OurHistory = () => {
         ></path>
       </svg>
 
+      <div className="bg-inherit flex flex-wrap justify-between w-[80%] mx-auto my-4 px-9">
+        <div className="w-1/4 mb-4">
+          <div className="shadow-xl shadow-quarteryColor rounded-3xl">
+            <img
+              src={imgprueba}
+              alt="capilla"
+              className="w-full h-auto rounded-3xl"
+            />
+          </div>
+        </div>
+        <div className="w-1/4 mb-4">
+          <div className="shadow-xl shadow-quarteryColor rounded-3xl">
+            <img
+              src={imgprueba}
+              alt="capilla"
+              className="w-full h-auto rounded-3xl"
+            />
+          </div>
+        </div>
+        <div className="w-1/4 mb-4">
+          <div className="shadow-xl shadow-quarteryColor rounded-3xl">
+            <img
+              src={imgprueba}
+              alt="capilla"
+              className="w-full h-auto rounded-3xl"
+            />
+          </div>
+        </div>
+      </div>
 
+      <div className="w-[80%] mx-auto my-5 px-9">
+        <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
+          2012
+        </h2>
+        <p className="text-LetterColor text-xl md:text-lg lg:text-xl text-justify mb-3">
+          Desde diciembre de 2012, la Casa ha estado acogiendo con cariño a
+          futuras mamás. Se han recibido a madres embarazadas y a madres con sus
+          hijos, dando lugar al nacimiento de muchos bebés y brindando apoyo a
+          numerosas mujeres. Esta labor ha generado grandes expectativas para el
+          futuro en las madres acogidas.
+        </p>
+        <p className="text-LetterColor text-xl md:text-lg lg:text-xl text-justify mb-5">
+          En reconocimiento a este valioso trabajo, agradecemos a Dios, quien es
+          partícipe y promotor de esta labor, y le damos toda la Gloria.
+          Asimismo, extendemos nuestro honor a las mujeres por su valentía y
+          entereza en este camino.
+        </p>
+        <div className="flex justify-center mt-2">
+          <ArrowButton rotate={"up"} />
+        </div>
+      </div>
     </div>
   );
 };
