@@ -7,15 +7,15 @@ import Email from "../../assets/icons/email.svg";
 
 const ContactInfo = () => (
   <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular leading-none space-y-0">
-    <div className="flex items-center">
+    <div className="flex items-center leading-none">
       <div><img src={LocationSharp} alt="Location" /></div>
       <div className="ml-2">Avda. del profesor Pérez Pimentel,105 Barrio de la Guía</div>
     </div>
-    <div className="flex items-center">
+    <div className="flex items-center leading-none">
       <div style={{width: '20px'}}></div>
       <div className="ml-2">33203 Gijón - Asturias</div>
     </div>
-    <div className="flex items-center">
+    <div className="flex items-center leading-none">
       <div><img src={Phone} alt="Phone" /></div>
       <div className="ml-2">tlfn. 985 363 314</div>
     </div>
