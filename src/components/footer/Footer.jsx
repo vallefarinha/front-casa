@@ -1,15 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LogoNav from "../../assets/images/LogoSanta.svg";
+import LocationSharp from "../../assets/icons/locationSharp.svg";
+import Phone from "../../assets/icons/phone.svg";
+import Email from "../../assets/icons/email.svg";
 
 const ContactInfo = () => (
   <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular leading-none space-y-0">
-    Avda. del profesor Pérez Pimentel,105 Barrio de la Guía<br/>
-    33203 Gijón - Asturias<br/>
-    <div className="leading-none">tlfn. 985 363 314</div>
-    <div className="leading-none"><a href="mailto:casadeacogidaguia@hotmail.es" className="underline">
-      casadeacogidaguia@hotmail.es
-    </a> </div>
+    <div className="flex items-center">
+      <div><img src={LocationSharp} alt="Location" /></div>
+      <div className="ml-2">Avda. del profesor Pérez Pimentel,105 Barrio de la Guía</div>
+    </div>
+    <div className="flex items-center">
+      <div style={{width: '20px'}}></div>
+      <div className="ml-2">33203 Gijón - Asturias</div>
+    </div>
+    <div className="flex items-center">
+      <div><img src={Phone} alt="Phone" /></div>
+      <div className="ml-2">tlfn. 985 363 314</div>
+    </div>
+    <div className="flex items-center">
+      <div><img src={Email} alt="Email" /></div>
+      <div className="ml-2"><a href="mailto:casadeacogidaguia@hotmail.es" className="underline">
+        casadeacogidaguia@hotmail.es
+      </a></div>
+    </div>
   </div>
 );
 
