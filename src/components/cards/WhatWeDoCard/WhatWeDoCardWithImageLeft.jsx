@@ -1,7 +1,7 @@
 function WhatWeDoCardWithImageLeft({img, title, text, shadowColor}) {
   return (
     <>
-<div className={`flex flex-col w-full bg-bgColorWithOpacity shadow-xl ${shadowColor} md:h-48 rounded-lg md:flex-row hover:bg-gray-100 z-50 `}>
+<div className={`flex flex-col w-full bg-bgColorWithOpacity shadow-xl ${shadowColor} md:h-48 rounded-lg md:flex-row hover:bg-gray-100 z-20 `}>
   <div className="flex flex-col w-full md:w-1/2">
   <img className="object-cover w-full rounded md:h-full md:rounded-none md:rounded-s-lg" src={img} alt=""/>
   </div>

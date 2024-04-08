@@ -20,12 +20,12 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-bgColor fixed w-full z-20 top-0 start-0">
-        <div className="max-w-screen-xl flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-4">
+      <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
+        <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-4">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={LogoNav} className="h-16" alt="Logo" />
+            <img src={LogoNav} className="h-16 z-50 " alt="Logo" />
           </Link>
-          <div className="flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
+          <div className=" z-50 flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
           <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
           <PrimaryBtn data={"Hazte Sócio"} go="form"></PrimaryBtn>
             <button
