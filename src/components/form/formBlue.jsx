@@ -16,7 +16,7 @@ const BoxBlue = ({ titleBox, squareBlue }) => {
 
 const FormBlue = () => {
   return (
-<div className="flex items-center justify-center">
+<div className="flex items-center justify-center mt-6">
 <div className="relative w-1/2 h-1/2 flex flex-wrap m-10" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
             <div className="w-full sm:w-1/2 p-4">
         <BoxBlue titleBox="Nombre *" squareBlue="Ingrese su nombre" />
