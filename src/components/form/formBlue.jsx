@@ -1,4 +1,5 @@
 import React from "react";
+import penform from "../../assets/icons/penForm.svg";
 
 const BoxBlue = ({ titleBox, squareBlue }) => {
   return (
@@ -18,13 +19,14 @@ const FormBlue = () => {
   return (
 <div className="flex items-center justify-center mt-6">
 <div className="relative w-1/2 h-1/2 flex flex-wrap m-10" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
-            <div className="w-full sm:w-1/2 p-4">
+      <div className="w-full sm:w-1/2 p-4">
         <BoxBlue titleBox="Nombre *" squareBlue="Ingrese su nombre" />
         <BoxBlue titleBox="DNI/NIE *" squareBlue="Ingrese su DNI/NIE" />
         <BoxBlue titleBox="Email *" squareBlue="Ingrese su correo electrónico" />
         <BoxBlue titleBox="Ciudad" squareBlue="Ingrese su ciudad" />
         <BoxBlue titleBox="Código Postal" squareBlue="Ingrese su código postal" />
       </div>
+      <img src={penform} alt="penForm" className="absolute w-[120px] h-[110px] top-[43%] left-[48%] transform -translate-x-1/2 -translate-y-1/2" />
       <div className="w-full sm:w-1/2 p-4">
         <BoxBlue titleBox="Apellidos *" squareBlue="Ingrese sus apellidos" />
         <BoxBlue titleBox="Teléfono" squareBlue="Ingrese su número de teléfono" />
