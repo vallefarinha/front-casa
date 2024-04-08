@@ -1,15 +1,14 @@
-import Earings from "../components/banners/Earings"
-import Help from "../components/banners/Help"
+import Earings from "../components/banners/Earings";
+import Help from "../components/banners/Help";
+import OurValorsCard from "../components/cards/WhatWeDoCard/OurValorsCard";
 
 function Home() {
   return (
-    <>  
-   <h1>ES ESLA HOME HOME</h1>
-    <div>Home</div>
-    <Earings/>
-    <Help/>
+    <>
+      <div>Home</div>
+      <OurValorsCard></OurValorsCard>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
