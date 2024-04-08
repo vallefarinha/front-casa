@@ -23,10 +23,12 @@ const Footer = () => (
       
     </div>
     <div className="w-2/3 md:w-1/2 flex flex-col items-end">
-      <div className="text-primaryColor text-xl font-semibold font-poppinsBold">
-        Información de contacto
+      <div className="-mr-2">
+        <div className="text-primaryColor text-xl font-semibold font-poppinsBold">
+          Información de contacto
+        </div>
+        <ContactInfo />
       </div>
-      <ContactInfo />
     </div>
   </div>
 );
