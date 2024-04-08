@@ -8,9 +8,9 @@ const ContactInfo = () => (
     <div className="text-LetterColor text-base font-normal font-poppinsRegular">
       tlfn. 985 363 314
     </div>
-    <div className="text-LetterColor text-base font-normal font-poppinsRegular underline leading-7 tracking-tight">
+    <a href="mailto:casadeacogidaguia@hotmail.es" className="text-LetterColor text-base font-normal font-poppinsRegular underline leading-7 tracking-tight">
       casadeacogidaguia@hotmail.es
-    </div>
+    </a>
   </div>
 );
 
