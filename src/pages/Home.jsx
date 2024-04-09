@@ -1,12 +1,12 @@
 import Earings from "../components/banners/Earings";
 import Help from "../components/banners/Help";
-import OurValorsCard from "../components/cards/WhatWeDoCard/OurValorsCard";
+import OurWorkText from "../components/texts/OurWorkText";
 
 function Home() {
   return (
     <>
       <div>Home</div>
-      <OurValorsCard></OurValorsCard>
+      <OurWorkText></OurWorkText>
     </>
   );
 }
