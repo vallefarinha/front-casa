@@ -62,15 +62,15 @@ const OurHistory = () => {
           <ArrowButton rotate={"up"} />
         </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
-          <div className="md:w-[40%]">
+          <div className="md:w-[40%] my-auto">
             <img
               src={ImgCasa1963}
               alt="Imagen de la casa en 1963"
-              className="max-w-full h-auto"
+              className="lg:w-[80%] md:mx-auto h-auto"
             />
           </div>
           <div className="lg:w-[45%]">
-            <div className="my-8">
+            <div className="my-6">
               <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
                 1963
               </h2>
@@ -81,7 +81,7 @@ const OurHistory = () => {
                 adecuados, y encontramos un chalet que requería algunas obras.
               </p>
             </div>
-            <div className="my-8">
+            <div className="my-6">
               <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
                 1965
               </h2>
@@ -128,7 +128,7 @@ const OurHistory = () => {
           </p>
         </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
-          <div className="lg:w-[45%] my-8">
+          <div className="lg:w-[45%] my-6">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
               1968
             </h2>
@@ -139,11 +139,11 @@ const OurHistory = () => {
               imposible.
             </p>
           </div>
-          <div className="md:w-[40%]">
+          <div className="md:w-[40%] my-auto">
             <img
               src={ImgCasa1968}
               alt="Imagen de la casa en 1967"
-              className="max-w-full h-auto"
+              className="lg:w-[60%] md:mx-auto h-auto"
             />
           </div>
         </div>
@@ -211,15 +211,15 @@ const OurHistory = () => {
           <ArrowButton rotate={"up"} />
         </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
-          <div className="lg:w-[40%]">
+          <div className="lg:w-[40%] my-auto">
             <img
               src={ImgCasa2006}
               alt="Imagen de la demolicion de la casa"
-              className="max-w-full h-auto"
+              className="md:w-[60%] md:mx-auto lg:w-[70%] h-auto"
             />
           </div>
           <div className="lg:w-[45%]">
-            <div className="my-8">
+            <div className="my-6">
               <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
                 2006
               </h2>
@@ -232,7 +232,7 @@ const OurHistory = () => {
                 la nueva construcción.
               </p>
             </div>
-            <div className="my-8">
+            <div className="my-6">
               <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
                 2008
               </h2>
@@ -242,7 +242,7 @@ const OurHistory = () => {
                 donde se estaba construyendo la nueva casa.(Se aceptó)
               </p>
             </div>
-            <div className="my-8">
+            <div className="my-6">
               <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
                 2010
               </h2>
@@ -312,7 +312,7 @@ const OurHistory = () => {
       </svg>
 
       <div className="bg-inherit flex flex-wrap justify-between w-[80%] mx-auto my-4 px-9">
-        <div className="w-1/4 mb-4">
+        <div className="md:w-1/4 mb-4">
           <div className="shadow-xl shadow-quarteryColor rounded-3xl">
             <img
               src={imgprueba}
@@ -321,7 +321,7 @@ const OurHistory = () => {
             />
           </div>
         </div>
-        <div className="w-1/4 mb-4">
+        <div className="md:w-1/4 mb-4">
           <div className="shadow-xl shadow-quarteryColor rounded-3xl">
             <img
               src={imgprueba}
@@ -330,7 +330,7 @@ const OurHistory = () => {
             />
           </div>
         </div>
-        <div className="w-1/4 mb-4">
+        <div className="md:w-1/4 mb-4">
           <div className="shadow-xl shadow-quarteryColor rounded-3xl">
             <img
               src={imgprueba}
