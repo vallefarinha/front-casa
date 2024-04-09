@@ -1,6 +1,6 @@
-function Title({ wordBlue, wordPink }) {
+function TitleHistory({ wordBlue, wordPink }) {
     return (
-      <h1 className="my-4 text-left text-6xl font-poppinsMedium w-full">
+      <h1 className="text-left text-2xl md:text-3xl font-poppinsMedium">
         <span className="text-LetterColor">{wordBlue}</span>{" "}
         <span className="text-primaryColor font-poppinsExtraBold">
           {wordPink}
@@ -9,4 +9,4 @@ function Title({ wordBlue, wordPink }) {
     );
   }
   
-export default Title
+export default TitleHistory
