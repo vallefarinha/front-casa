@@ -46,7 +46,12 @@
         font-style: italic;
       } 
 
-      .capitalize-first::first-letter {
+  }
+
+.capitalize-first::first-letter {
         text-transform: uppercase;
       }
-  }
+
+  .slick-slide > div{
+    margin: 0 10px;
+ }

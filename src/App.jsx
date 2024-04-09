@@ -8,7 +8,7 @@ const App = () => {
    <BrowserRouter>
       <div className="flex flex-col min-h-screen bg-bgColor">
         <Navbar />
-        <div className="max-w-screen-xl flex flex-col mx-auto justify-center items-center mt-26">
+        <div className="flex-grow mt-[88px] md:mt-[98px] lg:mt-[97px] ">
           <Router />
         </div>
         <Footer />
