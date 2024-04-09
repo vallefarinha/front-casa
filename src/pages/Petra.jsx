@@ -8,11 +8,18 @@ import Quote from "../components/quote/Quote.jsx";
 import petraImageGreenCircle from "../assets/images/petraImageGreenCircle.png";
 import petraImageWithFlower from "../assets/images/petraImageWithFlower.png";
 import photo1994 from "../assets/images/photo1994.png";
+import { Link } from "react-router-dom";
 
 function Petra() {
+
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
-      <div className="mx-4 my-6">
+      <div className="mx-4 my-6" id="section1">
         <div className="flex flex-col items-center justify-center">
           <div className="flex items-center justify-center mt-28">
             <div className="flex-col">
@@ -26,12 +33,12 @@ function Petra() {
             </div>
             <img src={imageMadrePetra} alt="madre petra" className="w-5/12" />
           </div>
-          <ArrowButton rotate={"down"} />
+          <ArrowButton rotate={"down"} onClick={() => scrollToSection("section2")} />
         </div>
 
-        <div className="bg-bgPinkPetra1 bg-cover h-full flex flex-col items-center justify-center">
+        <div className="bg-bgPinkPetra1 bg-cover h-full flex flex-col items-center justify-center" id="section2">
           <div className="flex flex-col items-center justify-center z-10 py-6">
-            <ArrowButton rotate={"up"} />
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section1")} />
             <img
               src={madreYellowcircle}
               alt="madre petra"
@@ -56,14 +63,14 @@ function Petra() {
             <div className="text-center">
               <Quote quote="Me postré delante de la Virgen suplicándole que no dejara de ser mi Madre, que yo procuraría santificarme ayudada por su gracia." />
             </div>
-            <ArrowButton rotate={"down"} className="mb-4" />
-          </div>
+            <ArrowButton rotate={"down"} onClick={() => scrollToSection("section3")} />              
+           </div>
         </div>
 
-        <div className="h-full flex flex-col items-center justify-center">
+        <div className="h-full flex flex-col items-center justify-center" id="section3">
           <div className="flex flex-col items-center justify-center z-10 py-6">
-            <ArrowButton rotate={"up"} className="mb-4" />
-            <div className="flex-col w-full p-6">
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section2")} />
+           <div className="flex-col w-full p-6">
               <Number wordBlue="1873" />
               <TitleHistory
                 wordBlue="La abertura de la"
@@ -85,12 +92,12 @@ function Petra() {
               Frasquita, Isabel, Josefita, y Rafaela; todas fueron conocidas
               entre el vecindario como Hermanitas de los Pobres.
             </p>
-            <ArrowButton rotate={"down"} />
+            <ArrowButton rotate={"down"} onClick={() => scrollToSection("section4")} />             
           </div>
         </div>
 
-        <div className="bg-bgPinkPetra2 bg-cover flex flex-col items-center justify-center py-6">
-          <ArrowButton rotate={"up"} />
+        <div className="bg-bgPinkPetra2 bg-cover flex flex-col items-center justify-center py-6" id="section4">
+        <ArrowButton rotate={"up"} onClick={() => scrollToSection("section3")} />               
           <div className="flex items-center w-full p-6 justify-between">
             <div className="flex-col">
               <Number wordBlue="1878" />
@@ -115,13 +122,13 @@ function Petra() {
             Josefita, con la ayuda de otras personas, continuó durante años al
             frente de la casa abierta en el Valle de Abdalajís.
           </p>
-          <ArrowButton rotate={"down"} />
-        </div>
+          <ArrowButton rotate={"down"} onClick={() => scrollToSection("section5")} />                   
+           </div>
 
-        <div className="h-full flex flex-col items-center justify-center">
+        <div className="h-full flex flex-col items-center justify-center" id="section5">
           <div className="flex flex-col items-center justify-center z-10 py-6">
-            <ArrowButton rotate={"up"} className="mb-4" />
-            <div className="flex-col w-full p-6">
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section4")} />                 
+                <div className="flex-col w-full p-6">
               <Number wordBlue="1881" />
               <TitleHistory
                 wordBlue="Adopta el nombre"
@@ -147,14 +154,14 @@ function Petra() {
               los votos temporales en la iglesia de San Juan Bautista, de
               Vélez-Málaga y tomó el nombre religioso de Petra de San José.
             </p>
-            <ArrowButton rotate={"down"} />
-          </div>
+            <ArrowButton rotate={"down"} onClick={() => scrollToSection("section6")} />             
+              </div>
         </div>
 
-        <div className="bg-bgPinkPetra3 bg-cover h-full flex flex-col items-center justify-center">
+        <div className="bg-bgPinkPetra3 bg-cover h-full flex flex-col items-center justify-center" id="section6">
           <div className="flex flex-col items-center justify-center z-10 py-6">
-            <ArrowButton rotate={"up"} />
-            <img
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section5")} />             
+          <img
               src={petraImageWithFlower}
               alt="madre petra"
               className="mb-4 h-72 my-4"
@@ -184,13 +191,13 @@ function Petra() {
               <div className="text-center">
               <Quote quote="Hijas, si esto que hemos ofrecido ha sido de verdad, Nuestro Señor lo ha recibido y hay que prepararse para grandes trabajos. Pronto veremos los efectos de esta oblación. Pongamos el hombro para una cruz muy grande, y de seguro que estará cerca, porque Nuestro Señor no acostumbra a dilatar esta clase de gracias, cuando se las pedimos de todo corazón. Digo gracias porque no dejan de ser los trabajos favores extraordinarios que reserva el Señor para los suyos. Más tarde, en días de tribulación, recordábamos el ofrecimiento del día de Reyes, que una ofrecía su honra por amor a Jesucristo; la otra, quedarse desnuda y vivir pobre como Él; otra, desear ser perseguida." />
             </div>
-            <ArrowButton rotate={"down"} className="mb-4" />
-          </div>
+            <ArrowButton rotate={"down"} onClick={() => scrollToSection("section7")} />             
+              </div>
         </div>
 
-        <div className="h-full flex flex-col items-center justify-center">
+        <div className="h-full flex flex-col items-center justify-center" id="section7">
           <div className="flex flex-col items-center justify-center z-10 py-6">
-            <ArrowButton rotate={"up"} className="mb-4" />
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section6")} />             
             <div className="flex-col w-full p-6">
               <Number wordBlue="1906" />
               <TitleHistory
@@ -210,11 +217,12 @@ function Petra() {
             <div className="text-center">
               <Quote quote="Hijas es el amor quien debe prestarnos alas para subir más arriba." />
             </div>
-            <ArrowButton rotate={"down"} />
+            <ArrowButton rotate={"down"} onClick={() => scrollToSection("section8")} />             
           </div>
         </div>
 
-        <div className="bg-bgPinkPetra4 flex flex-col items-center justify-center py-6">
+        <div className="bg-bgPinkPetra4 flex flex-col items-center justify-center py-6" id="section8">
+        <ArrowButton rotate={"up"} onClick={() => scrollToSection("section7")} />             
           <div className="flex items-center w-full p-6 justify-between">
             <div className="flex-col">
               <Number wordBlue="1994" />
@@ -242,7 +250,7 @@ function Petra() {
             <p className="text-xl md:text-xl lg:text-xl text-justify p-6 font-poppinsRegular text-LetterColor mb-4">
             Juan Pablo II la beatificó el 16 de octubre de 1994.  </p>
           </div>          
-          <ArrowButton rotate={"up"} />
+          <ArrowButton rotate={"up"} onClick={() => scrollToSection("section1")} /> 
         </div>
 </div>
     </>
@@ -250,3 +258,4 @@ function Petra() {
 }
 
 export default Petra;
+
