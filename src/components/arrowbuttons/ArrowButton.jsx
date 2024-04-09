@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArrowButton = ({ rotate }) => {
+const ArrowButton = ({ rotate, onClick }) => {
   let rotationClass = "";
 
   switch (rotate) {
@@ -21,6 +21,7 @@ const ArrowButton = ({ rotate }) => {
     <button
       type="button"
       className={`text-LetterColor bg-tertiaryColor hover:bg-gray-400 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transform ${rotationClass}`}
+      onClick={onClick}
     >
       <svg
         className="w-4 h-4"
