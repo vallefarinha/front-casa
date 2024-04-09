@@ -6,9 +6,9 @@ import Navbar from "./components/navbar/Navbar.jsx";
 const App = () => {
   return (
    <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-bgColor">
         <Navbar />
-        <div className="flex-grow">
+        <div className="flex-grow mt-[88px] md:mt-[98px] lg:mt-[97px] ">
           <Router />
         </div>
         <Footer />
