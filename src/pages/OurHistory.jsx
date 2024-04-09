@@ -8,7 +8,7 @@ import ArrowButton from "../components/arrowbuttons/ArrowButton";
 
 const OurHistory = () => {
   return (
-    <div className="mt-[88px] md:mt-28 lg:mt-32 mx-auto">
+    <div className=" mx-auto">
       <div className="bg-inherit">
         <div className="flex flex-wrap justify-around w-[80%] mx-auto mb-2">
           <div className="lg:w-[45%] my-auto ">
