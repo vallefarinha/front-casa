@@ -60,8 +60,8 @@ function Petra() {
                 cobijó en María adoptándola como tal:
               </p>
             </div>
-            <div className="text-center">
-              <Quote quote="Me postré delante de la Virgen suplicándole que no dejara de ser mi Madre, que yo procuraría santificarme ayudada por su gracia." />
+            <div className="w-3/4 text-center">
+              <Quote quote="Me postré delante de la Virgen suplicándole que no dejara de ser mi Madre, que yo procuraría santificarme ayudada por su gracia."  bgClass="bg-bgQuote"/>
             </div>
             <ArrowButton rotate={"down"} onClick={() => scrollToSection("section3")} />              
            </div>
@@ -179,8 +179,8 @@ function Petra() {
               En 1892 en la iglesia de la casa de Ronda emitió los definitivos. Selló este instante con la siguiente determinación:
               </p>
             </div>
-            <div className="text-center">
-              <Quote quote="Me postré delante de la Virgen suplicándole que no dejara de ser mi Madre, que yo procuraría santificarme ayudada por su gracia." />
+            <div className="w-3/4 text-center">
+              <Quote quote="Me postré delante de la Virgen suplicándole que no dejara de ser mi Madre, que yo procuraría santificarme ayudada por su gracia."  bgClass="bg-bgQuote" />
             </div>
             <div className="text-center">
               <p className="text-xl md:text-xl lg:text-xl text-justify p-6 font-poppinsRegular text-LetterColor mb-4">
@@ -188,7 +188,7 @@ function Petra() {
               Las dificultades de distinto signo, calumnias y persecuciones incluidas, no hicieron más que acrecentar sus virtudes. Quienes la vituperaron no hallaron en ella más respuesta que la caridad y el perdón. De algún modo previno a sus hijas de lo que podía recaer sobre la comunidad. Así, un día, celebrando entrañablemente la festividad de la epifanía en la que cada una ofrecía al Niño lo que brotaba de su interior, la fundadora les advirtió:
               </p>
             </div>
-              <div className="text-center">
+              <div className="w-3/4 text-center">
               <Quote quote="Hijas, si esto que hemos ofrecido ha sido de verdad, Nuestro Señor lo ha recibido y hay que prepararse para grandes trabajos. Pronto veremos los efectos de esta oblación. Pongamos el hombro para una cruz muy grande, y de seguro que estará cerca, porque Nuestro Señor no acostumbra a dilatar esta clase de gracias, cuando se las pedimos de todo corazón. Digo gracias porque no dejan de ser los trabajos favores extraordinarios que reserva el Señor para los suyos. Más tarde, en días de tribulación, recordábamos el ofrecimiento del día de Reyes, que una ofrecía su honra por amor a Jesucristo; la otra, quedarse desnuda y vivir pobre como Él; otra, desear ser perseguida." />
             </div>
             <ArrowButton rotate={"down"} onClick={() => scrollToSection("section7")} />             
@@ -214,8 +214,8 @@ function Petra() {
               16 de agosto de 1906. A fuerza de amar llegaba a la cima soñada de
               la que habló a sus religiosas:
             </p>
-            <div className="text-center">
-              <Quote quote="Hijas es el amor quien debe prestarnos alas para subir más arriba." />
+            <div className="w-3/4 text-center">
+              <Quote quote="Hijas es el amor quien debe prestarnos alas para subir más arriba."  bgClass="bg-bgQuotePink" />
             </div>
             <ArrowButton rotate={"down"} onClick={() => scrollToSection("section8")} />             
           </div>
@@ -243,8 +243,8 @@ function Petra() {
           Su devoción a san José, en cuyo honor había tomado su nombre, le ha conferido el título de apóstol josefino del siglo XIX. Dio a sus hijas como modelo para su santificación el de la Sagrada Familia. Aludiendo a Cristo, confesaba humildemente:
           </p>
           </div>
-          <div className="text-center">
-              <Quote quote="¡Ojalá que yo pudiese aprender las lecciones que siempre me ha dado! Pero soy tan miserable que parece que vamos a porfía: Él, con tanta misericordia a regalarme, y yo, con tanta frialdad e indiferencia en su santo servicio. Él me perdone y reciba mis deseos y buena voluntad, que ésta siempre la he tenido." />
+          <div className="w-3/4 text-center">
+              <Quote quote="¡Ojalá que yo pudiese aprender las lecciones que siempre me ha dado! Pero soy tan miserable que parece que vamos a porfía: Él, con tanta misericordia a regalarme, y yo, con tanta frialdad e indiferencia en su santo servicio. Él me perdone y reciba mis deseos y buena voluntad, que ésta siempre la he tenido."  bgClass="bg-bgQuote"/>
             </div>
             <div className="w-full text-center">
             <p className="text-xl md:text-xl lg:text-xl text-justify p-6 font-poppinsRegular text-LetterColor mb-4">
