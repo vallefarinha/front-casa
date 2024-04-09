@@ -41,18 +41,19 @@ const ContactInfo = () => (
 );
 
 const Footer = () => (
-  <div className="bg-white w-full h-24 py-6 px-4 md:px-6 flex items-center justify-between shadow-xl border-t-2 border-gray-200 relative bottom-0">
-    <div className="flex items-center space-x-3 ml-9">
+  <div className="bg-white w-full h-24 py-6 px-4 md:px-6 flex items-center justify-between shadow-xl border-t-2 border-gray-200 fixed bottom-0">
+    <div className="flex items-center space-x-3 ml-20">
       <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src={LogoNav} className="h-16" alt="Logo" />
+        <img src={LogoNav} className="h-16 ml-10" alt="Logo" />
       </Link>
     </div>
-    <div className="w-2/3 md:w-1/2 flex flex-col items-end mr-10">
+    <div className="w-2/3 md:w-1/2 flex flex-col items-end"style={{marginRight: '10%'}}>
       <div className="-mr-2">
         <ContactInfo />
       </div>
     </div>
   </div>
 );
+
 
 export default Footer;
