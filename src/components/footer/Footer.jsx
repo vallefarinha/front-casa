@@ -6,27 +6,34 @@ import Phone from "../../assets/icons/phone.svg";
 import Email from "../../assets/icons/email.svg";
 
 const ContactInfo = () => (
-  <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular leading-none space-y-0">
-    <div className="flex items-center leading-none">
-      <div><img src={LocationSharp} alt="Location" /></div>
-      <div className="ml-2">Avda. del profesor Pérez Pimentel,105 Barrio de la Guía</div>
+  <div className="flex space-x-10 space-y-4">
+    <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular mt-4">
+      <div className="flex items-center">
+        <div className="ml-2">Avda. del profesor Pérez Pimentel 105 </div>
+      </div>
+      <div className="flex items-center my-2">
+        <div className="ml-2">Barrio de la Guía 33203 Gijón - Asturias</div>
+      </div>
+      
     </div>
-    <div className="flex items-center leading-none">
-      <div style={{width: '20px'}}></div>
-      <div className="ml-2">33203 Gijón - Asturias</div>
+    <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular">
+      <div className="flex items-center">
+        <div className="ml-2">tlfn. 985 363 314</div>
+      </div> 
+      <div className="flex items-center my-2">
+        <div className="ml-2"><a href="mailto:casadeacogidaguia@hotmail.es">
+          casadeacogidaguia@hotmail.es
+        </a></div>
+      </div>
     </div>
-    <div className="flex items-center leading-none">
-      <div><img src={Phone} alt="Phone" /></div>
-      <div className="ml-2">tlfn. 985 363 314</div>
-    </div>
-    <div className="flex items-center">
-      <div><img src={Email} alt="Email" /></div>
-      <div className="ml-2"><a href="mailto:casadeacogidaguia@hotmail.es" className="underline">
-        casadeacogidaguia@hotmail.es
-      </a></div>
+    <div className="text-LetterColor text-sm md:text-sm font-normal font-poppinsRegular">
+      <div className="flex items-center">
+        <div className="ml-2">redes sociales</div>
+      </div> 
     </div>
   </div>
 );
+
 
 const Footer = () => (
   <div className="bg-white w-full h-24 py-6 px-4 md:px-6 flex items-center justify-between shadow-xl border-t-2 border-gray-200 fixed bottom-0">
@@ -35,11 +42,8 @@ const Footer = () => (
         <img src={LogoNav} className="h-16" alt="Logo" />
       </Link>
     </div>
-    <div className="w-2/3 md:w-1/2 flex flex-col items-end"style={{marginRight: '5%'}}>
+    <div className="w-2/3 md:w-1/2 flex flex-col items-end"style={{marginRight: '10%'}}>
       <div className="-mr-2">
-        <div className="text-primaryColor text-lg font-semibold font-poppinsBold leading-none">
-          Información de contacto
-        </div>
         <ContactInfo />
       </div>
     </div>
