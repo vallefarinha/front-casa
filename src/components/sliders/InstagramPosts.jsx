@@ -18,13 +18,13 @@ const InstagramPosts = () => {
   }, []);
 
   const CustomPrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="prev-arrow absolute bottom-[-45px] left-[40%] lg:left-[46%] z-10">
+    <div onClick={onClick} className="prev-arrow absolute bottom-[-45px] left-[40%] lg:left-[44%] z-10">
       <ArrowButton rotate="left" />
     </div>
   );
 
   const CustomNextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="next-arrow absolute bottom-[-45px] right-[40%] lg:right-[46%] z-10">
+    <div onClick={onClick} className="next-arrow absolute bottom-[-45px] right-[40%]  lg:right-[44%] z-10">
       <ArrowButton />
     </div>
   );
@@ -65,7 +65,7 @@ const InstagramPosts = () => {
         {posts.map((post) => (
           <div
             key={post.id}
-            className="relative overflow-hidden rounded-lg group w-auto h-[400px] bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
+            className="relative overflow-hidden rounded-lg group w-auto h-[338px]  bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
@@ -73,10 +73,10 @@ const InstagramPosts = () => {
                 <img
                   src={post.media_url}
                   alt={post.caption}
-                  className="object-cover w-full h-full"
+                  className="object-contain"
                 />
                 <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center p-4">
-                  <p className="text-white text-center">{post.caption}</p>
+                  <p className="text-white text-center text-sm">{post.caption}</p>
                 </div>
               </div>
             )}
@@ -93,7 +93,7 @@ const InstagramPosts = () => {
                   Tu navegador no soporta este video.
                 </video>
                 <div className="absolute top-1/4 left-0 right-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 p-4">
-                  <p className="text-white text-center">{post.caption}</p>
+                  <p className="text-white text-center text-sm">{post.caption}</p>
                 </div>
               </div>
             )}
@@ -105,7 +105,7 @@ const InstagramPosts = () => {
                   className="object-cover w-auto h-[100%]"
                 />
                 <div className="absolute inset-0 bg-LetterColor opacity-0 transition-opacity group-hover:opacity-90 flex items-center justify-center p-4">
-                  <p className="text-white text-center">{post.caption}</p>
+                  <p className="text-white text-center text-sm">{post.caption}</p>
                 </div>
               </div>
             )}

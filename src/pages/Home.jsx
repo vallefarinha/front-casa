@@ -10,7 +10,7 @@ function Home() {
         <HomeBannerSlider />
       </div>
       <Earings />
-      <section>
+      <section className="md:w-[80%] mx-auto">
         <InstagramPosts />
       </section>
       <Help />
