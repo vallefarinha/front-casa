@@ -1,11 +1,8 @@
-function Quote({ wordBlue, wordPink }) {
+function Quote({quote}) {
     return (
-      <h1 className="my-4 text-left text-6xl font-poppinsMedium w-full">
-        <span className="text-LetterColor">{wordBlue}</span>{" "}
-        <span className="text-primaryColor font-poppinsExtraBold">
-          {wordPink}
-        </span>
-      </h1>
+      <div className="bg-bgQuote my-4 text-center text-xl font-poppinsMediumItalic bg-cover w-96">
+      <p className="text-xl md:text-xl lg:text-xl center p-6 font-poppinsRegular text-LetterColor mb-4">{quote}</p>
+      </div>
     );
   }
   
