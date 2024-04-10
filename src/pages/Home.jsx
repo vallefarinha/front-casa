@@ -11,10 +11,7 @@ function Home() {
       <div className="w-full mb-5">
         <HomeBannerSlider />
       </div>
-      {/* <section className="md:w-[80%] mx-auto"> */}
-      
       <OurWorkYellow />
-      {/* </section> */}
       <Earings />
       <section className="md:w-[80%] mx-auto">
         <InstagramPosts />
