@@ -1,15 +1,20 @@
 import React from 'react'
 import OurWorkCardWithIcon from "./OurWorkCardWithIcon";
 import Title from "../../title/Title"
+import OurWorkText from "../../texts/OurWorkText";
+
 
 const OurWorkYellow = () => {
   return (
     <div className="w-full">
-    <section className="md:w-[80%] mx-auto">
+    <section className="flex md:w-[80%] mx-auto">
         <Title 
-            
+            wordBlue="Nuestro"
+            wordPink="trabajo"
+            textAlign="text-center"
         />
       </section>
+      <OurWorkText></OurWorkText>
         <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
             <div className="flex justify-center w-full">
                 <OurWorkCardWithIcon
