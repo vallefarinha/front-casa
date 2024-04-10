@@ -3,16 +3,17 @@ import OurWorkCardWithIcon from "./OurWorkCardWithIcon";
 import Title from "../../title/Title"
 import OurWorkText from "../../texts/OurWorkText";
 
-
 const OurWorkYellow = () => {
   return (
     <div className="w-full">
-    <section className="flex md:w-[80%] mx-auto">
+      <section className="flex md:w-[80%] mx-auto justify-center items-center">
+        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles" className="mr-2" />
         <Title 
             wordBlue="Nuestro"
             wordPink="trabajo"
             textAlign="text-center"
         />
+        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles" className="ml-2" />
       </section>
       <OurWorkText></OurWorkText>
         <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
