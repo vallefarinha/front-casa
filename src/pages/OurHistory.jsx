@@ -15,11 +15,16 @@ const OurHistory = () => {
     if (targetSection) {
       targetSection.scrollIntoView({
         behavior: "smooth",
-        block: "start",
-        inline: "nearest",
+        block: "nearest",
       });
 
+      // Agregar la clase de animación cuando cambie de sección
       targetSection.classList.add("animate__animated", "animate__zoomIn");
+
+      // Eliminar la clase de animación después de un tiempo para que esté lista para la próxima vez
+      setTimeout(() => {
+        targetSection.classList.remove("animate__animated", "animate__zoomIn");
+      }, 1000); // Ajusta el tiempo según la duración de tu animación
     }
   };
 
@@ -29,9 +34,12 @@ const OurHistory = () => {
         className="our-history-section bg-inherit h-screen custom-height"
         id="Section1"
       >
-        <div
-          className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height"
-        >
+        <div className="relative">
+          <div className="absolute right-4 pt-2">
+            <ArrowButton onClick={() => handleButtonClick("Section2")} />
+          </div>
+        </div>
+        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height">
           <div className="lg:w-[45%] my-auto ">
             <TitleHistory wordBlue={"Nuestra "} wordPink={" Historia"} />
             <div className="my-8">
@@ -64,12 +72,21 @@ const OurHistory = () => {
       </div>
 
       <div
-        className="our-history-section bg-quarteryColor bg-opacity-60 h-sreen custom-height"
+        className="our-history-section bg-quarteryColor bg-opacity-60 h-sreen custom-height pt-2"
         id="Section2"
       >
-        <div
-          className="flex flex-wrap justify-around w-[80%] mx-auto h-screen overflow-y-auto custom-height"
-        >
+        <div className="relative">
+          <div className="absolute right-14">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section1")}
+            />
+          </div>
+          <div className="absolute right-4">
+            <ArrowButton onClick={() => handleButtonClick("Section3")} />
+          </div>
+        </div>
+        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen overflow-y-auto custom-height">
           <div className="md:w-[40%] my-auto">
             <img
               src={ImgCasa1963}
@@ -109,6 +126,17 @@ const OurHistory = () => {
         className="our-history-section bg-inherit py-10 h-screen overflow-y-auto custom-height"
         id="Section3"
       >
+        <div className="relative">
+          <div className="absolute right-14">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section2")}
+            />
+          </div>
+          <div className="absolute right-4">
+            <ArrowButton onClick={() => handleButtonClick("Section4")} />
+          </div>
+        </div>
         <div className="w-[80%] lg:px-10 mx-auto">
           <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
             1967
@@ -125,8 +153,8 @@ const OurHistory = () => {
             ayudaban económicamente con limosnas generosas y pequeños donativos
           </p>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto">
-          <div className="lg:w-[45%] my-6">
+        <div className="flex flex-wrap justify-around w-[80%] mx-auto py-5">
+          <div className="lg:w-[45%] my-8">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
               1968
             </h2>
@@ -137,7 +165,7 @@ const OurHistory = () => {
               imposible.
             </p>
           </div>
-          <div className="md:w-[40%] my-auto">
+          <div className="md:w-[40%] my-auto ">
             <img
               src={ImgCasa1968}
               alt="Imagen de la casa en 1967"
@@ -148,10 +176,21 @@ const OurHistory = () => {
       </div>
 
       <div
-        className="our-history-section bg-quarteryColor bg-opacity-60 py-4 lg:py-3 px-4 lg:px-3 h-screen overflow-y-auto custom-height"
+        className="our-history-section bg-quarteryColor bg-opacity-60 py-4 lg:py-4 px-4 lg:px-3 h-screen overflow-y-auto custom-height"
         id="Section4"
       >
-        <div className="border-dashed border-4 border-secondaryColor p-4 mx-auto rounded-lg">
+        <div className="relative">
+          <div className="absolute right-14 pt-2">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section3")}
+            />
+          </div>
+          <div className="absolute right-4 pt-2">
+            <ArrowButton onClick={() => handleButtonClick("Section5")} />
+          </div>
+        </div>
+        <div className="border-dashed border-4 border-secondaryColor w-[99%] p-4 mx-auto rounded-lg">
           <div className="w-[92%] lg:w-[80%] mx-auto flex flex-col gap-2">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
               1972
@@ -195,6 +234,17 @@ const OurHistory = () => {
         className="our-history-section py-4 h-screen overflow-y-auto custom-height"
         id="Section5"
       >
+        <div className="relative">
+          <div className="absolute right-14">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section4")}
+            />
+          </div>
+          <div className="absolute right-4">
+            <ArrowButton onClick={() => handleButtonClick("Section6")} />
+          </div>
+        </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
           <div className="lg:w-[40%] my-auto">
             <img
@@ -243,6 +293,17 @@ const OurHistory = () => {
         className="our-history-section bg-quarteryColor bg-opacity-60 px-4 lg:px-7 h-screen py-7 overflow-y-auto custom-height"
         id="Section6"
       >
+        <div className="relative">
+          <div className="absolute right-14 pt-2">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section5")}
+            />
+          </div>
+          <div className="absolute right-4 pt-2">
+            <ArrowButton onClick={() => handleButtonClick("Section7")} />
+          </div>
+        </div>
         <div className="border-dashed border-4 border-secondaryColor py-12 mx-auto rounded-lg">
           <div className="w-[92%] lg:w-[80%] mx-auto flex flex-col gap-2">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
@@ -276,7 +337,21 @@ const OurHistory = () => {
         </div>
       </div>
 
-      <div id="Section7" className="our-history-section py-10 h-screen overflow-y-auto custom-height">
+      <div
+        id="Section7"
+        className="our-history-section py-10 h-screen overflow-y-auto custom-height"
+      >
+        <div className="relative">
+          <div className="absolute right-14">
+            <ArrowButton
+              rotate={"left"}
+              onClick={() => handleButtonClick("Section6")}
+            />
+          </div>
+          <div className="absolute right-4">
+            <ArrowButton onClick={() => handleButtonClick("Section1")} />
+          </div>
+        </div>
         <div className="flex flex-wrap justify-between w-[90%] lg:w-[80%] mx-auto lg:px-9 px-2">
           <div className="md:w-1/4 mb-4">
             <div className="shadow-xl shadow-quarteryColor rounded-3xl">
