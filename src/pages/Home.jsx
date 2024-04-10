@@ -11,10 +11,10 @@ function Home() {
       <div className="w-full mb-5">
         <HomeBannerSlider />
       </div>
-      <section className="md:w-[80%] mx-auto">
+      {/* <section className="md:w-[80%] mx-auto"> */}
       <OurWorkText></OurWorkText>
       <OurWorkYellow />
-      </section>
+      {/* </section> */}
       <Earings />
       <section className="md:w-[80%] mx-auto">
         <InstagramPosts />
