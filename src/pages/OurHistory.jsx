@@ -3,7 +3,9 @@ import ImgCruz from "../assets/images/imagenCruz.png";
 import ImgCasa1963 from "../assets/images/imagenCasa1963.png";
 import ImgCasa1968 from "../assets/images/imagenCasa1968.png";
 import ImgCasa2006 from "../assets/images/imagenCasa2006.png";
-import imgprueba from "../assets/images/studying.png";
+import card1 from '../assets/images/casa/IMG_6332.png';
+import card2 from '../assets/images/casa/IMG_6385.png';
+import card3 from '../assets/images/casa/IMG_6282.png';
 import ArrowButton from "../components/arrowbuttons/ArrowButton";
 
 const OurHistory = () => {
@@ -367,7 +369,7 @@ const OurHistory = () => {
           <div className="md:w-1/4 mb-4">
             <div className="shadow-xl shadow-quarteryColor rounded-3xl">
               <img
-                src={imgprueba}
+                src={card1}
                 alt="capilla"
                 className="w-full h-auto rounded-3xl"
               />
@@ -376,7 +378,7 @@ const OurHistory = () => {
           <div className="md:w-1/4 mb-4">
             <div className="shadow-xl shadow-quarteryColor rounded-3xl">
               <img
-                src={imgprueba}
+                src={card2}
                 alt="capilla"
                 className="w-full h-auto rounded-3xl"
               />
@@ -385,7 +387,7 @@ const OurHistory = () => {
           <div className="md:w-1/4 mb-4">
             <div className="shadow-xl shadow-quarteryColor rounded-3xl">
               <img
-                src={imgprueba}
+                src={card3}
                 alt="capilla"
                 className="w-full h-auto rounded-3xl"
               />
