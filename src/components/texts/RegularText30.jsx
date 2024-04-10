@@ -1,9 +1,9 @@
-function RegularText30({ text, textAlign }) {
+function RegularText30({ text, textAlign, size }) {
     return (
-      <h1 className={`my-4 ${textAlign} mb-6 text-xl font-poppinsRegular w-[85%]`}>
-          <span className="text-LetterColor">{text}</span>{" "}
-      </h1>
+        <h1 className={`my-4 mb-6 font-poppinsRegular w-[85%] text-${size} text-${textAlign}`}>
+            <span className="text-LetterColor">{text}</span>
+        </h1>
     );
-  }
-  
-  export default RegularText30;
+}
+
+export default RegularText30;
