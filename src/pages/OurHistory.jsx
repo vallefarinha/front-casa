@@ -455,13 +455,13 @@ const OurHistory = () => {
         className="our-history-section py-10 h-screen overflow-y-auto custom-height"
       >
         <div className="relative">
-          <div className="absolute right-14 -top-10 ">
+          <div className="absolute right-14 md:-top-10 lg:-top-2">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section6")}
             />
           </div>
-          <div className="absolute right-4 -top-10 ">
+          <div className="absolute right-4 md:-top-10 lg:-top-2">
             <ArrowButton onClick={() => handleButtonClick("Section1")} />
           </div>
         </div>
