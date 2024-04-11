@@ -10,8 +10,10 @@ const InstagramPosts = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await InstagramAPI();
-      setPosts(data);
+      const dataPosts = await InstagramAPI();
+      const posts = dataPosts.data.data;
+      const last5Posts = posts.slice(0, 5);
+      setPosts(last5Posts);
     };
 
     fetchData();
