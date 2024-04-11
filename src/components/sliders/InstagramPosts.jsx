@@ -10,10 +10,13 @@ const InstagramPosts = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const dataPosts = await InstagramAPI();
-      const posts = dataPosts.data.data;
-      const last5Posts = posts.slice(0, 5);
-      setPosts(last5Posts);
+      try {
+        const dataPosts = await InstagramAPI();
+        const last5Posts = dataPosts.slice(0, 5);
+        setPosts(last5Posts);
+      } catch (error) {
+        console.error('Error fetching Instagram data:', error);
+      }
     };
 
     fetchData();
@@ -60,14 +63,13 @@ const InstagramPosts = () => {
   };
 
   return (
-    <div className="container mx-auto mt-10 mb-16">
-      <h3 className="text-sm text-LetterColor pl-3 ">Nuestras redes sociales</h3>
-      <h1 className="text-xl md:text-3xl text-LetterColor font-poppinsSemiBold mb-5 text-start pl-3">Acompaña nuestras <span className="text-primaryColor font-poppinsBold">actividades</span></h1>
+    <div className="container mx-auto mb-20">
+      
       <Slider {...settings}>
         {posts.map((post) => (
           <div
             key={post.id}
-            className="relative overflow-hidden rounded-lg group w-auto h-[338px]  bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
+            className="relative overflow-hidden rounded-lg group w-[338px] h-[338px]  bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
