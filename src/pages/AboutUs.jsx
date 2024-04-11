@@ -9,12 +9,12 @@ import TextImage from "../components/textimages/TextImage";
 import Title from "../components/title/Title";
 import ourmision from "../assets/images/ourmision.png";
 import TextImageOurMission from "../components/textimages/TextImageOurMission";
-import ourvision from "../assets/images/ourvision.png";
+import ourvisionnew from "../assets/images/ourvisionnew.png";
 import TitleAboutUs from "../components/title/TitleAboutUs";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="w-[80%] mx-auto mb-10">
       <div className="flex flex-col">
         <Title wordBlue={"Quienes"} wordPink={"somos"}></Title>
         <TextImage></TextImage>
@@ -32,10 +32,13 @@ function AboutUs() {
         ></TitleAboutUs>
         <TextImageOurMission
           paragraph="Nos visualizamos como un refugio seguro y acogedor donde cada madre gestante encuentra el apoyo necesario para enfrentar los desafíos de la maternidad, desarrollarse como individuos íntegros y criar a sus hijos en un ambiente de amor y cuidado. Aspiramos a ser reconocidos como un modelo de excelencia en la atención y acompañamiento a madres gestantes, inspirando a otras instituciones y comunidades a seguir nuestro ejemplo de servicio y compasión. "
-          image={ourvision}
+          image={ourvisionnew}
         ></TextImageOurMission>
       </div>
-
+      <TitleAboutUs
+        firstword={"Nuestras"}
+        secondword={"valores"}
+      ></TitleAboutUs>
       <OurValorsCard
         title={"Empatia y compromiso"}
         icon={compromiso}
@@ -57,7 +60,7 @@ function AboutUs() {
         icon={autonomy}
         alt={"autonomy"}
         text={
-          "Promovemos la dignidad y seguridad de cada madre al mejorar su calidad de vida, proporcionándole un entorno estable y digno donde pueda sentirse protegida y cuidada."
+          "Fomentamos la responsabilidad y autonomía de nuestras residentes, apoyándolas en la toma de decisiones conscientes y en el control de su futuro."
         }
       ></OurValorsCard>
       <OurValorsCard

@@ -1,10 +1,10 @@
 import React from "react";
 
-const TextImage = ({ paragraph, image }) => {
+const TextImage = () => {
   return (
     <>
-      <div className="mx-4 my-5 flex flex-row">
-        <p className=" font-poppinsRegular text-xl text-LetterColor text-justify mr-5">
+      <div className="mb-5 mt-3 flex flex-wrap justify-between">
+        <p className="font-poppinsRegular text-lg lg:text-xl text-LetterColor text-justify lg:w-1/2  my-auto">
           La Casa de Acogida Nuestra Señora de los Desamparados tiene sus raíces
           en el año 1967, cuando fue establecida como una alternativa de
           atención para la infancia y la juventud. En la actualidad, se ha
@@ -18,7 +18,7 @@ const TextImage = ({ paragraph, image }) => {
           vida a ayudar a aquellos que más lo necesitaban.
         </p>
         <img
-          className="float-right h-96 -mt-16"
+          className="md:w-[40%] lg:w-[30%] md:mx-auto "
           src="../src/assets/images/Homeimage.png"
         />
       </div>
