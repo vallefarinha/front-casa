@@ -21,12 +21,15 @@ const Navbar = () => {
     <>
       <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
         <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-4">
-          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link
+            to="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
             <img src={LogoNav} className="h-16 z-50 " alt="Logo" />
           </Link>
           <div className=" z-50 flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
-          <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
-          <PrimaryBtn data={"Hazte Sócio"} go="form"></PrimaryBtn>
+            <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
+            <PrimaryBtn data={"Hazte Sócio"} go="form"></PrimaryBtn>
 
             <button
               onClick={toggleMenu}
@@ -94,9 +97,10 @@ const Navbar = () => {
                   } bg-bgColor pt-2 pb-4 border border-gray-200 rounded-md text-md font-normal text-start z-10 left-0 md:left-auto`}
                 >
                   <li>
-
-                    <Link to="/about" className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
-
+                    <Link
+                      to="/about"
+                      className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                    >
                       Quiénes Somos
                     </Link>
                   </li>
@@ -132,20 +136,30 @@ const Navbar = () => {
                       Beata Petra
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/sanjose"
+                      className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                    >
+                      San José de La Montaña
+                    </Link>
+                  </li>
                 </ul>
               </li>
 
               <li>
-
-                <Link  to="/partnership" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
-
+                <Link
+                  to="/partnership"
+                  className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
+                >
                   Colabora
                 </Link>
               </li>
               <li>
-
-                <Link  to="/blog" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
-
+                <Link
+                  to="/blog"
+                  className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
+                >
                   Noticias
                 </Link>
               </li>
