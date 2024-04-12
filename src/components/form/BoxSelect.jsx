@@ -18,7 +18,7 @@ const BoxSelect = ({ amount, customStyle, textSize }) => {
 
   return (
     <div 
-    className={`relative rounded-[20px] shadow ${isSelected ? 'bg-primaryColor text-white' : isHovered ? 'bg-cyan-600 text-white' : 'bg-gray-300 text-cyan-950'} font-poppinsBold text-${textSize} text-center cursor-pointer flex items-center justify-center`}
+    className={`relative rounded-[20px] shadow mb-4 md:mb-0 ${isSelected ? 'bg-primaryColor text-white' : isHovered ? 'bg-cyan-600 text-white' : 'bg-gray-300 text-cyan-950'} font-poppinsBold text-${textSize} text-center cursor-pointer flex items-center justify-center`}
     style={customStyle}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}

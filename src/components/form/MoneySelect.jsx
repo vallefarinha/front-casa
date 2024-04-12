@@ -12,11 +12,11 @@ const MoneySelect = () => {
         <TitleForm wordBlue="¿Cuánto quieres" wordPink="aportar?" textAlign="center" />
       </button>
       {isOpen && (
-        <div className="flex space-x-4 mt-8">
-          <BoxSelect amount="20 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
-          <BoxSelect amount="40 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
-          <BoxSelect amount="80 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
-          <BoxSelect amount="otra cantidad" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
+        <div className="flex flex-wrap justify-center space-x-4 mt-8">
+          <BoxSelect amount="20 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="40 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="80 €" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="otra cantidad" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
           <img src={kinMoney} alt="kingmoney" className="absolute w-[2420px] h-[200px] top-[73%] left-[28%] transform -translate-x-1/2 -translate-y-1/2" />
         </div>
       )}
