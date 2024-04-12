@@ -3,6 +3,7 @@ import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
 import Help from "../components/banners/Help";
+import TitleHistory from "../components/title/TitleHistory";
 
 const OurBlog = () => {
   const [posts, setPosts] = useState([]);
@@ -27,7 +28,7 @@ const OurBlog = () => {
       if (window.innerWidth <= 768) {
         setItemsPerPage(2);
       } else {
-        setItemsPerPage(4);
+        setItemsPerPage(6);
       }
     };
 
@@ -46,6 +47,7 @@ const OurBlog = () => {
 
   const handlePageChange = (selectedPage) => {
     setCurrentPage(selectedPage);
+    window.scrollTo(0, 0);
   };
 
   const startIndex = currentPage * itemsPerPage;
@@ -55,6 +57,12 @@ const OurBlog = () => {
 
   return (
     <div>
+      <div className=" mx-auto w-[90%] lg:w-[80%] mb-10">
+        <TitleHistory
+          wordBlue={"Mantente actualizado en la "}
+          wordPink={" Casa de la Guia"}
+        />
+      </div>
       <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5 lg:gap-5">
         {currentPosts.map((post) => (
           <div
@@ -103,28 +111,28 @@ const OurBlog = () => {
             {post.media_type === "CAROUSEL_ALBUM" && (
               <div className="flex w-full">
                 <div className=" w-1/2 ">
-                <div className="w-full mx-auto my-auto ">
-                <ImageGallery
-                  items={post.children.data.map((child) => ({
-                    original: child.media_url,
-                    thumbnail: child.media_url,
-                  }))}
-                  showPlayButton={false}
-                  showFullscreenButton={false}
-                  showThumbnails={false}
-                  showNav={false}
-                  showBullets={false}
-                  autoPlay={true}
-                  slideInterval={4000}
-                  renderItem={(item) => (
-                    <img
-                      src={item.original}
-                      alt={post.caption}
-                      className="object-contain"
+                  <div className="w-full mx-auto my-auto ">
+                    <ImageGallery
+                      items={post.children.data.map((child) => ({
+                        original: child.media_url,
+                        thumbnail: child.media_url,
+                      }))}
+                      showPlayButton={false}
+                      showFullscreenButton={false}
+                      showThumbnails={false}
+                      showNav={false}
+                      showBullets={false}
+                      autoPlay={true}
+                      slideInterval={4000}
+                      renderItem={(item) => (
+                        <img
+                          src={item.original}
+                          alt={post.caption}
+                          className="object-contain"
+                        />
+                      )}
                     />
-                  )}
-                />
-                </div>
+                  </div>
                 </div>
                 <div className="w-1/2 flex py-3 px-4 overflow-y-auto">
                   <p className="text-LetterColor font-poppinsRegular text-start text-sm  flex flex-wrap">
@@ -136,13 +144,13 @@ const OurBlog = () => {
           </div>
         ))}
       </div>
-      <Pagination 
-             totalItems={posts.length} // Usar el total de posts para la paginación
-        itemsPerPage={itemsPerPage} 
+      <Pagination
+        totalItems={posts.length} // Usar el total de posts para la paginación
+        itemsPerPage={itemsPerPage}
         onPageChange={handlePageChange}
-          />
+      />
 
-          <Help/>
+      <Help />
     </div>
   );
 };
