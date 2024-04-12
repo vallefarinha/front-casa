@@ -6,41 +6,44 @@ import ArrowButton from "../components/arrowbuttons/ArrowButton.jsx";
 import TitleHistory from "../components/title/TitleHistory.jsx";
 import Number from "../components/title/Number.jsx";
 import Quote from "../components/quote/Quote.jsx";
-import petraImageGreenCircle from "../assets/images/petraImageGreenCircle.png";
+// import petraImageGreenCircle from "../assets/images/petraImageGreenCircle.png";
 import petraImageWithFlower from "../assets/images/petraImageWithFlower.png";
 import photo1994 from "../assets/images/photo1994.png";
-import {motion, useScroll, useTransform} from "framer-motion";
+import { motion, useInView} from "framer-motion";
 import { useRef } from "react";
 
-function Petra() {
-  const wrapperRef = useRef(null);
-
-const {scrollYProgress } = useScroll({
-  target: wrapperRef,
-  offset: ["0 1", "1.33 1"]
-})
-const scaleProgress = useTransform(scrollYProgress, [0,1], [0.8,1]);
-const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
-
+function Section({ children, className  }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
 
   return (
-    <>
-       <motion.div
-      style={{
-        scale: scaleProgress,
-        opacity: opacityProgress
-      }}
-      ref={wrapperRef}
-      className="flex-col -mt-96"
+    <section ref={ref} className={className} >
+      <span
+        style={{
+          // transform: isInView ? "none" : "translateY(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s 0.5s"
+        }}
+
       >
-    
-      <section
+        {children}
+      </span>
+    </section>
+  );
+}
+
+function Petra() {
+  return (
+    <>
+    <div className="w-[80%] mx-auto">
+    <Section
         className="h-screen flex flex-col items-center justify-center"
         id="section1"
       >
         <div
-          className="flex items-center h-screen justify-center mt-28"
-          style={{ height: "calc(100vh - 88px)" }}
+          className="flex items-center justify-center"
+                    style={{ height: "calc(100vh - 88px)" }}
+
         >
           <div className="flex-col">
             <Title wordBlue="Beata" wordPink="Petra de San José" />
@@ -52,47 +55,39 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
             </p>
           </div>
           <div>
-          </div>
+          </div>        
           <img src={imageMadrePetra} alt="madre petra" className="w-5/12"/>
         </div>
-        <div>
-          <ArrowButton
-            rotate={"down"}
-            onClick={() => scrollToSection("section2")}
-          />
+        <div>     
         </div>
-      </section>
+      </Section>
 
-      <section
-      style={{
-        scale: scrollYProgress,
-      }}
-
-        className="h-screen bg-bgPinkPetra1 bg-cover flex flex-col items-center justify-center"
+      <Section
+        className="h-screen bg-bgPinkPetra1 bg-cover flex flex-col items-center justify-center overflow-y-auto"
         id="section2"
       >
         <div
-          className="flex flex-col h-screen items-center justify-center z-10 py-6"
-          style={{ height: "calc(100vh - 88px)" }}
-        >
-          <div>
-            {" "}
-            <ArrowButton
-              rotate={"up"}
-              onClick={() => scrollToSection("section1")}
-            />
-          </div>
-          <img
+          className="flex flex-col h-screen items-center justify-center z-10"
+        >      
+        <motion.div
+          initial={{y: -250}}
+          animate={{y: 0}}
+          transition={{delay: 1.5, duration: 2}}
+          className="flex justify-center"
+          viewport={{ amount: "all" }}
+          >
+          
+         <img
             src={madreYellowcircle}
             alt="madre petra"
-            className="w-2/6 my-6"
+            className="w-2/6 mt-52"
           />
-          <div className="flex-col w-full p-6">
+                 </motion.div>   
+          <div className="flex-col w-full pl-6">
             <Number wordBlue="1845" />
             <TitleHistory
               wordBlue="El comienzo de"
               wordPink="todo"
-              className="mb-4 text-left"
             />
           </div>
           <div className="text-center">
@@ -109,15 +104,15 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
               bgClass="bg-bgQuote"
             />
           </div>
-          <div>
-            <ArrowButton
-              rotate={"down"}
-              onClick={() => scrollToSection("section3")}/>{" "}
+          <div className="text-center">
+            <p className="text-xl md:text-xl lg:text-xl text-justify p-6 font-poppinsRegular text-LetterColor mb-4">
+            Aunque heredó la fe de sus padres, crecía sin que nada hiciera pensar que su vida iba a dar un giro hacia la consagración. De hecho, se prometió con José Mir, un muchacho del pueblo. Rompió con él para seguir a Cristo: la gracia me solicitaba, explicó con posterioridad. Su padre no compartía su idea de ingresar en un convento, por lo que ese anhelo solo pudo hacerlo realidad cuando falleció.
+            </p>
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section
+      <Section
         className="h-screen flex flex-col items-center justify-center"
         id="section3"
       >
@@ -125,12 +120,6 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
           className="h-screen flex flex-col items-center justify-center z-10 py-6"
           style={{ height: "calc(100vh - 88px)" }}
         >
-          <div>
-            <ArrowButton
-              rotate={"up"}
-              onClick={() => scrollToSection("section2")}
-            />
-          </div>
           <div className="flex-col w-full p-6">
             <Number wordBlue="1873" />
             <TitleHistory
@@ -153,35 +142,23 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
             Rafaela; todas fueron conocidas entre el vecindario como Hermanitas
             de los Pobres.
           </p>
-          <div>
-            <ArrowButton
-              rotate={"down"}
-              onClick={() => scrollToSection("section4")}
-            />{" "}
-          </div>
         </div>
-      </section>
+      </Section>
 
-      <section
-        className="h-screen bg-bgPinkPetra2 bg-cover flex flex-col items-center justify-center py-6"
+      <Section
+        className="h-screen flex flex-col items-center justify-center py-6 bg-bgPinkPetra2 bg-cover"
         id="section4"
       >
-        <div>
-          <ArrowButton
-            rotate={"up"}
-            onClick={() => scrollToSection("section3")}
-          />{" "}
-        </div>
         <div
           className=" h-screen flex items-center w-full p-6 justify-between"
           style={{ height: "calc(100vh - 88px)" }}
         >
-          <div className="flex-col">
-            <Number wordBlue="1878" paddingClass="p-6" />
+          <div className="flex-col w-3/4">
+            <Number wordBlue="1878" paddingClass="pl-6" />
             <TitleHistory
               wordBlue="Ingresión en la"
               wordPink="Congregación de las Mercedarias de la Caridad"
-              paddingClass="p-6"
+              paddingClass="pl-6"
             />
             <p className="text-xl md:text-xl lg:text-xl text-justify p-6 font-poppinsRegular text-LetterColor mb-4">
               En 1878, después de morir su padre, fiel al sentimiento que latía
@@ -193,32 +170,30 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
               años al frente de la casa abierta en el Valle de Abdalajís.
             </p>
           </div>
-          <img
-            src={petraImageGreenCircle}
-            alt="madre petra"
-            className="mb-4 h-72 my-4 float-end"
-          />{" "}
-        </div>
-        <div>
-          <ArrowButton
-            rotate={"down"}
-            onClick={() => scrollToSection("section5")}
-          />{" "}
-        </div>
-      </section>
+          <motion.div
+           initial={{x: 250}}
+           animate={{x: 0}}
+           transition={{duration: 2}}
+           className="flex-col justify-center w-2/4"
+           >
 
-      <section
+          <img
+            src={madreYellowcircle}
+            alt="madre petra"
+            className="mb-4 my-4 float-end"
+          />
+          </motion.div>
+        </div>
+      </Section>
+
+      <Section
         className="h-screen flex flex-col items-center justify-center"
         id="section5"
       >
         <div
-          className="h-screen flex flex-col items-center justify-center z-10 py-6"
+          className="flex flex-col items-center justify-center z-10 py-6"
           style={{ height: "calc(100vh - 88px)" }}
         >
-          <ArrowButton
-            rotate={"up"}
-            onClick={() => scrollToSection("section4")}
-          />
           <div className="flex-col w-full p-6">
             <Number wordBlue="1881" />
             <TitleHistory
@@ -245,23 +220,15 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
             Juan Bautista, de Vélez-Málaga y tomó el nombre religioso de Petra
             de San José.
           </p>
-          <ArrowButton
-            rotate={"down"}
-            onClick={() => scrollToSection("section6")}
-          />
+  
         </div>
-      </section>
+      </Section>
 
-      <section
+      <Section
         className="h-screen bg-bgPinkPetra1 bg-cover flex flex-col items-center py-6 overflow-y-auto"
         id="section6"
       >
-        <div>
-          <ArrowButton
-            rotate={"up"}
-            onClick={() => scrollToSection("section5")}
-          />{" "}
-        </div>
+    
         <div className="w-full p-6">
             <Number wordBlue="1892" />
             <TitleHistory
@@ -270,9 +237,7 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
               className="mb-4 text-left"
             />
           </div>
-        <div className="h-screen flex flex-col items-center justify-center z-10 py-6">
-          
-        
+        <div className="flex flex-col items-center justify-center z-10 py-6">        
           <div className="text-center">
           <img
             src={petraImageWithFlower}
@@ -308,29 +273,17 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
           </div>
 
           <div className="w-3/4 text-center"></div>
-          <div>
-            <ArrowButton
-              rotate={"down"}
-              onClick={() => scrollToSection("section7")}
-            />{" "}
-          </div>
         </div>
-      </section>
+      </Section>
 
-      <section
+      <Section
         className="h-screen flex flex-col items-center justify-center"
         id="section7"
       >
         <div
-          className="h-screen flex flex-col items-center justify-center z-10 py-6"
+          className="flex flex-col items-center justify-center z-10 py-6"
           style={{ height: "calc(100vh - 88px)" }}
         >
-          <div>
-            <ArrowButton
-              rotate={"up"}
-              onClick={() => scrollToSection("section6")}
-            />{" "}
-          </div>
           <div className="flex-col w-full p-6">
             <Number wordBlue="1906" />
             <TitleHistory
@@ -353,27 +306,15 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
               bgClass="bg-bgQuotePink"
             />
           </div>
-          <div>
-            <ArrowButton
-              rotate={"down"}
-              onClick={() => scrollToSection("section8")}
-            />{" "}
-          </div>
         </div>
-      </section>
+      </Section>
 
-      <section
-        className="h-screen bg-bgPinkPetra4 flex flex-col items-center justify-center py-6"
+      <Section
+        className="h-screen bg-bgPinkPetra4 bg-cover flex flex-col items-center justify-center py-6"
         style={{ height: "calc(100vh - 88px)" }}
         id="section8"
       >
-        <div>
-          <ArrowButton
-            rotate={"up"}
-            onClick={() => scrollToSection("section7")}
-          />{" "}
-        </div>
-        <div className="h-screen flex items-center w-full p-6 justify-between">
+        <div className="flex items-center w-full p-6 justify-between">
           <div className="flex-col">
             <Number wordBlue="1994" />
             <TitleHistory
@@ -405,15 +346,16 @@ const opacityProgress = useTransform(scrollYProgress, [0,1], [0.5 ,1]);
             Juan Pablo II la beatificó el 16 de octubre de 1994.
           </p>
         </div>
-        <div>
+        <div className="flex justify-center mb-8">
           <ArrowButton
             rotate={"up"}
             onClick={() => scrollToSection("section1")}
           />{" "}
         </div>
-      </section>
-      </motion.div>
+      </Section>
 
+    </div>
+      
     </>
   );
 }

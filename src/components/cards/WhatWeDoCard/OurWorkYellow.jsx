@@ -5,15 +5,15 @@ import OurWorkText from '../../texts/OurWorkText';
 
 const OurWorkYellow = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-screen">
       <section className="flex md:w-[80%] mx-auto justify-center items-center">
-        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles" className="mr-2" />
+        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles"/>
         <Title
           wordBlue="Nuestro"
           wordPink="trabajo"
           textAlign="text-center"
         />
-        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles" className="ml-2" />
+        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles"/>
       </section>
       <OurWorkText />
       <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
