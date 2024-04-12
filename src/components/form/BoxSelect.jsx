@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const BoxSelect = ({ amount }) => {
+const BoxSelect = ({ amount, customStyle, textSize }) => {
   const [isSelected, setIsSelected] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -18,7 +18,8 @@ const BoxSelect = ({ amount }) => {
 
   return (
     <div 
-    className={`w-56 min-h-[145px] relative rounded-[20px] shadow ${isSelected ? 'bg-primaryColor text-white' : isHovered ? 'bg-cyan-600 text-white' : 'bg-gray-300 text-cyan-950'} font-poppinsBold ${amount === 'Otra cantidad' ? 'text-4xl' : 'text-6xl'} text-center cursor-pointer flex items-center justify-center`}
+    className={`relative rounded-[20px] shadow ${isSelected ? 'bg-primaryColor text-white' : isHovered ? 'bg-cyan-600 text-white' : 'bg-gray-300 text-cyan-950'} font-poppinsBold text-${textSize} text-center cursor-pointer flex items-center justify-center`}
+    style={customStyle}
     onMouseEnter={handleMouseEnter}
     onMouseLeave={handleMouseLeave}
     onClick={handleClick}
