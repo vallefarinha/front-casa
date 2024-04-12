@@ -85,7 +85,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="relative" onClick={toggleDropdown}>
-                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
+                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 cursor-pointer">
                   <div className="flex gap-2 items-center">
                     <span>Sobre Nosotros</span>
                     {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}

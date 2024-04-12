@@ -19,9 +19,9 @@ const ArrowButton = ({ rotate, onClick }) => {
 
   return (
     <button
-      onClick={onClick}
       type="button"
-      className={`text-LetterColor bg-tertiaryColor hover:bg-gray-400 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center m-2 transform ${rotationClass}`}
+      className={`text-LetterColor bg-tertiaryColor hover:bg-gray-400 focus:ring-2 focus:outline-none focus:ring-gray-200 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 transform ${rotationClass}`}
+      onClick={onClick}
     >
       <svg
         className="w-4 h-4"
