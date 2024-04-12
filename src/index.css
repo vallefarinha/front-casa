@@ -55,3 +55,19 @@
   .slick-slide > div{
     margin: 0 10px;
  }
+
+ 
+.custom-height {
+  height: calc(100vh - 88px);
+}
+.our-history-container {
+  display: flex;
+  overflow-x: auto; 
+  overflow-y: hidden;
+}
+
+.our-history-section {
+  flex: 0 0 auto; 
+  width: 100vw; 
+}
+
