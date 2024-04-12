@@ -13,7 +13,7 @@ function Home() {
       </div>
       <OurWorkYellow />
       <Earings />
-      <section className="md:w-[80%] mx-auto">
+      <section className="flex-col content-center h-screen md:w-[80%] mx-auto">
         <InstagramPosts />
       </section>
       <Help />

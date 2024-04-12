@@ -18,13 +18,13 @@ const InstagramPosts = () => {
   }, []);
 
   const CustomPrevArrow = ({ onClick }) => (
-    <div onClick={onClick} className="prev-arrow absolute bottom-[-45px] left-[40%] lg:left-[44%] z-10">
-      <ArrowButton rotate="left" />
+    <div onClick={onClick} className="prev-arrow absolute bottom-[-60px] left-[40%] lg:left-[44%] z-10">
+      <ArrowButton rotate="left"  />
     </div>
   );
 
   const CustomNextArrow = ({ onClick }) => (
-    <div onClick={onClick} className="next-arrow absolute bottom-[-45px] right-[40%]  lg:right-[44%] z-10">
+    <div onClick={onClick} className="next-arrow absolute bottom-[-60px] right-[40%]  lg:right-[44%] z-10">
       <ArrowButton />
     </div>
   );
@@ -59,7 +59,7 @@ const InstagramPosts = () => {
 
   return (
     <div className="container mx-auto mt-10 mb-16">
-      <h3 className="text-sm text-LetterColor pl-3 ">Nuestras redes sociales</h3>
+      <h3 className="text-base text-LetterColor pl-3 font-poppinsMedium">Nuestras redes sociales</h3>
       <h1 className="text-xl md:text-3xl text-LetterColor font-poppinsSemiBold mb-5 text-start pl-3">Acompaña nuestras <span className="text-primaryColor font-poppinsBold">actividades</span></h1>
       <Slider {...settings}>
         {posts.map((post) => (
