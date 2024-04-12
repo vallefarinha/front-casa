@@ -11,11 +11,11 @@ const Periodicity = () => {
         <TitleForm wordBlue="¿Qué periodicidad" wordPink="quieres?" textAlign="center" />
       </button>
       {isOpen && (
-        <div className="flex space-x-4 mt-8">
-          <BoxSelect amount="MENSUAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" />
-          <BoxSelect amount="TRIMESTRAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" />
-          <BoxSelect amount="SEMESTRAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" />
-          <BoxSelect amount="ANUAL" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
+        <div className="flex flex-wrap justify-center space-x-4 mt-8">
+          <BoxSelect amount="MENSUAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="TRIMESTRAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="SEMESTRAL" customStyle={{width: '150px', height: '100px'}} textSize="2xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="ANUAL" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
         </div>
       )}
     </div>

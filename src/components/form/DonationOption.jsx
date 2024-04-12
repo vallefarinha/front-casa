@@ -11,9 +11,9 @@ const DonationOption = () => {
         <TitleForm wordBlue="¿Deseas recibir certificado de" wordPink="donación?" textAlign="center" />
       </button>
       {isOpen && (
-        <div className="flex space-x-4 mt-8">
-          <BoxSelect amount="SÍ" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
-          <BoxSelect amount="NO" customStyle={{width: '150px', height: '100px'}} textSize="3xl" />
+        <div className="flex flex-wrap justify-center space-x-4 mt-8">
+          <BoxSelect amount="SÍ" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
+          <BoxSelect amount="NO" customStyle={{width: '150px', height: '100px'}} textSize="3xl" className="mb-4 md:mb-0" />
         </div>
       )}
     </div>
@@ -21,4 +21,3 @@ const DonationOption = () => {
 };
 
 export default DonationOption;
-
