@@ -4,6 +4,7 @@ import MoneySelect from "../components/form/MoneySelect"
 import Periodicity from "../components/form/Periodicity";
 import Title from "../components/title/Title";
 import DonationOption from "../components/form/DonationOption";
+import SendButtonForm from "../components/form/SendButtonForm";
 
 function PartnerForm() {
   return (
@@ -18,6 +19,7 @@ function PartnerForm() {
       <Periodicity />
       <BankBlue />
       <DonationOption />
+      <SendButtonForm />
     </div>
   );
 }
