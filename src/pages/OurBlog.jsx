@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
-import NewCard from "../components/cards/NewCard";
+import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
+import Pagination from "../components/pagination/Pagination";
 
 const OurBlog = () => {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 4;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,13 +21,25 @@ const OurBlog = () => {
     fetchData();
   }, []);
 
+
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage);
+  };
+
+    // Calcular el índice de inicio y fin para la página actual
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+
+  // Filtrar los posts según la página actual
+  const currentPosts = posts.slice(startIndex, endIndex);
+
   return (
     <div>
-      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap md:gap-5 lg:gap-8">
-        {posts.map((post) => (
+      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5 lg:gap-8">
+        {currentPosts.map((post) => (
           <div
             key={post.id}
-            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[476px] lg:h-[238px] bg-inherit shadow-xl shadow-LetterColor cursor-pointer mx-auto"
+            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[476px] lg:h-[238px] shadow-xl shadow-LetterColor cursor-pointer mx-auto"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
@@ -68,11 +83,28 @@ const OurBlog = () => {
             {post.media_type === "CAROUSEL_ALBUM" && (
               <div className="flex w-full">
                 <div className=" w-1/2 ">
-                  <img
-                    src={post.media_url}
-                    alt={post.caption}
-                    className="object-contain w-full h-full "
-                  />
+                <div className="w-full mx-auto my-auto ">
+                <ImageGallery
+                  items={post.children.data.map((child) => ({
+                    original: child.media_url,
+                    thumbnail: child.media_url,
+                  }))}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                  showThumbnails={false}
+                  showNav={false}
+                  showBullets={false}
+                  autoPlay={true}
+                  slideInterval={4000}
+                  renderItem={(item) => (
+                    <img
+                      src={item.original}
+                      alt={post.caption}
+                      className="object-contain"
+                    />
+                  )}
+                />
+                </div>
                 </div>
                 <div className="w-1/2 flex py-3 px-4 overflow-y-auto">
                   <p className="text-LetterColor font-poppinsRegular text-start text-sm  flex flex-wrap">
@@ -84,6 +116,11 @@ const OurBlog = () => {
           </div>
         ))}
       </div>
+      <Pagination 
+             totalItems={posts.length} // Usar el total de posts para la paginación
+        itemsPerPage={itemsPerPage} 
+        onPageChange={handlePageChange}
+          />
     </div>
   );
 };
