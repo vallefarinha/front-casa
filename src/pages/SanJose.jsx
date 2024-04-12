@@ -59,7 +59,7 @@ const SanJose = () => {
           className="z-10 hidden bg-bgColor divide-y divide-gray-100 rounded-lg shadow-xl w-30 dark:bg-gray-700 "
         >
           <ul
-            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+            className="py-2 text-sm text-gray-700 dark:text-gray-200 cursor-pointer"
             aria-labelledby="dropdownDefault"
           >
             <li>
@@ -133,7 +133,7 @@ const SanJose = () => {
         </div>
         <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height">
           <div className="lg:w-[45%] my-auto ">
-            <TitleHistory wordBlue={"La história de"} wordPink={"San José"} />
+            <Title wordBlue={"La história de"} wordPink={"San José"} />
             <div className="my-8">
               <p className="text-LetterColor font-poppinsRegular text-xl md:text-lg  text-justify">
                 San José es una figura central en la tradición cristiana,
@@ -192,8 +192,10 @@ const SanJose = () => {
           </div>
           <div className="lg:w-[60%] my-auto">
             <div className="my-6 ">
-            <Number wordBlue="La imagen" />
-            <TitleHistory wordBlue={"Historia  de "} wordPink={"San José de la Montaña"} />
+              <div className="mb-4">
+              <Number wordBlue="La imagen" />
+            <TitleHistory wordBlue={"Historia de "} wordPink={"San José de la Montaña"} />
+              </div>            
               <p className="text-LetterColor font-poppinsRegular text-xl md:text-lg  text-justify">
             Madre Petra, una devota de San José, experimentó un acontecimiento extraordinario cuando la cabeza de la imagen de San José se inclinó suavemente hacia el lugar donde ella había estado orando. Este suceso llevó a considerar la imagen como milagrosa. Poco después, una señorita llegó a la casa de Madre Petra ofreciendo donar unos terrenos conocidos como la "Montaña Pelada" para construir una casa grande y una iglesia dedicada a San José. Con el tiempo, la capilla donde se colocó la imagen de San José atrajo a muchas personas, y la fama del lugar creció rápidamente. La curación milagrosa de una mujer que dejó una nota escrita a los pies de San José fortaleció esta fama, y el lugar comenzó a ser conocido como "San José de la Montaña". Esta devoción se extendió tanto que en 1934 la congregación de Madre Petra pudo agregar el nombre "San José de la Montaña" a su denominación original. Hoy en día, el Santuario de San José de la Montaña recibe cartas de peticiones de todo el mundo, que son ofrecidas y quemadas como parte de un acto de devoción conocido como la quema de cartas a San José de la Montaña.
               </p>
@@ -237,17 +239,17 @@ const SanJose = () => {
 
       <div
         className="our-history-section pt-4 bg-secondaryColor bg-opacity-60 h-screen overflow-y-auto custom-height"
-        id="Section5"
+        id="Section4"
       >
         <div className="relative">
           <div className="absolute right-14 top-3">
             <ArrowButton
               rotate={"left"}
-              onClick={() => handleButtonClick("Section4")}
+              onClick={() => handleButtonClick("Section3")}
             />
           </div>
           <div className="absolute right-4 top-3">
-            <ArrowButton onClick={() => handleButtonClick("Section6")} />
+            <ArrowButton onClick={() => handleButtonClick("Section5")} />
           </div>
         </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
@@ -265,7 +267,7 @@ const SanJose = () => {
               <p className="text-LetterColor font-poppinsRegular text-xl md:text-lg  text-justify">
               El Cordón de San José: Protección para las mujeres embarazadas y deseo de fertilidad
 El Cordón de San José es una tradición que consiste en colocar una cinta alrededor de la cintura o barriga de las mujeres embarazadas para obtener la protección de San José para el bebé. Esta práctica, que se remonta a siglos atrás, también ha sido utilizada por mujeres que desean quedar embarazadas, ya que se cree que la protección del patriarca favorece la predisposición de la mujer a concebir. La devoción al cordón de San José se originó en Amberes en 1657, cuando una religiosa agustina llamada Isabel Sillevoort experimentó una curación milagrosa después de confiarse a la protección de San José y utilizar un cordón bendecido en su honor. Esta devoción se ha extendido por todo el mundo cristiano, y la cinta suele ser blanca con siete nudos en recuerdo de los siete Dolores y Gozos de San José.
-              </p>tó el 29 de octubre de 2010.
+              </p>
             </div>
           </div>
         </div>
@@ -283,7 +285,7 @@ El Cordón de San José es una tradición que consiste en colocar una cinta alre
             />
           </div>
           <div className="absolute right-4 top-3">
-            <ArrowButton onClick={() => handleButtonClick("Section6")} />
+            {/* <ArrowButton onClick={() => handleButtonClick("Section")} /> */}
           </div>
         </div>
         <div className="flex flex-wrap justify-around w-[80%] mx-auto">
