@@ -1,12 +1,12 @@
 function Title({ wordBlue, wordPink, textAlign }) {
-    return (
-      <h1 className={`my-4 ${textAlign} text-6xl font-poppinsMedium w-full`}>
-        <span className="text-LetterColor">{wordBlue}</span>{" "}
-        <span className="text-primaryColor font-poppinsExtraBold">
-          {wordPink}
-        </span>
-      </h1>
-    );
-  } 
-  
-export default Title
+  return (
+    <h1 className={`my-4 ${textAlign} text-6xl font-poppinsMedium w-full`}>
+      <span className="text-LetterColor">{wordBlue}</span>{" "}
+      <span className="text-primaryColor font-poppinsExtraBold">
+        {wordPink}
+      </span>
+    </h1>
+  );
+}
+
+export default Title;
