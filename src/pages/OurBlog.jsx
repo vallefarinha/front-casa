@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
+import Help from "../components/banners/Help";
 
 const OurBlog = () => {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 4;
+  const [itemsPerPage, setItemsPerPage] = useState(4);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -21,25 +22,44 @@ const OurBlog = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 768) {
+        setItemsPerPage(2);
+      } else {
+        setItemsPerPage(4);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handlePostClick = (permalink) => {
+    window.open(permalink, "_blank");
+  };
 
   const handlePageChange = (selectedPage) => {
     setCurrentPage(selectedPage);
   };
 
-    // Calcular el índice de inicio y fin para la página actual
   const startIndex = currentPage * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
 
-  // Filtrar los posts según la página actual
   const currentPosts = posts.slice(startIndex, endIndex);
 
   return (
     <div>
-      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5 lg:gap-8">
+      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5 lg:gap-5">
         {currentPosts.map((post) => (
           <div
             key={post.id}
-            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[476px] lg:h-[238px] shadow-xl shadow-LetterColor cursor-pointer mx-auto"
+            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[476px] lg:h-[238px] shadow-xl shadow-LetterColor hover:shadow-primaryColor cursor-pointer mx-auto"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
@@ -121,6 +141,8 @@ const OurBlog = () => {
         itemsPerPage={itemsPerPage} 
         onPageChange={handlePageChange}
           />
+
+          <Help/>
     </div>
   );
 };
