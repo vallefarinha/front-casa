@@ -11,7 +11,7 @@ function Home() {
       <div className="w-full mb-5">
         <HomeBannerSlider />
       </div>
-      {/* <OurWorkYellow /> */}
+      <OurWorkYellow />
       <Earings />
       <section className="md:w-[80%] mx-auto my-10 ">
         <h3 className="text-sm text-LetterColor pl-3 ">
