@@ -292,7 +292,7 @@ El Cordón de San José es una tradición que consiste en colocar una cinta alre
           </div>
           <div className="absolute right-4 top-3">
           <ArrowButton
-           rotate={"up"}
+           rotate={""}
            onClick={() => handleButtonClick("Section1")} />
           </div>
         </div>

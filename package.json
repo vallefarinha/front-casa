@@ -13,11 +13,7 @@
     "axios": "^1.6.8",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.8",
-<<<<<<< HEAD
-    "framer-motion": "^11.0.28",
-=======
     "framer-motion": "^10.16.4",
->>>>>>> eda709830b4078a3429d429a71e8152a7c257453
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",

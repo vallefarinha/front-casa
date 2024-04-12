@@ -7,7 +7,7 @@ function WhatWeDoCardWithImageRight({ img, title, text, shadowColor }) {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center text-center p-4 leading-normal w-full md:w-1/2 order-1 md:order-2">
+      <div className="flex flex-col justify-center text-center p-4 leading-normal w-full md:w-1/2 order-1 md:order-2 transition-transform duration-200 transform hover:scale-105">
         <h5 className="mb-2 text-xl font-poppinsBlack tracking-tight text-LetterColor dark:text-white">{title}</h5>
         <p className="mb-3 font-normal font-poppinsRegular text-LetterColor">{text}</p>
       </div>

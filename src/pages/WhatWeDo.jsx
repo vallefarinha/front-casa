@@ -18,7 +18,7 @@ import irregularPinkCircle from "../assets/icons/irregularPinkCircle.svg";
 function WhatWeDo() {
   return (
     <>
-<div className="mx-4 relative">
+<div className="mx-4 relative w-[80%] mx-auto">
   <div className="flex items-center justify-center relative">
     <Title wordBlue="Que" wordPink="hacemos" />
     <div className="w-80 relative flex justify-center items-center mt-24">
