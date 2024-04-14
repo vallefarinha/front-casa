@@ -72,7 +72,7 @@ const Footer = () => {
     <div className="bg-white w-full h-auto mx-auto p-4 font-poppins flex flex-col md:flex-row shadow-xl border-t-2 border-gray-200 mt-10">
       <div className="flex w-full md:w-1/6 md:mx-auto lg:mx-0 md:justify-start">
         <Link to="/">
-          <img src={LogoNav} className="w-1/2 h-auto mx-auto" alt="Logo" />
+          <img src={LogoNav} className="w-1/2 h-auto mx-auto md:w-[80%]" alt="Logo" />
         </Link>
       </div>
       <div className="flex text-center w-full flex-wrap md:justify-end">
@@ -97,23 +97,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
-          <p className="text-primaryColor font-semibold">Redes sociales</p>
-          <ul className="flex-col flex-wrap mb-3 text-sm font-medium text-LetterColor sm:mb-0">
-            <li className="my-1">
-              <a href="#" className="flex justify-center">
-                <FaFacebook className="size-6 hover:text-tertiaryColor ml-1" />
-              </a>
-            </li>
-            <li>
-              <a href="#"  className="flex justify-center">
-                <FaInstagram className="size-6 hover:text-tertiaryColor ml-1" />
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
+         <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
           <p className="text-primaryColor font-semibold">Enlaces Úteles</p>
           <ul className="flex-col flex-wrap gap-4 mb-6 text-center text-sm font-medium text-LetterColor sm:mb-0 md:text-start">
             <li className="hover:text-tertiaryColor">
@@ -131,6 +115,22 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
+      <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
+          <p className="text-primaryColor font-semibold">Redes sociales</p>
+          <ul className="flex-col flex-wrap mb-3 text-sm font-medium text-LetterColor sm:mb-0">
+            <li className="my-1">
+              <a href="#" className="flex justify-center">
+                <FaFacebook className="size-6 hover:text-tertiaryColor ml-1" />
+              </a>
+            </li>
+            <li>
+              <a href="#"  className="flex justify-center">
+                <FaInstagram className="size-6 hover:text-tertiaryColor ml-1" />
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
   );
 };
