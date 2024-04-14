@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoNav from "../../assets/images/LogoSanta.svg";
+import LogoNav from "../../assets/images/casaacogidaT.png";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 import PrimaryBtn from "../buttons/PrimaryBtn";
@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={LogoNav} className="h-16 z-50 " alt="Logo" />
+            <img src={LogoNav} className="w-24 z-50 " alt="Logo" />
           </Link>
           <div className=" z-50 flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
           <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
