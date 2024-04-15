@@ -3,7 +3,7 @@ import PrimaryBtn from "../buttons/PrimaryBtn"
 
 const SendButtonForm = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+    <div className="mt-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <PrimaryBtn data="ENVIAR" go="/thanks" />
     </div>
   )

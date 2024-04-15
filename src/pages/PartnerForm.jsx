@@ -8,20 +8,21 @@ import SendButtonForm from "../components/form/SendButtonForm";
 
 function PartnerForm() {
   return (
-    <div>
+    <div className="w-[80%] mx-auto">
       
-      <section>
+      <section className="md:h-screen">
         <TitleAllForm />
         <FormBlue />
       </section>
-      <section>
+      <section className="md:h-screen">
         
         <MoneySelect />
         <Periodicity />
         <BankBlue />
         <DonationOption />
+        <SendButtonForm />
       </section>
-      <SendButtonForm />
+      
     </div>
   );
 }
