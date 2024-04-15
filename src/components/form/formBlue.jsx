@@ -1,15 +1,16 @@
 import React from "react";
 import penform from "../../assets/icons/penForm.svg";
 
-const BoxBlue = ({ titleBox, squareBlue }) => {
+const BoxBlue = ({ titleBox, squareBlue, type }) => {
   return (
     <div className="flex flex-col mb-6 w-full px-2">
       <label htmlFor={titleBox} className="text-LetterColor font-poppinsBold text-xl mb-2">{titleBox}</label>
       <input
-        type="text"
+        type={type}
         id={titleBox}
         placeholder={squareBlue}
         className="border-2 border-quarteryColor rounded-lg py-4 px-6 shadow-xl focus:outline-none bg-white"
+        required
       />
     </div>
   );
