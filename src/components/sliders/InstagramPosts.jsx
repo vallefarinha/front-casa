@@ -76,7 +76,7 @@ const InstagramPosts = () => {
         {posts.map((post) => (
           <div
             key={post.id}
-            className="relative overflow-hidden rounded-lg group w-[338px] h-[338px] bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
+            className="relative overflow-hidden rounded-lg group bg-inherit shadow-xl shadow-LetterColor cursor-pointer"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (
