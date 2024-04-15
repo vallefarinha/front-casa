@@ -10,17 +10,18 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-white w-full h-auto mx-auto p-4 font-poppins flex flex-col md:flex-row shadow-xl border-t-2 border-gray-200 mt-10">
-      <div className="flex w-full md:w-1/6 md:mx-auto lg:mx-0 md:justify-start">
+      <div className="flex-wrap md:flex md:flex-nowrap max-w-screen-xl mx-auto">
+      <div className="flex w-full md:w-1/6 mx-auto lg:mx-0 md:justify-start">
         <Link to="/">
           <img src={LogoNav} className="w-1/2 h-auto mx-auto md:w-full" alt="Logo" />
         </Link>
       </div>
       <div className="flex text-center w-full flex-wrap md:justify-end">
-        <div className="w-full py-2 px-5 md:px-2 flex flex-col md:items-start md:text-start md:w-1/3 md:mr-4">
+        <div className="w-full py-2 px-5 md:px-2 flex flex-col md:items-start md:text-start md:w-1/3 md:-mr-12">
           <p className="text-primaryColor font-semibold">Información de contacto</p>
           <div className="flex gap-1 text-LetterColor hover:text-tertiaryColor">
             <IoLocationOutline className="size-6 ml-1" />
-            <p className="flex flex-wrap text-sm text-center md:text-start md:ml-1 md:w-3/5">
+            <p className="flex flex-wrap text-sm text-center md:text-start md:ml-1">
               Avda. del profesor Pérez Pimentel 105 Barrio de la Guía 33203
               Gijón - Asturias
             </p>
@@ -37,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
 
-         <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
+         <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-end md:text-center">
           <p className="text-primaryColor font-semibold">Enlaces Útiles</p>
           <ul className="flex-col flex-wrap gap-4 mb-6 text-center text-sm font-medium text-LetterColor sm:mb-0 md:text-start">
             <li className="hover:text-tertiaryColor">
@@ -54,9 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
-
-      <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-start md:text-center">
+        <div className="flex flex-col w-full md:w-1/4 py-2 px-5 md:px-2 md:items-end">
           <p className="text-primaryColor font-semibold">Redes sociales</p>
           <ul className="flex-col flex-wrap mb-3 text-sm font-medium text-LetterColor sm:mb-0">
             <li className="my-1">
@@ -71,6 +70,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      </div>
+  
     </div>
   );
 };

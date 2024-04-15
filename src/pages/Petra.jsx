@@ -69,7 +69,7 @@ function Petra() {
           transition={{delay: 1.5, duration: 2 }}
           viewport={{ amount: "all" }}
           >
-          <div className="w-1/2 mx-auto md:mt-72">
+          <div className="w-1/2 mx-auto mt-12 md:mt-72">
           <img
             src={casaNatal}
             alt="madre petra"
