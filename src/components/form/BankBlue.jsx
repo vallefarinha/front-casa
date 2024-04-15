@@ -30,7 +30,7 @@ const BankBlue = () => {
             <BoxBlue titleBox="Titular" squareBlue="Ingrese el titular de la cuenta" />
             <BoxBlue titleBox="IBAN" squareBlue="Ingrese su IBAN" />
           </div>
-          <img src={rainbowpink} alt="rainbowpink" className="absolute w-[240px] h-[220px] top-[43%] left-[78%] transform -translate-x-1/2 -translate-y-1/2" />
+          <img src={rainbowpink} alt="rainbowpink" className="w-[65px] h-[69px] absolute top-[52%] left-[68%] transform -translate-x-1/2 -translate-y-1/2 md:w-[178px] md:h-[170px] md:left-[78%] md:top-[42%]" />
         </div>
       )}
     </div>

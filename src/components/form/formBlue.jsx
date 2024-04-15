@@ -26,7 +26,7 @@ const FormBlue = () => {
         <BoxBlue titleBox="Ciudad" squareBlue="Ingrese su ciudad" />
         <BoxBlue titleBox="Código Postal" squareBlue="Ingrese su código postal" />
       </div>
-      <img src={penform} alt="penForm" className="absolute w-[120px] h-[110px] top-[43%] left-[48%] transform -translate-x-1/2 -translate-y-1/2" />
+      <img src={penform} alt="penForm" className="w-[55px] h-[59px] absolute top-[40%] left-[78%] transform -translate-x-1/2 -translate-y-1/2 md:w-[120px] md:h-[100px] md:left-[48%] md:top-[42%]" />
       <div className="w-full sm:w-1/2 p-4">
         <BoxBlue titleBox="Apellidos *" squareBlue="Ingrese sus apellidos" />
         <BoxBlue titleBox="Teléfono" squareBlue="Ingrese su número de teléfono" />
