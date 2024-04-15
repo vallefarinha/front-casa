@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import { Spinner } from "flowbite-react";
 import ArrowButton from '../arrowbuttons/ArrowButton';
 import casa1 from '../../assets/images/casa/IMG_6282.png';
 import casa2 from '../../assets/images/casa/IMG_6272.png';
@@ -198,6 +199,8 @@ const CustomRightNav = ({ onClick, disabled }) => (
 
 const HouseGallery = () => {
   const [cachedImages, setCachedImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadedImagesCount, setLoadedImagesCount] = useState(0);
 
   useEffect(() => {
     const cachedImagesFromStorage = localStorage.getItem('cachedImages');
@@ -209,9 +212,21 @@ const HouseGallery = () => {
     }
   }, []);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false); 
+    }, 3000); 
+  }, []);
+
+  const handleImageLoad = () => {
+    setLoadedImagesCount(prevCount => prevCount + 1);
+    if (loadedImagesCount === images.length - 1) {
+      setLoading(false);
+    }
+  };
+
   const renderItem = (item) => {
     return (
-      
       <div className="image-gallery-image">
         <img
           src={item.original}
@@ -219,30 +234,35 @@ const HouseGallery = () => {
           srcSet={item.srcSet}
           sizes={item.sizes}
           style={{ objectFit: 'cover', objectPosition: 'center', maxWidth: '100%', maxHeight: '100%' }}
+          onLoad={handleImageLoad} 
         />
       </div>
-   
     );
   };
 
   return (
     <div className="gallery-container relative">
-      <ImageGallery
-        items={images}
-        showNav={true}
-        showBullets={false}
-        thumbnailPosition='left'
-        renderLeftNav={(onClick, disabled) => (
-          <CustomLeftNav onClick={onClick} disabled={disabled} />
-        )}
-        renderRightNav={(onClick, disabled) => (
-          <CustomRightNav onClick={onClick} disabled={disabled} />
-        )}
-        renderItem={renderItem}
-      />
+      {loading ? (
+        <div className='flex justify-around py-5'>
+          <Spinner color="pink" className='text-tertiaryColor' size="xl" aria-label="Pink spinner example" />
+        </div>
+      ) : (
+        <ImageGallery
+          items={images}
+          showNav={true}
+          showBullets={false}
+          thumbnailPosition='left'
+          renderLeftNav={(onClick, disabled) => (
+            <CustomLeftNav onClick={onClick} disabled={disabled} />
+          )}
+          renderRightNav={(onClick, disabled) => (
+            <CustomRightNav onClick={onClick} disabled={disabled} />
+          )}
+          renderItem={renderItem}
+        />
+      )}
     </div>
   );
 };
 
 export default HouseGallery;
-
