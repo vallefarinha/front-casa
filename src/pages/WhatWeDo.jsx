@@ -11,37 +11,19 @@ import hands from "../assets/images/hands.png";
 import house from "../assets/icons/house.svg";
 import heart from "../assets/icons/heart.svg";
 import rainbow from "../assets/icons/rainbow.svg";
-import blueBall from "../assets/icons/blueBall.svg";
-import orangeLines from "../assets/icons/orangeLines.svg";
-import irregularPinkCircle from "../assets/icons/irregularPinkCircle.svg";
 
 function WhatWeDo() {
   return (
     <>
-<div className="mx-4 relative w-[80%] mx-auto">
-  <div className="flex items-center justify-center relative">
-    <Title wordBlue="Que" wordPink="hacemos" />
-    <div className="w-80 relative flex justify-center items-center mt-24">
-      <img src={hands} alt="photo of hands" className="h-60 w-60 transform scale-110" />
-      <div className="absolute bottom-0 right-0">
-        <img
-          src={irregularPinkCircle}
-          alt="irregular pink circle"
-          className="h-60 w-96 z-10 transform scale-125"
-        />
-        <img
-          src={blueBall}
-          alt="blue ball"
-          className="h-12 absolute bottom-4 right-0 z-20"
-        />
-        <img
-          src={orangeLines}
-          alt="orange lines"
-          className="h-16 absolute bottom-8 -right-12 z-20"
-        />
-      </div>
+      <div className="mx-4 relative w-[80%] mx-auto">
+        <div className="flex relative h-48">
+          <div className="flex w-12">
+            <Title wordBlue="Que" wordPink="hacemos" />
+          </div>
+          <div className="flex w-1/2 absolute -top-1/4 right-0 flex justify-end">
+      <img src={hands} alt="photo of hands" className="w-3/5" />
     </div>
-  </div>
+        </div>
   <div className="flex-col">
     <div className="flex flex-col">
       <WhatWeDoCardWithImageLeft
