@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
 import ArrowButton from '../arrowbuttons/ArrowButton';
@@ -197,6 +197,34 @@ const CustomRightNav = ({ onClick, disabled }) => (
 );
 
 const HouseGallery = () => {
+  const [cachedImages, setCachedImages] = useState([]);
+
+  useEffect(() => {
+    const cachedImagesFromStorage = localStorage.getItem('cachedImages');
+    if (cachedImagesFromStorage) {
+      setCachedImages(JSON.parse(cachedImagesFromStorage));
+    } else {
+      setCachedImages(images.map(image => image.original));
+      localStorage.setItem('cachedImages', JSON.stringify(images.map(image => image.original)));
+    }
+  }, []);
+
+  const renderItem = (item) => {
+    return (
+      
+      <div className="image-gallery-image">
+        <img
+          src={item.original}
+          alt={item.originalAlt}
+          srcSet={item.srcSet}
+          sizes={item.sizes}
+          style={{ objectFit: 'cover', objectPosition: 'center', maxWidth: '100%', maxHeight: '100%' }}
+        />
+      </div>
+   
+    );
+  };
+
   return (
     <div className="gallery-container relative">
       <ImageGallery
@@ -218,16 +246,3 @@ const HouseGallery = () => {
 
 export default HouseGallery;
 
-const renderItem = (item) => {
-  return (
-    <div className="image-gallery-image">
-      <img
-        src={item.original}
-        alt={item.originalAlt}
-        srcSet={item.srcSet}
-        sizes={item.sizes}
-        style={{ objectFit: 'cover', objectPosition: 'center', maxWidth: '100%', maxHeight: '100%' }}
-      />
-    </div>
-  );
-};
