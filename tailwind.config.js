@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bgQuote: "url(./src/assets/images/bgQuote.svg)",
+        bgQuote: "url(./src/assets/images/bgQuote.png)",
+        bgQuotePink: "url(./src/assets/images/bgQuotePink.png)",
         bgPinkPetra1: "url(./src/assets/images/pinkRectangle1.png)",
         bgPinkPetra2: "url(./src/assets/images/pinkRectangle2.png)",
         bgPinkPetra3: "url(./src/assets/images/pinkRectangle3.png)",

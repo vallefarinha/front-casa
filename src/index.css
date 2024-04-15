@@ -71,3 +71,17 @@
   width: 100vw; 
 }
 
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #06D6A0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
