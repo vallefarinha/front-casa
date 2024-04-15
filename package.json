@@ -10,8 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "axios": "^1.6.8",
-    "emailjs": "^4.0.3",
     "flowbite": "^2.3.0",
     "flowbite-react": "^0.7.8",
     "react": "^18.2.0",

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef }  from 'react'
 import { SMTPClient } from 'emailjs';
+
 
 const client = new SMTPClient({
 	user: 'user',
@@ -29,3 +30,5 @@ const Email = () => {
 }
 
 export default Email
+
+
