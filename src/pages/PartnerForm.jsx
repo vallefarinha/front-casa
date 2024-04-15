@@ -9,16 +9,22 @@ import SendButtonForm from "../components/form/SendButtonForm";
 function PartnerForm() {
   return (
     <div>
-      <Title
+      
+      <section>
+        <Title
           wordBlue="Formulario de"
           wordPink="socio"
           textAlign="text-center"
         />
-      <FormBlue />
-      <MoneySelect />
-      <Periodicity />
-      <BankBlue />
-      <DonationOption />
+        <FormBlue />
+      </section>
+      <section>
+        
+        <MoneySelect />
+        <Periodicity />
+        <BankBlue />
+        <DonationOption />
+      </section>
       <SendButtonForm />
     </div>
   );
