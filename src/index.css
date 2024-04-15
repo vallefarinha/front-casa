@@ -85,3 +85,7 @@
 ::-webkit-scrollbar-track {
   background-color: inherit;
 }
+
+.bg-custom-size {
+  background-size: 300px 300px;
+}

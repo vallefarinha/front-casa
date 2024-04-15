@@ -5,7 +5,7 @@ import OurWorkText from '../../texts/OurWorkText';
 
 const OurWorkYellow = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full">
       <section className="flex md:w-[80%] mx-auto justify-center items-center">
         <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles"/>
         <Title
