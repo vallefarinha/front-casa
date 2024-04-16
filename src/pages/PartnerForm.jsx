@@ -29,10 +29,10 @@ function PartnerForm() {
         <TitleAllForm />
 
         <form ref={refForm} onSubmit={handleSubmit}>
+          
           <FormBlue />
-          <button type="submit">Send</button>
+      
         </form>
-
         
         </section>
       <section className="md:h-screen">
@@ -42,6 +42,11 @@ function PartnerForm() {
         <BankBlue />
         <DonationOption />
         <SendButtonForm />
+
+        <button type="submit">Send</button>
+        
+       
+       
       </section>
       
     </div>
