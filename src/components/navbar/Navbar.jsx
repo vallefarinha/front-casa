@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoNav from "../../assets/images/LogoSanta.svg";
+import LogoNav from "../../assets/images/casaacogidaT.png";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 import PrimaryBtn from "../buttons/PrimaryBtn";
@@ -17,12 +17,17 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
+
         <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3">
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={LogoNav} className="h-16 z-50 " alt="Logo" />
+            <img src={LogoNav} className="w-20 z-50 " alt="Logo" />
           </Link>
           <div className=" z-50 flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
           <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
@@ -77,12 +82,13 @@ const Navbar = () => {
                   to="/"
                   className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
                   aria-current="page"
+                  onClick={closeMenu}
                 >
                   Inicio
                 </Link>
               </li>
               <li className="relative" onClick={toggleDropdown}>
-                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100">
+                <a className="block py-2 px-3  text-LetterColor rounded hover:bg-gray-100 cursor-pointer">
                   <div className="flex gap-2 items-center">
                     <span>Sobre Nosotros</span>
                     {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
@@ -94,9 +100,11 @@ const Navbar = () => {
                   } bg-bgColor pt-2 pb-4 border border-gray-200 rounded-md text-md font-normal text-start z-10 left-0 md:left-auto`}
                 >
                   <li>
-
-                    <Link to="/about" className="block px-4 py-2 text-LetterColor hover:bg-gray-100">
-
+                    <Link
+                      to="/about"
+                      className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
+                    >
                       Quiénes Somos
                     </Link>
                   </li>
@@ -104,6 +112,7 @@ const Navbar = () => {
                     <Link
                       to="/work"
                       className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
                     >
                       Qué Hacemos
                     </Link>
@@ -112,6 +121,7 @@ const Navbar = () => {
                     <Link
                       to="/history"
                       className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
                     >
                       Nuestra Historia
                     </Link>
@@ -120,6 +130,7 @@ const Navbar = () => {
                     <Link
                       to="/house"
                       className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
                     >
                       Nuestra Casa
                     </Link>
@@ -128,24 +139,38 @@ const Navbar = () => {
                     <Link
                       to="/petra"
                       className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
                     >
                       Beata Petra
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/sanjose"
+                      className="block px-4 py-2 text-LetterColor hover:bg-gray-100"
+                      onClick={closeMenu}
+                    >
+                      San José de La Montaña
                     </Link>
                   </li>
                 </ul>
               </li>
 
               <li>
-
-                <Link  to="/partnership" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
-
+                <Link
+                  to="/partnership"
+                  className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
+                  onClick={closeMenu}
+                >
                   Colabora
                 </Link>
               </li>
               <li>
-
-                <Link  to="/blog" className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 ">
-
+                <Link
+                  to="/blog"
+                  className="block py-2 px-3 text-LetterColor rounded hover:bg-gray-100 "
+                  onClick={closeMenu}
+                >
                   Noticias
                 </Link>
               </li>
