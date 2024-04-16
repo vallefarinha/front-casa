@@ -127,11 +127,11 @@ const SanJose = () => {
         id="Section1"
       >
         <div className="relative">
-          <div className="absolute right-4 -top-6 sm:-top-4">
+          <div className="absolute right-4 -top-6 sm:-top-4 md:top-4">
             <ArrowButton onClick={() => handleButtonClick("Section2")} />
           </div>
         </div>
-        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height">
+        <div className="h-screen  flex flex-wrap justify-around w-[80%] mx-auto custom-height">
           <div className="lg:w-[60%] my-auto pt-4">
             <Title wordBlue={"La história de"} wordPink={"San José"} />
             <div className="my-8">
