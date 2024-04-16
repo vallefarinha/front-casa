@@ -13,6 +13,8 @@ export default {
         bgPinkPetra2: "url(./src/assets/images/pinkRectangle2.png)",
         bgPinkPetra3: "url(./src/assets/images/pinkRectangle3.png)",
         bgPinkPetra4: "url(./src/assets/images/pinkRectangle4.png)",
+        bgHelp: "url(./src/assets/images/bannerColabora.png)",
+
       },
       boxShadow: {
         xl: "5px 5px 5px rgba(0, 0, 0, 0.3)",
