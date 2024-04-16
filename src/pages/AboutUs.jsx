@@ -5,10 +5,40 @@ import autonomy from "../assets/icons/autonomy.svg";
 import respect from "../assets/icons/respect.svg";
 import formation from "../assets/icons/formation.svg";
 import development from "../assets/icons/development.svg";
+import TextImage from "../components/textimages/TextImage";
+import Title from "../components/title/Title";
+import ourmision from "../assets/images/ourmision.png";
+import TextImageOurMission from "../components/textimages/TextImageOurMission";
+import ourvisionnew from "../assets/images/ourvisionnew.png";
+import TitleAboutUs from "../components/title/TitleAboutUs";
 
 function AboutUs() {
   return (
-    <div>
+    <div className="w-[80%] mx-auto mb-10">
+      <div className="flex flex-col">
+        <Title wordBlue={"Quienes"} wordPink={"somos"}></Title>
+        <TextImage></TextImage>
+        <TitleAboutUs
+          firstword={"Nuestra"}
+          secondword={"misión"}
+        ></TitleAboutUs>
+        <TextImageOurMission
+          paragraph="En Casa de Acogida para Madres Gestantes La Guía, nuestra misión es brindar un entorno de apoyo y cuidado integral para las madres gestantes, ofreciendo acompañamiento emocional, mejorando su calidad de vida, fomentando la responsabilidad, desarrollando valores humanos, capacitando en habilidades maternales y descubriendo potencialidades. "
+          image={ourmision}
+        ></TextImageOurMission>
+        <TitleAboutUs
+          firstword={"Nuestra"}
+          secondword={"visión"}
+        ></TitleAboutUs>
+        <TextImageOurMission
+          paragraph="Nos visualizamos como un refugio seguro y acogedor donde cada madre gestante encuentra el apoyo necesario para enfrentar los desafíos de la maternidad, desarrollarse como individuos íntegros y criar a sus hijos en un ambiente de amor y cuidado. Aspiramos a ser reconocidos como un modelo de excelencia en la atención y acompañamiento a madres gestantes, inspirando a otras instituciones y comunidades a seguir nuestro ejemplo de servicio y compasión. "
+          image={ourvisionnew}
+        ></TextImageOurMission>
+      </div>
+      <TitleAboutUs
+        firstword={"Nuestras"}
+        secondword={"valores"}
+      ></TitleAboutUs>
       <OurValorsCard
         title={"Empatia y compromiso"}
         icon={compromiso}
@@ -30,7 +60,7 @@ function AboutUs() {
         icon={autonomy}
         alt={"autonomy"}
         text={
-          "Promovemos la dignidad y seguridad de cada madre al mejorar su calidad de vida, proporcionándole un entorno estable y digno donde pueda sentirse protegida y cuidada."
+          "Fomentamos la responsabilidad y autonomía de nuestras residentes, apoyándolas en la toma de decisiones conscientes y en el control de su futuro."
         }
       ></OurValorsCard>
       <OurValorsCard

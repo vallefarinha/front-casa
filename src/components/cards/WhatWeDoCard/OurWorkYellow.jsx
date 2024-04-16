@@ -7,17 +7,17 @@ const OurWorkYellow = () => {
   return (
     <div className="w-full">
       <section className="flex md:w-[80%] mx-auto justify-center items-center">
-        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles" className="mr-2" />
+        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles"/>
         <Title
           wordBlue="Nuestro"
           wordPink="trabajo"
           textAlign="text-center"
         />
-        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles" className="ml-2" />
+        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles"/>
       </section>
       <OurWorkText />
       <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4"> 
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-2"> 
           <OurWorkCardWithIcon
             imgSrc="src\assets\icons\homeyellowicon.svg"
             altText="yellow card"

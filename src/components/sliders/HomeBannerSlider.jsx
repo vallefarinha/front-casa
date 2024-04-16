@@ -49,7 +49,7 @@ const renderItem = (item) => {
           alt={item.originalAlt}
           srcSet={item.srcSet}
           sizes={item.sizes}
-          style={{ objectFit: 'cover', objectPosition: 'center', maxWidth: '100%', maxHeight: '100%' }}
+          style={{ objectFit: 'cover', objectPosition: 'center', width: '100%', maxHeight: '100%' }}
         />
       </div>
     );
