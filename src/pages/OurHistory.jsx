@@ -144,7 +144,7 @@ const OurHistory = () => {
         </div>
       </div>
       <div
-        className="our-history-section bg-inherit h-screen custom-height"
+        className="our-history-section bg-inherit h-screen custom-height overflow-y-auto"
         id="Section1"
       >
         <div className="relative">
@@ -152,7 +152,7 @@ const OurHistory = () => {
             <ArrowButton onClick={() => handleButtonClick("Section2")} />
           </div>
         </div>
-        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height">
+        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto sm:py-10 md:py-0 custom-height">
           <div className="lg:w-[45%] my-auto ">
             <TitleHistory wordBlue={"Nuestra "} wordPink={" Historia"} />
             <div className="my-8">
@@ -185,7 +185,7 @@ const OurHistory = () => {
       </div>
 
       <div
-        className="our-history-section bg-quarteryColor bg-opacity-60 h-sreen custom-height pt-2"
+        className="our-history-section bg-quarteryColor bg-opacity-60 h-sreen overflow-y-auto custom-height pt-2"
         id="Section2"
       >
         <div className="relative">
@@ -199,7 +199,7 @@ const OurHistory = () => {
             <ArrowButton onClick={() => handleButtonClick("Section3")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen overflow-y-auto custom-height">
+        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen  custom-height">
           <div className="md:w-[40%] my-auto">
             <img
               src={ImgCasa1963}
