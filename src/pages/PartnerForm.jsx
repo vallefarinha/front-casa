@@ -24,15 +24,15 @@ function PartnerForm() {
 
   return (
     <div className="w-[80%] mx-auto">
-      
+      <form ref={refForm} onSubmit={handleSubmit}>
       <section className="md:h-screen">
         <TitleAllForm />
 
-        <form ref={refForm} onSubmit={handleSubmit}>
+        
           
           <FormBlue />
       
-        </form>
+        
         
         </section>
       <section className="md:h-screen">
@@ -43,11 +43,12 @@ function PartnerForm() {
         <DonationOption />
         <SendButtonForm />
 
-        <button type="submit">Send</button>
+    
         
        
        
       </section>
+      </form>
       
     </div>
   );
