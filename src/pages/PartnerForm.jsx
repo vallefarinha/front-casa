@@ -1,3 +1,6 @@
+import React, { useRef } from 'react';
+import SendMail from '../services/SendMail';
+
 import BankBlue from "../components/form/BankBlue";
 import FormBlue from "../components/form/FormBlue";
 import MoneySelect from "../components/form/MoneySelect"
@@ -7,13 +10,31 @@ import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 
 function PartnerForm() {
+  const refForm = useRef();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;      
+          try {
+            const result = await SendMail(templateID, refForm.current);
+            console.log(result);
+          } catch (error) {
+            console.error(error);
+          }
+        };
+
   return (
     <div className="w-[80%] mx-auto">
       
       <section className="md:h-screen">
         <TitleAllForm />
-        <FormBlue />
-      </section>
+
+        <form ref={refForm} onSubmit={handleSubmit}>
+          <FormBlue />
+          <button type="submit">Send</button>
+        </form>
+
+        
+        </section>
       <section className="md:h-screen">
         
         <MoneySelect />

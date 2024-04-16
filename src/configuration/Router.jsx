@@ -29,7 +29,6 @@ export default function Router() {
           <Route path="/partnership" element={<BecameAPartner/>}></Route> 
           <Route path="/form" element={<PartnerForm/>}></Route> 
           <Route path="/thanks" element={<ThanksForSignIn/>}></Route>
-          <Route path="/mailing" element={<FormMailing/>}></Route>
       </Routes>
     )
   }
