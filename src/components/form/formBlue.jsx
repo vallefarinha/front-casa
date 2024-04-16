@@ -1,12 +1,13 @@
 import React from "react";
 import penform from "../../assets/icons/penForm.svg";
 
-const BoxBlue = ({ titleBox, squareBlue, type }) => {
+const BoxBlue = ({ titleBox, squareBlue, type, name }) => {
   return (
     <div className="flex flex-col mb-6 w-full px-2">
       <label htmlFor={titleBox} className="text-LetterColor font-poppinsBold text-xl mb-2">{titleBox}</label>
       <input
         type={type}
+        name={name}
         id={titleBox}
         placeholder={squareBlue}
         className="border-2 border-quarteryColor rounded-lg py-4 px-6 shadow-xl focus:outline-none bg-white"
@@ -21,8 +22,8 @@ const FormBlue = () => {
 <div className="flex items-center justify-center mt-6">
 <div className="relative w-1/2 h-1/2 flex flex-wrap m-10" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
       <div className="w-full sm:w-1/2 p-4">
-        <BoxBlue titleBox="Nombre *" squareBlue="Ingrese su nombre" />
-        <BoxBlue titleBox="DNI/NIE *" squareBlue="Ingrese su DNI/NIE" />
+        <BoxBlue titleBox="Nombre *" name="name" squareBlue="Ingrese su nombre" />
+        <BoxBlue titleBox="DNI/NIE *" name="DNI" squareBlue="Ingrese su DNI/NIE" />
         <BoxBlue titleBox="Email *" squareBlue="Ingrese su correo electrónico" />
         <BoxBlue titleBox="Ciudad" squareBlue="Ingrese su ciudad" />
         <BoxBlue titleBox="Código Postal" squareBlue="Ingrese su código postal" />
