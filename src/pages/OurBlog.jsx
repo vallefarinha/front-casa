@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
@@ -57,7 +57,7 @@ const OurBlog = () => {
 
   return (
     <div>
-      <div className=" mx-auto w-[90%] lg:w-[80%] mb-10">
+      <div className=" mx-auto w-[90%] lg:w-[80%] my-6 sm:my-10">
         <TitleHistory
           wordBlue={"Mantente actualizado en la "}
           wordPink={" Casa de la Guia"}

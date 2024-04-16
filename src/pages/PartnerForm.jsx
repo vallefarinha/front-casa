@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import SendMail from '../services/SendMail';
 
 import BankBlue from "../components/form/BankBlue";
-import FormBlue from "../components/form/FormBlue";
+import FormBlue from "../components/form/formBlue";
 import MoneySelect from "../components/form/MoneySelect"
 import Periodicity from "../components/form/Periodicity";
 import TitleAllForm from "../components/form/TitleAllForm";
