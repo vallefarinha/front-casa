@@ -1,6 +1,5 @@
-import ColaborateCard from "../components/cards/WhatWeDoCard/ColaborateCard";
-import SocioCard from "../components/cards/WhatWeDoCard/SocioCard";
-import ColaboraRegularText from "../components/texts/ColaboraRegularText";
+import TitleCard from "../components/cards/ColaborateCard/TitleCard";
+import DonationCard from "../components/cards/ColaborateCard/DonationCard";
 import RegularText30 from "../components/texts/RegularText30";
 import Title from "../components/title/Title";
 
@@ -13,8 +12,8 @@ function BecameAPartner() {
           "Puedes hacer el donativo que estimes oportuno, mediante ingreso o transferencia en la cuenta corriente de la Casa de Acogida"
         }
       ></RegularText30>
-      <ColaborateCard></ColaborateCard>
-      <SocioCard></SocioCard>
+      <TitleCard></TitleCard>
+      <DonationCard></DonationCard>
     </div>
   );
 }

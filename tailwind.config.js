@@ -25,7 +25,7 @@ export default {
         quarteryColor: "#118AB2",
         bgColor: "#FAFAFA",
         bgColorWithOpacity: "rgba(250, 250, 250, 0.5)",
-        bgColorColaborateCards: "FFEEEE",
+        bgColorColaborateCards: "#FAB3B3",
       },
       fontFamily: {
         poppinsBlack: ["Poppins-Black", "sans-serif"],
