@@ -11,6 +11,13 @@ const MoneySelect = () => {
 
   const handleSelectClick = (amount) => {
     setSelectedAmount(amount);
+    if (inputRef && inputRef.current) {
+      inputRef.current.value = amount;
+    }
+  };
+  
+  const handleInputChange = (event) => {
+    setSelectedAmount(event.target.value);
   };
 
     return (
@@ -26,7 +33,7 @@ const MoneySelect = () => {
             <BoxSelect amount="40 €" customStyle={{width: '100px', height: '50px'}} textSize="2xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
             <BoxSelect amount="80 €" customStyle={{width: '100px', height: '50px'}} textSize="2xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
             <BoxSelect amount="otra cantidad" customStyle={{width: '100px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
-            <input type="text" ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
+            <input type="text" ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} onChange={handleInputChange} style={{ display: 'none' }} />
          </div>
         )}
       </div>

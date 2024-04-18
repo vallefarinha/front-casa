@@ -11,6 +11,13 @@ const DonationOption = () => {
 
   const handleSelectClick = (amount) => {
     setSelectedAmount(amount);
+    if (inputRef && inputRef.current) {
+      inputRef.current.value = amount;
+    }
+  };
+  
+  const handleInputChange = (event) => {
+    setSelectedAmount(event.target.value);
   };
 
   return (
@@ -24,7 +31,7 @@ const DonationOption = () => {
         <img src={diamondMoney} alt="diamonMoney"  className="w-[35px] h-[39px] absolute top-[50%] left-[105%] transform -translate-x-1/2 -translate-y-1/2 md:w-[78px] md:h-[58px] md:left-[170%] md:top-[42%]" />
           <BoxSelect amount="SÍ" customStyle={{width: '100px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
           <BoxSelect amount="NO" customStyle={{width: '100px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
-          <input type="text" ref={inputRef} name="selectedAmountDonation" value={selectedAmountDonation} style={{ display: 'none' }} />
+          <input type="text" ref={inputRef} name="selectedAmountDonation" value={selectedAmountDonation} onChange={handleInputChange} style={{ display: 'none' }} />
         </div>
       )}
     </div>

@@ -11,6 +11,13 @@ const Periodicity = () => {
 
   const handleSelectClick = (amount) => {
     setSelectedAmount(amount);
+    if (inputRef && inputRef.current) {
+      inputRef.current.value = amount;
+    }
+  };
+  
+  const handleInputChange = (event) => {
+    setSelectedAmount(event.target.value);
   };
 
   return (
@@ -25,7 +32,7 @@ const Periodicity = () => {
           <BoxSelect amount="TRIMESTRAL" customStyle={{width: '100px', height: '50px'}} textSize="md" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
           <BoxSelect amount="SEMESTRAL" customStyle={{width: '100px', height: '50px'}} textSize="md" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
           <BoxSelect amount="ANUAL" customStyle={{width: '100px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick} />
-          <input type="text" ref={inputRef} name="selectedPeriodicity" value={selectedPeriodicity} style={{ display: 'none' }} />
+          <input type="text" ref={inputRef} name="selectedPeriodicity" value={selectedPeriodicity} onChange={handleInputChange} style={{ display: 'none' }} />
 
         </div>
       )}
