@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 import penform from "../../assets/icons/penForm.svg";
 import BoxBlue from "./BoxBlueAtom";
 
 const FormBlue = () => {
-
 
   return (
     <div className="flex items-center justify-center mt-[-30px]">
@@ -25,7 +23,6 @@ const FormBlue = () => {
             <BoxBlue titleBox="Provincia" name="province" squareBlue="Ingrese su provincia" type="text" />
             <BoxBlue titleBox="País" name="country" squareBlue="Ingrese su país" type="text" />
           </div>
-   
       </div>
     </div>
   );
