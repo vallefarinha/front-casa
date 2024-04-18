@@ -16,6 +16,7 @@ const BoxSelect = ({ amount, customStyle, textSize, inputRef, onClick }) => {
     setIsSelected(!isSelected);
     inputRef.current.value = amount;
     onClick(amount);
+    console.log(amount)
   };
 
   return (
