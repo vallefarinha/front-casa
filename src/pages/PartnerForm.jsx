@@ -22,22 +22,22 @@ function PartnerForm() {
           }
         };
 
-  return (
-    <div className="w-[80%] mx-auto">
-      <form ref={refForm} onSubmit={handleSubmit}>
-      <section className="md:h-screen">
-        <TitleAllForm />
-          <FormBlue />
-          <MoneySelect />
-          <Periodicity />
-          <BankBlue />
-          <DonationOption />
-          <SendButtonForm />
-      </section>
-      </form>
-      
-    </div>
-  );
-}
+        return (
+          <div className="w-[80%] mx-auto">
+            <form ref={refForm} onSubmit={handleSubmit}>
+              <section className="md:h-screen">
+                <TitleAllForm />
+                <FormBlue />
+                <MoneySelect />
+                <Periodicity />
+                <BankBlue />
+                <DonationOption />
+                <SendButtonForm />
+              </section>
+            </form>
+            <div style={{ height: '100vh' }} />
+          </div>
+        );
+      }
 
 export default PartnerForm;
