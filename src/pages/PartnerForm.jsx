@@ -28,14 +28,11 @@ function PartnerForm() {
       <section className="md:h-screen">
         <TitleAllForm />
           <FormBlue />
-        </section>
-      <section className="md:h-screen">
-        
-        <MoneySelect />
-        <Periodicity />
-        <BankBlue />
-        <DonationOption />
-        <SendButtonForm />
+          <MoneySelect />
+          <Periodicity />
+          <BankBlue />
+          <DonationOption />
+          <SendButtonForm />
       </section>
       </form>
       
