@@ -9,6 +9,7 @@ import OurBlog from "../pages/OurBlog";
 import BecameAPartner from "../pages/BecameAPartner";
 import PartnerForm from "../pages/PartnerForm";
 import ThanksForSignIn from "../pages/ThanksForSignIn";
+import Blog from "../pages/Blog";
 
 
 
@@ -29,6 +30,8 @@ export default function Router() {
           <Route path="/partnership" element={<BecameAPartner/>}></Route> 
           <Route path="/form" element={<PartnerForm/>}></Route> 
           <Route path="/thanks" element={<ThanksForSignIn/>}></Route>
+          <Route path="/api" element={<Blog/>}></Route>
+
       </Routes>
     )
   }

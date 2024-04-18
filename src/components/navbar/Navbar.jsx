@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import LogoNav from "../../assets/images/casaacogidaT.png";
+// import LogoNav from "../../assets/images/casaacogidaT.png";
+import LogoNav from "../../assets/images/LogoLetters.png";
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 import PrimaryBtn from "../buttons/PrimaryBtn";
@@ -25,10 +26,10 @@ const Navbar = () => {
     <>
       <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
 
-        <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3 sm:p-3">
-          <Link to="/" className="flex items-center space-x-2 rtl:space-x-reverse">
-            <img src={LogoNav} className="w-14 sm:w-20 z-50 " alt="Logo" />
-          </Link>
+        <div className=" z-50  w-full flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3 sm:p-3">
+          
+            <img src={LogoNav} className="  w-48 h-auto sm:w-52 z-50 " alt="Logo" />
+          
           <div className=" z-50 flex  md:order-2 space-x-2 md:space-x-3 rtl:space-x-reverse">
           <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
           <PrimaryBtn data={"Hazte Socio"} go="form"></PrimaryBtn>
