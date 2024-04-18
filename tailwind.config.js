@@ -39,6 +39,9 @@ export default {
         poppinsMediumItalic: ["Poppins-MediumItalic", "sans-serif"],
         poppinsSemiBoldItalic: ["Poppins-SemiBoldItalic", "sans-serif"],
       },
+      screens: {
+        'sm': '375px',
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

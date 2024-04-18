@@ -7,7 +7,7 @@ const PrimaryBtn = ({data, go}) => {
       <Link
         to={go} 
         type="button"
-        className="text-LetterColor bg-tertiaryColor hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-tertiaryColor font-bold shadow-md text-xs p-2 rounded-2xl sm:text-sm sm:px-6 sm:py-2 sm:rounded-3xl  text-center"
+        className="text-LetterColor bg-tertiaryColor hover:bg-green-500 focus:ring-4 focus:outline-none focus:ring-tertiaryColor font-bold shadow-md rounded-3xl text-sm sm:text-base px-4 sm:px-4 py-2 text-center"
       >
         {data}
       </Link>

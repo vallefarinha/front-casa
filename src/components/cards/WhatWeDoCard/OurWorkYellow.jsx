@@ -16,8 +16,8 @@ const OurWorkYellow = () => {
         <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles" className='w-1/4'/>
       </section>
       <OurWorkText />
-      <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-2"> 
+      <div className="flex flex-col items-center justify-center w-[90%] md:w-[80%] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mb-2"> 
           <OurWorkCardWithIcon
             imgSrc="src\assets\icons\homeyellowicon.svg"
             altText="yellow card"
