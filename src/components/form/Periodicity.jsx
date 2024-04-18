@@ -6,7 +6,7 @@ import heart from "../../assets/icons/heart.svg";
 
 const Periodicity = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedAmount, setSelectedAmount] = useState("");
+  const [selectedPeriodicity, setSelectedAmount] = useState("");
   const inputRef = useRef();
 
   const handleSelectClick = (amount) => {
@@ -25,6 +25,8 @@ const Periodicity = () => {
           <BoxSelect amount="TRIMESTRAL" customStyle={{width: '100px', height: '50px'}} textSize="md" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
           <BoxSelect amount="SEMESTRAL" customStyle={{width: '100px', height: '50px'}} textSize="md" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick}/>
           <BoxSelect amount="ANUAL" customStyle={{width: '100px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick} />
+          <input type="text" ref={inputRef} name="selectedPeriodicity" value={selectedPeriodicity} style={{ display: 'none' }} />
+
         </div>
       )}
     </div>

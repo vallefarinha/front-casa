@@ -6,14 +6,13 @@ import jigsawMoney from "../../assets/icons/jigsawMoney.svg";
 
 const MoneySelect = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedAmount, setSelectedAmount] = useState("");
+  const [selectedAmountMoney, setSelectedAmount] = useState("");
   const inputRef = useRef();
 
   const handleSelectClick = (amount) => {
     setSelectedAmount(amount);
   };
 
-  
     return (
       <div className="flex flex-col items-center w-[85%] mx-auto mt-6">
         <button className="bg-transparent border-none p-0 m-0" onClick={() => setIsOpen(!isOpen)}>
@@ -27,7 +26,7 @@ const MoneySelect = () => {
             <BoxSelect amount="40 €" customStyle={{width: '100px', height: '50px'}} textSize="2xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
             <BoxSelect amount="80 €" customStyle={{width: '100px', height: '50px'}} textSize="2xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
             <BoxSelect amount="otra cantidad" customStyle={{width: '100px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} />
-            <input type="text" ref={inputRef} name="selectedAmount" value={selectedAmount} style={{ display: 'none' }} />
+            <input type="text" ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
          </div>
         )}
       </div>
