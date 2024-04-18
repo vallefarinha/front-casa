@@ -9,7 +9,7 @@ import OurBlog from "../pages/OurBlog";
 import BecameAPartner from "../pages/BecameAPartner";
 import PartnerForm from "../pages/PartnerForm";
 import ThanksForSignIn from "../pages/ThanksForSignIn";
-import FormMailing from "../pages/FormMailing";
+
 
 
 

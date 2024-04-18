@@ -7,6 +7,7 @@ import Periodicity from "../components/form/Periodicity";
 import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
+import Legislation from '../components/legilsation/Legislation';
 
 function PartnerForm() {
   const refForm = useRef();
@@ -17,6 +18,7 @@ function PartnerForm() {
           try {
             const result = await SendMail(templateID, refForm.current);
             console.log(result);
+            console.log(refForm.current);
           } catch (error) {
             console.error(error);
           }
@@ -38,7 +40,9 @@ function PartnerForm() {
         <SendButtonForm />
       </section>
       </form>
-      
+      <Legislation/>
+
+
     </div>
   );
 }
