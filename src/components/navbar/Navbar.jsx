@@ -25,18 +25,18 @@ const Navbar = () => {
     <>
       <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
 
-        <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3">
-          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src={LogoNav} className="w-20 z-50 " alt="Logo" />
+        <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3 sm:p-3">
+          <Link to="/" className="flex items-center space-x-2 rtl:space-x-reverse">
+            <img src={LogoNav} className="w-14 sm:w-20 z-50 " alt="Logo" />
           </Link>
-          <div className=" z-50 flex -1 md:order-2 space-x-3 md:space-x-3 rtl:space-x-reverse">
+          <div className=" z-50 flex  md:order-2 space-x-2 md:space-x-3 rtl:space-x-reverse">
           <PrimaryBtn data={"Dona"} go="partnership"></PrimaryBtn>
           <PrimaryBtn data={"Hazte Socio"} go="form"></PrimaryBtn>
 
             <button
               onClick={toggleMenu}
               type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-LetterColor rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-primaryColor dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 w-8 h-8 sm:w-10 sm:h-10 justify-center text-sm text-LetterColor rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-primaryColor dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded={isOpen ? "true" : "false"}
             >

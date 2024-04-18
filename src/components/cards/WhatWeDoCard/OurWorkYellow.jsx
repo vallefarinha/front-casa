@@ -5,19 +5,19 @@ import OurWorkText from '../../texts/OurWorkText';
 
 const OurWorkYellow = () => {
   return (
-    <div className="w-full h-screen">
-      <section className="flex md:w-[80%] mx-auto justify-center items-center">
-        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles"/>
+    <div className="w-full">
+      <section className="flex w-[90%] md:w-[95%] mx-auto justify-center items-center">
+        <img src="src\assets\icons\leftBubbles.svg" alt="left bubbles" className='w-1/4'/>
         <Title
           wordBlue="Nuestro"
           wordPink="trabajo"
           textAlign="text-center"
         />
-        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles"/>
+        <img src="src\assets\icons\rightBubbles.svg" alt="right bubbles" className='w-1/4'/>
       </section>
       <OurWorkText />
-      <div className="flex flex-col items-center justify-center w-[80%] mx-auto">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 mb-2"> 
+      <div className="flex flex-col items-center justify-center w-[90%] md:w-[80%] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 mb-2"> 
           <OurWorkCardWithIcon
             imgSrc="src\assets\icons\homeyellowicon.svg"
             altText="yellow card"

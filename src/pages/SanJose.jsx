@@ -123,15 +123,15 @@ const SanJose = () => {
       </div>
 
       <div
-        className="our-history-section bg-inherit h-screen custom-height"
+        className="our-history-section bg-inherit h-screen py-12 sm:py-10 md:py-0 custom-height  overflow-y-auto"
         id="Section1"
       >
         <div className="relative">
-          <div className="absolute right-4 top-4">
+          <div className="absolute right-4 -top-6 sm:-top-4 md:top-4">
             <ArrowButton onClick={() => handleButtonClick("Section2")} />
           </div>
         </div>
-        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto custom-height">
+        <div className="h-screen  flex flex-wrap justify-around w-[80%] mx-auto custom-height">
           <div className="lg:w-[60%] my-auto pt-4">
             <Title wordBlue={"La história de"} wordPink={"San José"} />
             <div className="my-8">
@@ -168,7 +168,7 @@ const SanJose = () => {
       </div>
 
       <div
-        className="our-history-section bg-secondaryColor bg-opacity-60 h-screen custom-height pt-2"
+        className="our-history-section bg-secondaryColor bg-opacity-60 h-screen custom-height pt-2  overflow-y-auto"
         id="Section2"
       >
         <div className="relative">
@@ -182,7 +182,7 @@ const SanJose = () => {
             <ArrowButton onClick={() => handleButtonClick("Section3")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen overflow-y-auto custom-height">
+        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen custom-height">
           <div className="md:w-[40%] my-auto">
             <img
               src={sanjose}
@@ -205,7 +205,7 @@ const SanJose = () => {
       </div>
 
       <div
-        className="our-history-section bg-inherit py-10 h-screen custom-height"
+        className="our-history-section bg-inherit py-10 h-screen custom-height  overflow-y-auto"
         id="Section3"
       >
         <div className="relative">
@@ -219,7 +219,7 @@ const SanJose = () => {
             <ArrowButton onClick={() => handleButtonClick("Section4")} />
           </div>
         </div>
-        <div className="flex flex-wrap h-screen justify-around w-[80%] mx-auto py-2 items-center overflow-y-auto custom-height">
+        <div className="flex flex-wrap h-screen justify-around w-[80%] mx-auto py-2 items-center custom-height">
           <div className="lg:w-[45%] my-auto">
             <div className="mb-4">
             <Number wordBlue="El Santuário" />
@@ -241,7 +241,7 @@ const SanJose = () => {
       </div>
 
       <div
-        className="our-history-section pt-4 bg-secondaryColor bg-opacity-60 h-screen custom-height"
+        className="our-history-section pt-4 bg-secondaryColor bg-opacity-60 h-screen custom-height  overflow-y-auto"
         id="Section4"
       >
         <div className="relative">
@@ -280,7 +280,7 @@ El Cordón de San José es una tradición que consiste en colocar una cinta alre
       </div>
 
       <div
-        className="our-history-section pt-4 h-screen custom-height"
+        className="our-history-section pt-4 h-screen custom-height  overflow-y-auto"
         id="Section5"
       >
         <div className="relative">

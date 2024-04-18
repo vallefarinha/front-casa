@@ -1,6 +1,6 @@
 function Title({ wordBlue, wordPink, textAlign }) {
   return (
-    <h1 className={`my-4 ${textAlign} text-6xl font-poppinsMedium w-full`}>
+    <h1 className={`${textAlign} text-4xl font-poppinsMedium w-full md:text-6xl`}>
       <span className="text-LetterColor">{wordBlue}</span>{" "}
       <span className="text-primaryColor font-poppinsExtraBold">
         {wordPink}

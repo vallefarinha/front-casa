@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
@@ -57,17 +57,17 @@ const OurBlog = () => {
 
   return (
     <div>
-      <div className=" mx-auto w-[90%] lg:w-[80%] mb-10">
+      <div className=" mx-auto w-[90%] lg:w-[80%] my-6 sm:my-10">
         <TitleHistory
           wordBlue={"Mantente actualizado en la "}
           wordPink={" Casa de la Guia"}
         />
       </div>
-      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5 lg:gap-5">
+      <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5">
         {currentPosts.map((post) => (
           <div
             key={post.id}
-            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[476px] lg:h-[238px] shadow-xl shadow-LetterColor hover:shadow-primaryColor cursor-pointer mx-auto"
+            className=" flex overflow-hidden rounded-lg group w-[350px] h-[170px] lg:w-[400px] lg:h-[200px] shadow-xl shadow-LetterColor hover:shadow-primaryColor cursor-pointer mx-auto"
             onClick={() => handlePostClick(post.permalink)}
           >
             {post.media_type === "IMAGE" && (

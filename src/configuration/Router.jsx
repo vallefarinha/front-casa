@@ -9,6 +9,10 @@ import OurBlog from "../pages/OurBlog";
 import BecameAPartner from "../pages/BecameAPartner";
 import PartnerForm from "../pages/PartnerForm";
 import ThanksForSignIn from "../pages/ThanksForSignIn";
+import FormMailing from "../pages/FormMailing";
+
+
+
 import SanJose from "../pages/SanJose";
 
 export default function Router() {
@@ -25,6 +29,7 @@ export default function Router() {
           <Route path="/partnership" element={<BecameAPartner/>}></Route> 
           <Route path="/form" element={<PartnerForm/>}></Route> 
           <Route path="/thanks" element={<ThanksForSignIn/>}></Route>
+          <Route path="/mailing" element={<FormMailing/>}></Route>
       </Routes>
     )
   }
