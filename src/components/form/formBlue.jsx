@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import penform from "../../assets/icons/penForm.svg";
 import BoxBlue from "./BoxBlueAtom";
 
 const FormBlue = () => {
 
   return (
-    <div className="flex items-center justify-center mt-[-30px]">
-      <div className="relative w-auto h-1/2 flex flex-wrap mt-5 mb-2" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
+    <div className="flex items-center justify-center mt-[-10px]">
+      <div className="relative w-auto h-1/2 flex flex-wrap mt-5 mb-1" style={{backgroundColor: 'rgba(17, 138, 178, 0.6)', borderRadius: '20px'}}>
         
           <div className="w-full sm:w-1/2 p-4">
             <BoxBlue titleBox="Nombre *" name="name" squareBlue="Ingrese su nombre" type="text" />
