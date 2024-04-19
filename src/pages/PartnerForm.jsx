@@ -5,6 +5,7 @@ import Periodicity from "../components/form/Periodicity";
 import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
+import Legislation from "../components/form/Legislation"
 
 function PartnerForm() {
   return (
@@ -22,7 +23,7 @@ function PartnerForm() {
         <DonationOption />
         <SendButtonForm />
       </section>
-      
+      <Legislation/>
     </div>
   );
 }
