@@ -12,11 +12,11 @@ function PartnerForm() {
   return (
     <div className="w-[80%] mx-auto">
       
-      <section className="md:h-screen">
+      <section className="">
         <TitleAllForm />
         <FormBlue />
       </section>
-      <section className="md:h-screen">
+      <section className="">
         
         <MoneySelect />
         <Periodicity />
@@ -24,8 +24,8 @@ function PartnerForm() {
         <DonationOption />
         <SendButtonForm />
       </section>
-      <Tax/>
-      <Legislation/>
+        <Tax/>
+        <Legislation/>
       
     </div>
   );

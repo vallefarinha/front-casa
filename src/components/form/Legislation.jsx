@@ -1,9 +1,10 @@
-import React from 'react'
-import LegislationText from '../texts/LegislationText'
+import React from 'react';
+import LegislationText from '../texts/LegislationText';
+
 
 const Legislation = () => {
   return (
-    <div>Legislation
+    <div>
      <LegislationText></LegislationText>
 
     </div>

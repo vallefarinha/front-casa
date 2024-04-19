@@ -5,3 +5,4 @@ const RegularText30 = ({ text, textAlign, size }) => (
 );
 
 export default RegularText30;
+
