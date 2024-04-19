@@ -5,6 +5,8 @@ import Title from "../components/title/Title";
 import TitleAboutUs from "../components/title/TitleAboutUs";
 import ColaboraRegularText from "../components/colaboration/ColaboraRegularText";
 import SendBtn from "../components/buttons/SendBtn";
+import Legislation from "../components/form/Legislation"
+import Tax from "../components/form/Tax";
 
 function Collaborate() {
   return (
@@ -38,6 +40,8 @@ function Collaborate() {
         <img src="src/assets/images/octagono.png" alt="octagono" />
       </div>
       <TitleCard></TitleCard>
+      <Tax/>
+      <Legislation/>
     </div>
   );
 }

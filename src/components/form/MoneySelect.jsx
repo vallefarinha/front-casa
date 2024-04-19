@@ -32,9 +32,9 @@ const MoneySelect = () => {
         <BoxSelect amount="80 €" customStyle={{width: '100px', height: '50px'}} textSize="2xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "80 €"} />
         <BoxSelect amount="otra cantidad" customStyle={{width: '100px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "otra cantidad"} />
         {isOtherAmount && (
-          <input type="number" name="otherAmount" placeholder="100" className="border-2 border-quarteryColor rounded-lg py-2 px-2 shadow-xl focus:outline-none bg-white" onChange={handleOtherAmountChange} />
+          <input type="number"  step="0.01" name="otherAmount" placeholder="100" className="border-2 border-quarteryColor rounded-lg py-2 px-2 shadow-xl focus:outline-none bg-white" onChange={handleOtherAmountChange} />
         )}
-        <input type="text" ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
+        <input type="text"  ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ function PartnerForm() {
   const handleSubmit = async (event) => {
     event.preventDefault();
    const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID; 
-  //  const formData = new FormData(refForm.current);     
+  //const formData = new FormData(refForm.current);     
           try {
             const result = await SendMail(templateID, refForm.current);
             console.log(result);
@@ -23,23 +23,28 @@ function PartnerForm() {
             console.error(error);
           }
         };
-
         return (
-          <div className="w-[80%] mx-auto">
-            <form ref={refForm} onSubmit={handleSubmit}>
-              <section className="md:h-screen">
+            <div className="w-[80%] mx-auto">
+              
+              <section className="">
                 <TitleAllForm />
                 <FormBlue />
+              </section>
+              <section className="">
+                
                 <MoneySelect />
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
                 <SendButtonForm />
               </section>
-            </form>
-            <div style={{ height: '100vh' }} />
-          </div>
+                <Tax/>
+                <Legislation/>
+              
+            </div>
         );
       }
 
 export default PartnerForm;
+
+
