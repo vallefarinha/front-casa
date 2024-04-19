@@ -6,7 +6,7 @@ import TitleAboutUs from "../components/title/TitleAboutUs";
 import ColaboraRegularText from "../components/colaboration/ColaboraRegularText";
 import SendBtn from "../components/buttons/SendBtn";
 
-function BecameAPartner() {
+function Collaborate() {
   return (
     <div className="w-[80%] mx-auto mb-10">
       <Title wordBlue={"Hazte socio y"} wordPink={"dona"}></Title>
@@ -42,4 +42,4 @@ function BecameAPartner() {
   );
 }
 
-export default BecameAPartner;
+export default Collaborate;
