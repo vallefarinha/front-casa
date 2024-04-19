@@ -14,37 +14,35 @@ function PartnerForm() {
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
-   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID; 
-  //const formData = new FormData(refForm.current);     
+   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_PARTNER; 
+   const formData = new FormData(refForm.current);     
           try {
-            const result = await SendMail(templateID, refForm.current);
+            const result = await SendMail(templateID, formData);
             console.log(result);
           } catch (error) {
             console.error(error);
           }
-        };
+  };
+
         return (
-            <div className="w-[80%] mx-auto">
-              
-              <section className="">
+          <div className="w-[80%] mx-auto">
+            <form ref={refForm} onSubmit={handleSubmit}>
+              <section className="md:h-screen">
                 <TitleAllForm />
                 <FormBlue />
-              </section>
-              <section className="">
-                
                 <MoneySelect />
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
                 <SendButtonForm />
               </section>
-                <Tax/>
-                <Legislation/>
-              
-            </div>
+            </form>
+            <div style={{ height: '100vh' }} />
+            <Tax/>
+            <Legislation/>
+          </div>
         );
       }
 
 export default PartnerForm;
-
 

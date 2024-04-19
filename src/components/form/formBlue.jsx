@@ -1,8 +1,7 @@
 // import React, { useState } from "react";
 import penform from "../../assets/icons/penForm.svg";
 import BoxBlue from "./BoxBlueAtom";
-import Tax from "./Tax";
-import Legislation from "./Legislation";
+
 
 const FormBlue = () => {
 
