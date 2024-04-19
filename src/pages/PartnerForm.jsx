@@ -5,16 +5,18 @@ import Periodicity from "../components/form/Periodicity";
 import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
+import Legislation from "../components/form/Legislation"
+import Tax from "../components/form/Tax";
 
 function PartnerForm() {
   return (
     <div className="w-[80%] mx-auto">
       
-      <section className="md:h-screen">
+      <section className="">
         <TitleAllForm />
         <FormBlue />
       </section>
-      <section className="md:h-screen">
+      <section className="">
         
         <MoneySelect />
         <Periodicity />
@@ -22,6 +24,8 @@ function PartnerForm() {
         <DonationOption />
         <SendButtonForm />
       </section>
+        <Tax/>
+        <Legislation/>
       
     </div>
   );
