@@ -1,12 +1,11 @@
-import React from 'react';
-import SendButton from '../buttons/SendButton';
-
+import React from 'react'
+import SendBtn from '../buttons/SendBtn'
 
 
 const SendButtonForm = () => {
   return (
     <div className="mt-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <SendButton data="ENVIAR" go="/thanks" />
+        <SendBtn data="ENVIAR" go="/thanks" />
     </div>
   )
 }

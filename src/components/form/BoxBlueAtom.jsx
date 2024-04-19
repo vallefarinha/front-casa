@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const BoxBlue = ({ titleBox, squareBlue, type, pattern }) => {
+const BoxBlue = ({ titleBox, squareBlue, type, pattern, name}) => {
   const [isValid, setIsValid] = useState(true);
 
   const validateInput = (event) => {
@@ -15,6 +15,7 @@ const BoxBlue = ({ titleBox, squareBlue, type, pattern }) => {
         id={titleBox}
         placeholder={squareBlue}
         pattern={pattern}
+        name={name}
         required
         className={`border-2 ${isValid ? 'border-quarteryColor' : 'border-red-500'} rounded-lg py-2 px-4 shadow-xl focus:outline-none bg-white`}
         onChange={validateInput}
