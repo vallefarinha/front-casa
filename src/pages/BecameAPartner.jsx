@@ -4,7 +4,7 @@ import RegularText30 from "../components/texts/RegularText30";
 import Title from "../components/title/Title";
 import TitleAboutUs from "../components/title/TitleAboutUs";
 import ColaboraRegularText from "../components/colaboration/ColaboraRegularText";
-import SendButton from "../components/buttons/SendButton";
+import SendBtn from "../components/buttons/SendBtn";
 
 function BecameAPartner() {
   return (
@@ -34,7 +34,7 @@ function BecameAPartner() {
       </div>
       <div className="flex justify-around" style={{ height: "60px" }}>
         <img src="src/assets/images/Corazon.png" alt="Corazon" />
-        <SendButton></SendButton>
+        <SendBtn data="Enviar"></SendBtn>
         <img src="src/assets/images/octagono.png" alt="octagono" />
       </div>
       <TitleCard></TitleCard>
