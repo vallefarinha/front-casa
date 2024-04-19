@@ -17,9 +17,9 @@ function Collaborate() {
   const handleSubmit = async (event) => {
     event.preventDefault();
    const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
-   const formData = new FormData(refForm.current);     
+   //const formData = new FormData(refForm.current);     
           try {
-            const result = await SendMail(templateID, formData);
+            const result = await SendMail(templateID, refForm.current);
             console.log(result);
             alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
 
