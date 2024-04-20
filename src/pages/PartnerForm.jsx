@@ -19,8 +19,10 @@ function PartnerForm() {
           try {
             const result = await SendMail(templateID, formData);
             console.log(result);
+            alert("Mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
           } catch (error) {
             console.error(error);
+            alert("Error en el envio de mensaje. Intentelo mas tarde. Gracias")
           }
   };
 

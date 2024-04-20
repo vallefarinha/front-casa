@@ -10,9 +10,25 @@ import SendButtonForm from "../components/form/SendButtonForm";
 import Legislation from "../components/form/Legislation"
 import Tax from "../components/form/Tax";
 import TaxForm from '../components/form/TaxForm';
+import Swal from 'sweetalert2';
+
+
+
 
 
 function Collaborate() {
+
+  function showAlert() {
+    Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Mensaje enviado. Gracias",
+        showConfirmButton: false,
+        timer: 1500
+    });
+}
+
+  // const MySwal = withReactContent(Swal)
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,12 +36,15 @@ function Collaborate() {
    //const formData = new FormData(refForm.current);     
           try {
             const result = await SendMail(templateID, refForm.current);
-            console.log(result);
-            alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
+            //console.log(result);
+            
+            showAlert();
+            //alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
 
           } catch (error) {
             console.error(error);
-            alert("Error en el envio de mensaje. Intentelo mas tarde. Gracias")
+             alert("Error en el envio de mensaje. Intentelo mas tarde. Gracias")
+            //Swal.fire('Error', message, 'error')
           }
   };
 

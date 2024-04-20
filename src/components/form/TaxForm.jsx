@@ -31,6 +31,8 @@ const TaxForm = () => {
             </div>
             <div className="flex md:flex-row flex-col" >
             <BoxBlue titleBox="País" name="country" squareBlue="Ingrese su país" type="text" />
+            <input type="checkbox" id="tratamiento-datos" name="tratamiento-datos"/>
+          <label htmlFor="tratamiento-datos"> Acepto <a href="#personaldata">Tratamiento de datos personales</a> *</label>
             </div>
 
           </div>
