@@ -28,6 +28,8 @@ export default {
         bgColor: "#FAFAFA",
         bgColorWithOpacity: "rgba(250, 250, 250, 0.5)",
         bgColorColaborateCards: "#FAB3B3",
+        bgColorForm:"rgba(17, 138, 178, 0.6)",
+        
       },
       fontFamily: {
         poppinsBlack: ["Poppins-Black", "sans-serif"],
