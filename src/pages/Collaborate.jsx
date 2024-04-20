@@ -18,13 +18,31 @@ import Swal from 'sweetalert2';
 
 function Collaborate() {
 
-  function showAlert() {
+  function showAlert(icon,text) {
     Swal.fire({
-        position: "top-end",
-        icon: "success",
-        title: "Mensaje enviado. Gracias",
+        position: "center",
+        icon: icon,
+        text: text,
+        showCloseButton: true,
         showConfirmButton: false,
-        timer: 1500
+        timer: 7000,
+        color: "#073B4C",
+        // background:"#FBB",
+        iconColor: "#073B4C",
+        showClass: {
+          popup: `
+            animate__animated
+            animate__fadeInUp
+            animate__faster
+          `
+        },
+        hideClass: {
+          popup: `
+            animate__animated
+            animate__fadeOutDown
+            animate__faster
+          `
+        }
     });
 }
 
@@ -36,14 +54,14 @@ function Collaborate() {
    //const formData = new FormData(refForm.current);     
           try {
             const result = await SendMail(templateID, refForm.current);
-            //console.log(result);
+            console.log(result);
             
-            showAlert();
+            showAlert('success', "Su mensaje ha sido envidado con éxtio. Mire su email.");
             //alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
 
           } catch (error) {
             console.error(error);
-             alert("Error en el envio de mensaje. Intentelo mas tarde. Gracias")
+            showAlert('error', "Ha ocurrido un error en el envío de formulario. Por favor intentelo más tarde o pongase en contacto con casadeacogidaguia@hotmail.es .");
             //Swal.fire('Error', message, 'error')
           }
   };
