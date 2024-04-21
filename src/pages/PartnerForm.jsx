@@ -17,7 +17,7 @@ function PartnerForm() {
    const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_PARTNER; 
    const formData = new FormData(refForm.current);     
           try {
-            const result = await SendMail(templateID, formData);
+            const result = await SendMail(templateID, refForm.current);
             console.log(result);
             alert("Mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
           } catch (error) {

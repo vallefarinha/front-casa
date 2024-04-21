@@ -17,7 +17,7 @@ const BoxBlue = ({ titleBox, squareBlue, type, pattern, name}) => {
         pattern={pattern}
         name={name}
         required
-        className={`border-2 ${isValid ? 'border-quarteryColor' : 'border-red-500'} rounded-lg py-2 px-4 shadow-xl focus:outline-none bg-white`}
+        className={`border-2 ${isValid ? 'border-quarteryColor' : 'border-red-500'} rounded-lg py-2 px-4 shadow-xl focus:outline-none  bg-white`}
         onChange={validateInput}
       />
     </div>

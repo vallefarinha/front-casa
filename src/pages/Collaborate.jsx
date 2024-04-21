@@ -105,7 +105,7 @@ function Collaborate() {
       </div>
       <TitleCard></TitleCard>
       <Tax/>
-      <Legislation/>
+      <Legislation></Legislation>
      
     </div>
   );

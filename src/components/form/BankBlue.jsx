@@ -10,8 +10,8 @@ const BankBlue = () => {
       
         <div className="relative w-1/2 h-1/2 flex flex-wrap mt-5 mb-2  bg-bgColorForm rounded-3xl">
           <div className="w-full sm:w-1/2 p-4">
-            <BoxBlueAtom titleBox="Titular" name="titular" squareBlue="Ingrese el titular de la cuenta" type="text" />
-            <BoxBlueAtom titleBox="IBAN" name="IBAN" squareBlue="Ingrese su IBAN" type="text" />
+            <BoxBlueAtom titleBox="Titular" name="accountholder" squareBlue="Ingrese el titular de la cuenta" type="text" />
+            <BoxBlueAtom titleBox="IBAN" name="iban" squareBlue="Ingrese su IBAN" type="text" />
           </div>
           <img src={rainbowpink} alt="rainbowpink" className="w-[65px] h-[69px] absolute top-[52%] left-[68%] transform -translate-x-1/2 -translate-y-1/2 md:w-[178px] md:h-[170px] md:left-[78%] md:top-[42%]" />
         </div>
