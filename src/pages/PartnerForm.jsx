@@ -8,6 +8,9 @@ import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
+import Tax from "../components/form/Tax";
+import TaxForm from '../components/form/TaxForm';
+import Legislation from "../components/form/Legislation"
 
 function PartnerForm() {
   const refForm = useRef();
@@ -32,7 +35,10 @@ function PartnerForm() {
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
+                <TaxForm></TaxForm>
                 <SendButtonForm />
+                <Tax/>
+                <Legislation></Legislation>
               </section>
             </form>
             <div style={{ height: '100vh' }} />
