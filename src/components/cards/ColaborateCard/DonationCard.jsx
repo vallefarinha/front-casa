@@ -2,21 +2,33 @@ import React from "react";
 import CardNumberTitle from "../../title/CardNumberTitle";
 const DonationCard = () => {
   return (
-    <div className="flex flex-row items-center justify-between pt-16 pb-16 ">
-      <img src="src/assets/images/cubic.png" alt="cubic imgage" />
-      <div className=" bg-blue-500  w-2/3 rounded-lg">
+    <div className=" flex items-center justify-center pt-16 pb-16 ">
+       <img
+      className="absolute left-0 top-150 z-100"
+      src="src/assets/images/yellowcircle.png"
+      alt="yellow circles"
+      />
+        
+      <img
+        className="absolute right-0 top-150 z-100"
+      img src="src/assets/images/cubic.png" alt="cubic imgage"
+      />
+     
+   
+     <div className="relative  h-1/2 mt-2 mb-1 bg-bgColorForm rounded-3xl inline-block p-6" >   
         <CardNumberTitle
-          wordGreen={"ENTIDAD BANCARIA:"}
+          wordBlue={"ENTIDAD BANCARIA:"}
           wordWhite={" CAIXA"}
         ></CardNumberTitle>
         <CardNumberTitle
-          wordGreen={"NÚMERO DE CUENTA:"}
+          wordBlue={"NÚMERO DE CUENTA:"}
           wordWhite={"ES65 2100 2181 68 0200229273"}
         ></CardNumberTitle>
-      </div>{" "}
-      <img src="src/assets/images/yellowcircle.png" alt="yellow circles" />
+      </div>
+     
     </div>
   );
 };
 
 export default DonationCard;
+

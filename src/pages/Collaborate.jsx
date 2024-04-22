@@ -4,13 +4,13 @@ import TitleCard from "../components/cards/ColaborateCard/TitleCard";
 import DonationCard from "../components/cards/ColaborateCard/DonationCard";
 import RegularText30 from "../components/texts/RegularText30";
 import Title from "../components/title/Title";
-import TitleAboutUs from "../components/title/TitleAboutUs";
 import ColaboraRegularText from "../components/colaboration/ColaboraRegularText";
 import SendButtonForm from "../components/form/SendButtonForm";
 import Legislation from "../components/form/Legislation"
 import Tax from "../components/form/Tax";
 import TaxForm from '../components/form/TaxForm';
 import SimpleAlert from '../components/alerts/SimpleAlert';
+import penform from "../assets/icons/penForm.svg"
 
 
 
@@ -24,7 +24,7 @@ function Collaborate() {
    const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
           try {
             const result = await SendMail(templateID, refForm.current);
-            SimpleAlert ({ icon: 'error', text: "Su petición ha sido enviada con éxito. Revise su email." });
+            SimpleAlert ({ icon: 'success', text: "Su petición ha sido enviada con éxito. Revise su email." });
           } catch (error) {
             SimpleAlert ({ icon: 'error', text: 'Ha ocurrido un error en el envío de sus datos. Por favor inténtelo más tarde o póngase en contacto con casadeacogidaguia@hotmail.es.' });
           }
@@ -33,17 +33,12 @@ function Collaborate() {
   return (
     <div className="w-[80%] mx-auto">
     
-      <Title wordBlue={"Hazte socio y"} wordPink={"dona"}></Title>
+      <Title wordBlue={"Haz un"} wordPink={"donativo"}></Title>
       <RegularText30
-        text={
-          "Puedes hacer el donativo que estimes oportuno, mediante ingreso o transferencia en la cuenta corriente de la Casa de Acogida"
-        }
+        text={ "Puedes donar lo que estimes oportuno, mediante ingreso o transferencia en la cuenta corriente de la Casa de Acogida" }
       ></RegularText30>
-      <TitleCard>
-        {" "}
-        <TitleAboutUs firstword={"Hola"} secondword={"Mundo"}></TitleAboutUs>
-      </TitleCard>
       <DonationCard></DonationCard>
+      
       <TitleCard></TitleCard>
       <div className=" flex justify-center items-center">
         <div className="flex flex-col justify-center">
@@ -57,6 +52,7 @@ function Collaborate() {
         </div>
       </div>
       <div className="w-[80%] mx-auto">
+      <img src={penform} alt="penForm" className="absolute z-0"/>
         <form ref={refForm} onSubmit={handleSubmit}>
         <TaxForm></TaxForm>
         <SendButtonForm />

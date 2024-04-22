@@ -1,13 +1,11 @@
 import React from "react";
 
-const CardNumberTitle = ({ wordGreen, wordWhite, textAlign }) => {
+const CardNumberTitle = ({ wordBlue, wordWhite, textAlign }) => {
   return (
-    <h1
-      className={`my-4 ml-5 ${textAlign} text-2xl font-poppinsSemiBold w-full`}
-    >
-      <span className="text-LetterColor">{wordGreen}</span>{" "}
-      <span className=" text-white font-poppinsExtraBold">{wordWhite}</span>
-    </h1>
+    <section className={`my-4 ml-5 md:text-2xl text-xl font-poppinsSemiBold w-full flex flex-col md:flex-row`}>
+    <div className="text-LetterColor md:mr-4">{wordBlue}</div>
+    <div className="text-white font-poppinsExtraBold mt-2 md:mt-0">{wordWhite}</div>
+  </section>
   );
 };
 
