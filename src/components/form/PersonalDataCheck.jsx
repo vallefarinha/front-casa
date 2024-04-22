@@ -3,13 +3,6 @@ import React from 'react';
 const PersonalDataCheck = () => {
     return (
       <div>
-        <input
-          type="checkbox"
-          id="personaldata"
-          name="personaldata"
-          required
-          value="SI"
-        />
         <label htmlFor="personaldata">
           <a 
             href="#personal_data" 
@@ -17,6 +10,13 @@ const PersonalDataCheck = () => {
             Acepto el tratamiento de datos personales
           </a>
         </label>
+        <input
+          type="checkbox"
+          id="personaldata"
+          name="personaldata"
+          required
+          value="SI"
+        />
       </div>
     );
   }

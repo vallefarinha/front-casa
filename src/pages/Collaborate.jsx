@@ -56,7 +56,7 @@ function Collaborate() {
             const result = await SendMail(templateID, refForm.current);
             console.log(result);
             
-            showAlert('success', "Su mensaje ha sido envidado con éxtio. Mire su email.");
+            showAlert('success', "Su mensaje ha sido envidado con éxtio. Revise su email.");
             //alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
 
           } catch (error) {
