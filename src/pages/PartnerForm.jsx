@@ -7,20 +7,20 @@ import Periodicity from "../components/form/Periodicity";
 import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
+import SimpleAlert from '../components/alerts/SimpleAlert';
 
 function PartnerForm() {
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
-   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID; 
-  //  const formData = new FormData(refForm.current);     
+   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
           try {
             const result = await SendMail(templateID, refForm.current);
-            console.log(result);
+            SimpleAlert ({ icon: 'success', text: "Su petición ha sido enviada con éxito. Revise su email." });
           } catch (error) {
-            console.error(error);
+            SimpleAlert ({ icon: 'error', text: 'Ha ocurrido un error en el envío de sus datos. Por favor inténtelo más tarde o póngase en contacto con casadeacogidaguia@hotmail.es.' });
           }
-        };
+  };
 
         return (
           <div className="w-[80%] mx-auto">
