@@ -1,5 +1,3 @@
-// import React, { useState } from "react";
-import penform from "../../assets/icons/penForm.svg";
 import BoxBlue from "./BoxBlueAtom";
 
 const FormBlue = () => {
@@ -15,7 +13,6 @@ const FormBlue = () => {
             <BoxBlue titleBox="Ciudad" name="city" squareBlue="Ingrese su ciudad" type="text" />
             <BoxBlue titleBox="Código Postal" name="zipcode" squareBlue="Ingrese su código postal" type="text" pattern="^[0-9]{5}$" />
           </div>
-          <img src={penform} alt="penForm" className="w-[55px] h-[59px] absolute top-[50%] left-[78%] transform -translate-x-1/2 -translate-y-1/2 md:w-[90px] md:h-[80px] md:left-[48%] md:top-[45%]" />
           <div className="w-full sm:w-1/2 p-4">
             <BoxBlue titleBox="Apellidos *" name="secondname" squareBlue="Ingrese sus apellidos" type="text" />
             <BoxBlue titleBox="Teléfono" name="phone" squareBlue="Ingrese su número de teléfono" type="text" pattern="^[0-9]{9}$" />
