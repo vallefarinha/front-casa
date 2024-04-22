@@ -1,5 +1,7 @@
 import React from "react";
 import CardNumberTitle from "../../title/CardNumberTitle";
+import ClipboardButton from "../../buttons/ClipboardButton";
+
 const DonationCard = () => {
   return (
     <div className=" flex items-center justify-center pt-16 pb-16 ">
@@ -19,11 +21,15 @@ const DonationCard = () => {
         <CardNumberTitle
           wordBlue={"ENTIDAD BANCARIA:"}
           wordWhite={" CAIXA"}
-        ></CardNumberTitle>
+        />
         <CardNumberTitle
           wordBlue={"NÚMERO DE CUENTA:"}
           wordWhite={"ES65 2100 2181 68 0200229273"}
         ></CardNumberTitle>
+         <span className="flex justify-end">
+          <ClipboardButton  textToCopy="ES65 2100 2181 68 0200229273" />
+        </span>
+        
       </div>
      
     </div>
