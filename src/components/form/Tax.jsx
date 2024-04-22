@@ -7,7 +7,7 @@ import TitleForm from './TitleForm';
 const Tax = () => {
   return (
     <div>
-        <TitleForm wordBlue="¿Cuánto quieres" wordPink="aportar?" textAlign="center" />
+        <TitleForm wordBlue="Conoce las beneficios " wordPink="fiscales" textAlign="center" />
         <TaxText/>
     </div>
   )
