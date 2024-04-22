@@ -6,7 +6,7 @@ import OurHistory from "../pages/OurHistory";
 import OurHouse from "../pages/OurHouse";
 import Petra from "../pages/Petra";
 import OurBlog from "../pages/OurBlog";
-import BecameAPartner from "../pages/BecameAPartner";
+import Collaborate from "../pages/Collaborate";
 import PartnerForm from "../pages/PartnerForm";
 import ThanksForSignIn from "../pages/ThanksForSignIn";
 import FormMailing from "../pages/FormMailing";
@@ -26,7 +26,7 @@ export default function Router() {
           <Route path="/petra" element={<Petra/>}></Route> 
           <Route path="/sanjose" element={<SanJose/>}></Route> 
           <Route path="/blog" element={<OurBlog/>}></Route> 
-          <Route path="/partnership" element={<BecameAPartner/>}></Route> 
+          <Route path="/partnership" element={<Collaborate/>}></Route> 
           <Route path="/form" element={<PartnerForm/>}></Route> 
           <Route path="/thanks" element={<ThanksForSignIn/>}></Route>
       </Routes>
