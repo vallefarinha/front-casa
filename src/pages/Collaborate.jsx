@@ -10,7 +10,7 @@ import SendButtonForm from "../components/form/SendButtonForm";
 import Legislation from "../components/form/Legislation"
 import Tax from "../components/form/Tax";
 import TaxForm from '../components/form/TaxForm';
-import Swal from 'sweetalert2';
+import SimpleAlert from '../components/alerts/SimpleAlert';
 
 
 
@@ -18,51 +18,15 @@ import Swal from 'sweetalert2';
 
 function Collaborate() {
 
-  function showAlert(icon,text) {
-    Swal.fire({
-        position: "center",
-        icon: icon,
-        text: text,
-        showCloseButton: true,
-        showConfirmButton: false,
-        timer: 7000,
-        color: "#073B4C",
-        // background:"#FBB",
-        iconColor: "#073B4C",
-        showClass: {
-          popup: `
-            animate__animated
-            animate__fadeInUp
-            animate__faster
-          `
-        },
-        hideClass: {
-          popup: `
-            animate__animated
-            animate__fadeOutDown
-            animate__faster
-          `
-        }
-    });
-}
-
-  // const MySwal = withReactContent(Swal)
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
    const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
-   //const formData = new FormData(refForm.current);     
           try {
             const result = await SendMail(templateID, refForm.current);
-            console.log(result);
-            
-            showAlert('success', "Su mensaje ha sido envidado con éxtio. Revise su email.");
-            //alert("mensaje enviado con éxito, en breve recibirá una confirmación. Gracias")
-
+            SimpleAlert ({ icon: 'error', text: "Su petición ha sido enviada con éxito. Revise su email." });
           } catch (error) {
-            console.error(error);
-            showAlert('error', "Ha ocurrido un error en el envío de formulario. Por favor intentelo más tarde o pongase en contacto con casadeacogidaguia@hotmail.es .");
-            //Swal.fire('Error', message, 'error')
+            SimpleAlert ({ icon: 'error', text: 'Ha ocurrido un error en el envío de sus datos. Por favor inténtelo más tarde o póngase en contacto con casadeacogidaguia@hotmail.es.' });
           }
   };
 
