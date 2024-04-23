@@ -14,7 +14,7 @@ const MoneySelect = () => {
     if (inputRef && inputRef.current) {
       inputRef.current.value = amount;
     }
-    setIsOtherAmount(amount === "otra cantidad");
+    setIsOtherAmount(amount === "OTRA");
   };
 
   const handleOtherAmountChange = (event) => {
@@ -30,7 +30,7 @@ const MoneySelect = () => {
         <BoxSelect amount="20 €" customStyle={{width: '150px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "20 €"} />
         <BoxSelect amount="40 €" customStyle={{width: '150px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "40 €"} />
         <BoxSelect amount="80 €" customStyle={{width: '150px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "80 €"} />
-        <BoxSelect amount="OTRA" customStyle={{width: '150px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "otra cantidad"} />
+        <BoxSelect amount="OTRA" customStyle={{width: '150px', height: '50px'}} textSize="xl" className="mb-4 md:mb-0 z-20" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedAmountMoney === "OTRA"} />
         {isOtherAmount && (
           <input type="number" name="otherAmount" placeholder="00.00" className="border-2 border-quarteryColor rounded-lg py-2 px-2 shadow-xl focus:outline-none bg-white" onChange={handleOtherAmountChange} step={"0.01"}/>
         )}
