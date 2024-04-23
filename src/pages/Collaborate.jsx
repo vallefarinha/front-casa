@@ -10,8 +10,8 @@ import Tax from "../components/form/Tax";
 import TaxForm from "../components/form/TaxForm";
 import SimpleAlert from "../components/alerts/SimpleAlert";
 import penform from "../assets/icons/penForm.svg";
-import heart from "../assets/icons/heart.png";
-import octagon from "../assets/icons/octagon.png";
+import heart from "../assets/images/heart.png"
+import octagon from "../assets/images/octagon.png";
 import TitleForm from "../components/form/TitleForm";
 
 
