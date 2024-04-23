@@ -1,9 +1,10 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
 import Help from "../components/banners/Help";
 import TitleHistory from "../components/title/TitleHistory";
+import Title from "../components/title/Title";
 
 const OurBlog = () => {
   const [posts, setPosts] = useState([]);
@@ -58,10 +59,13 @@ const OurBlog = () => {
   return (
     <div>
       <div className=" mx-auto w-[90%] lg:w-[80%] my-6 sm:my-10">
-        <TitleHistory
-          wordBlue={"Mantente actualizado en la "}
-          wordPink={" Casa de la Guia"}
-        />
+        <div className="my-10">
+          {" "}
+          <Title
+            wordBlue={"Mantente actualizado en la "}
+            wordPink={" Casa de la Guia"}
+          />
+        </div>
       </div>
       <div className="w-[90%] lg:w-[80%] mx-auto flex flex-wrap gap-5">
         {currentPosts.map((post) => (

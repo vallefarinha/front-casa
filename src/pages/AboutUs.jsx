@@ -16,7 +16,7 @@ function AboutUs() {
   return (
     <div className="w-[80%] mx-auto mb-10">
       <div className="flex flex-col mx-auto ">
-        <div className="w-full mb-3">
+        <div className="w-full my-10">
           <Title wordBlue={"Quienes"} wordPink={"somos"}></Title>
           <TextImage></TextImage>
         </div>
