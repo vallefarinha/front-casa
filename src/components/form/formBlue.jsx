@@ -2,6 +2,7 @@ import React from 'react'
 import BoxBlue from "./BoxBlueAtom";
 import PersonalDataCheck from './PersonalDataCheck';
 
+
 const FormBlue = () => {
   return (
     <div className="flex items-center justify-center mt-[-10px]">
@@ -32,6 +33,7 @@ const FormBlue = () => {
           </div>
         </div>
       </div>
+    
     </div>
   )
 }

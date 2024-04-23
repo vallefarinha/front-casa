@@ -11,6 +11,7 @@ import Tax from "../components/form/Tax";
 import TaxForm from '../components/form/TaxForm';
 import SimpleAlert from '../components/alerts/SimpleAlert';
 import penform from "../assets/icons/penForm.svg"
+import TitleForm from '../components/form/TitleForm';
 
 
 
@@ -33,13 +34,13 @@ function Collaborate() {
   return (
     <div className="w-[80%] mx-auto">
     
-      <Title wordBlue={"Haz un"} wordPink={"donativo"}></Title>
+      <Title wordBlue={"Haz una"} wordPink={"donación"}></Title>
       <RegularText30
         text={ "Puedes donar lo que estimes oportuno, mediante ingreso o transferencia en la cuenta corriente de la Casa de Acogida" }
       ></RegularText30>
       <DonationCard></DonationCard>
-      
-      <TitleCard></TitleCard>
+
+      <TitleForm wordBlue="¿Cuánto quieres" wordPink="aportar?" textAlign="center" />
       <div className=" flex justify-center items-center">
         <div className="flex flex-col justify-center">
           <ColaboraRegularText
@@ -51,6 +52,7 @@ function Collaborate() {
           />
         </div>
       </div>
+      <Tax/>
       <div className="w-[80%] mx-auto">
       <img src={penform} alt="penForm" className="absolute z-0"/>
         <form ref={refForm} onSubmit={handleSubmit}>
@@ -63,8 +65,7 @@ function Collaborate() {
         <img src="src/assets/images/Corazon.png" alt="Corazon" />
         <img src="src/assets/images/octagono.png" alt="octagono" />
       </div>
-      <TitleCard></TitleCard>
-      <Tax/>
+      
       <Legislation></Legislation>
      
     </div>

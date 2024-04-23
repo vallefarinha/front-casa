@@ -3,12 +3,12 @@ import React from 'react';
 const PersonalDataCheck = () => {
     return (
       <div>
-        <label htmlFor="personaldata">
+        <label htmlFor="personaldata" className="ml-3"> Acepto el{' '}
           <a 
             href="#personal_data" 
-            className="hover:text-quarteryColor transition-opacity">
-            Acepto el tratamiento de datos personales
-          </a>
+            className="hover:text-gray-500 transition-opacity">
+             tratamiento de datos personales *
+          </a> 
         </label>
         <input
           type="checkbox"
@@ -16,6 +16,7 @@ const PersonalDataCheck = () => {
           name="personaldata"
           required
           value="SI"
+          className="ml-3"
         />
       </div>
     );

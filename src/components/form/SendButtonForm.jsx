@@ -5,7 +5,7 @@ import SendBtn from '../buttons/SendBtn'
 const SendButtonForm = () => {
   return (
     <div className="mt-6" style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <SendBtn data="ENVIAR" go="/thanks" />
+        <SendBtn data="ENVIAR" />
     </div>
   )
 }

@@ -34,7 +34,7 @@ const MoneySelect = () => {
         {isOtherAmount && (
           <input type="number" name="otherAmount" placeholder="00.00" className="border-2 border-quarteryColor rounded-lg py-2 px-2 shadow-xl focus:outline-none bg-white" onChange={handleOtherAmountChange} step={"0.01"}/>
         )}
-        <input type="text" ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
+        <input type="text"  ref={inputRef} name="selectedAmountMoney" value={selectedAmountMoney} style={{ display: 'none' }} />
       </div>
     </div>
   );

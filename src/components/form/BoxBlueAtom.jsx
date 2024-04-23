@@ -8,7 +8,7 @@ const BoxBlue = ({ titleBox, squareBlue, type, pattern, name}) => {
   };
 
   return (
-    <div className="flex flex-col mb-2 w-full px-2">
+    <div className="flex flex-col mb-6 w-full px-2">
       <label htmlFor={titleBox} className="text-LetterColor font-poppinsBold text-sm mb-1">{titleBox}</label>
       <input
         type={type}
@@ -17,7 +17,7 @@ const BoxBlue = ({ titleBox, squareBlue, type, pattern, name}) => {
         pattern={pattern}
         name={name}
         required
-        className={`border-2 ${isValid ? 'border-quarteryColor' : 'border-red-500'} rounded-lg py-2 px-4 shadow-xl focus:outline-none bg-white`}
+        className={`border-2 ${isValid ? 'border-quarteryColor' : 'border-red-500'} rounded-lg py-2 px-4 shadow-xl focus:outline-none  bg-white`}
         onChange={validateInput}
       />
     </div>

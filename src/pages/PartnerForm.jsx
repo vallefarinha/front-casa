@@ -37,13 +37,15 @@ function PartnerForm() {
                 <DonationOption />
                 <TaxForm></TaxForm>
                 <SendButtonForm />
-                <Tax/>
-                <Legislation></Legislation>
+                
               </section>
             </form>
             <div style={{ height: '100vh' }} />
+            <Tax/>
+            <Legislation/>
           </div>
         );
       }
 
 export default PartnerForm;
+
