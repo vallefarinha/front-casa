@@ -33,9 +33,10 @@ function PartnerForm() {
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
+                <SendButtonForm />  
                 <Tax/>
                 <Legislation/>
-                <SendButtonForm />             
+                           
             </form>
           </div>
         );
