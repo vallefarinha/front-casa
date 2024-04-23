@@ -15,14 +15,18 @@ import rainbow from "../assets/icons/rainbow.svg";
 function WhatWeDo() {
   return (
     <>
-      <div className="mx-4 relative w-[80%] mx-auto">
-          <div className="flex relative mt-20 mb-6">
-            <div>
+      <div className="relative w-[80%] mx-auto">
+        <div className="flex relative mt-20 mb-6">
+          <div className="my-10">
             <Title wordBlue="Que" wordPink="hacemos" />
-            </div>
-            <div className="hidden md:flex md:-mt-28 w-full md:w-2/6 md:absolute md:right-0 justify-end">
-            <img src={hands} alt="photo of hands" className="mx-auto max-w-full" />
-          </div>   
+          </div>
+          <div className="hidden md:flex md:-mt-28 w-full md:w-2/6 md:absolute md:right-0 justify-end">
+            <img
+              src={hands}
+              alt="photo of hands"
+              className="mx-auto max-w-full"
+            />
+          </div>
         </div>
         <div className="flex-col">
           <div className="flex flex-col">
