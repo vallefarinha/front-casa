@@ -25,7 +25,7 @@ function SimpleAlert ({ icon, text }) {
         `
       }
     });
-    return null; 
+     return null; 
 }
 
 export default SimpleAlert

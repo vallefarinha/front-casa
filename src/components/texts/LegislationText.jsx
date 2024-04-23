@@ -7,7 +7,7 @@ const LegislationText = () => {
   return (
     <>
       <div className="mt-4">
-      <span className="font-poppinsRegular text-justify mb-4 w-full text-primaryColor text-sm lg:text-lg sm:text-xs">
+      <span id="personal_data" className="font-poppinsRegular text-justify mb-4 w-full text-primaryColor text-sm lg:text-lg sm:text-xs">
         * Tratamiento de datos personales:
       </span>
       <p className="font-poppinsRegular text-justify mb-4 w-full text-LetterColor text-xs lg:text-base sm:text-xs">
