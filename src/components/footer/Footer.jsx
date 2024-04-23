@@ -23,7 +23,7 @@ const Footer = () => {
           <p className="text-primaryColor font-semibold">Información de contacto</p>
           
           <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor">
-            <IoLocationOutline className="size-6 ml-2" />
+            <IoLocationOutline className="size-6 ml-1" />
             <p className="flex flex-wrap text-sm text-center md:text-start md:ml-2">
               Avda. del profesor Pérez Pimentel 105 Barrio de la Guía 33203
               Gijón - Asturias
