@@ -17,7 +17,7 @@ const DonationOption = () => {
   };
   
   return (
-    <div className="flex flex-col items-center w-[85%] mx-auto mt-6">        
+    <div className="flex flex-col items-center w-[85%] mx-auto mt-6 mb-4">        
         <TitleForm wordBlue="¿Deseas recibir certificado de" wordPink="donación?" textAlign="center" />
       
         <div className="flex flex-wrap justify-center space-x-4 mt-8 relative">    

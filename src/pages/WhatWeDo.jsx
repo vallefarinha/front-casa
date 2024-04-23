@@ -15,7 +15,7 @@ import rainbow from "../assets/icons/rainbow.svg";
 function WhatWeDo() {
   return (
     <>
-      <div className="mx-4 relative w-[80%] mx-auto">
+      <div className="mx-4 relative w-[80%]">
           <div className="flex relative mt-20 mb-6">
             <div>
             <Title wordBlue="Que" wordPink="hacemos" />

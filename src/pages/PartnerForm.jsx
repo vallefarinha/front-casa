@@ -9,7 +9,6 @@ import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
 import Tax from "../components/form/Tax";
-import TaxForm from '../components/form/TaxForm';
 import Legislation from "../components/form/Legislation"
 
 function PartnerForm() {
@@ -28,6 +27,7 @@ function PartnerForm() {
         return (
           <div className="w-[80%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
+            
               <section className="md:h-screen">
                 <TitleAllForm />
                 <FormBlue />
@@ -35,14 +35,12 @@ function PartnerForm() {
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
-                <TaxForm></TaxForm>
+                <Tax/>
+                <Legislation/>
                 <SendButtonForm />
                 
               </section>
             </form>
-            <div style={{ height: '100vh' }} />
-            <Tax/>
-            <Legislation/>
           </div>
         );
       }
