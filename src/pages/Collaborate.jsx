@@ -9,7 +9,7 @@ import Legislation from "../components/form/Legislation";
 import Tax from "../components/form/Tax";
 import TaxForm from "../components/form/TaxForm";
 import SimpleAlert from "../components/alerts/SimpleAlert";
-import penform from "../assets/icons/penForm.svg";
+import Penform from "../assets/icons/penForm.svg";
 import TitleForm from "../components/form/TitleForm";
 
 function Collaborate() {
@@ -62,7 +62,7 @@ function Collaborate() {
       </div>
       <Tax />
       <div className="w-[80%] mx-auto">
-        <img src={penform} alt="penForm" className="absolute z-0" />
+        <img src={Penform} alt="penForm" className="absolute z-0" />
         <form ref={refForm} onSubmit={handleSubmit}>
           <TaxForm></TaxForm>
           <SendButtonForm />
