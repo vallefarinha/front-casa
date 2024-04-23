@@ -28,11 +28,11 @@ const Footer = () => {
           </div>
           <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor">
             <LuPhone className="size-4 ml-1" />
-            <p className="text-sm ml-3 text-center md:text-start md:ml-3"> 985 363 314</p>
+            <p className="text-sm ml-3 text-center md:text-start md:ml-2"> 985 363 314</p>
           </div>
           <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor hover:ml-2">
             <HiOutlineMail className="size-4 ml-1" />
-            <a href="mailto:casadeacogidaguia@hotmail.es" className="text-sm text-center md:text-start md:ml-3">
+            <a href="mailto:casadeacogidaguia@hotmail.es" className="text-sm text-center md:text-start md:ml-2">
               casadeacogidaguia@hotmail.es
             </a>
           </div>
