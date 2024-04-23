@@ -9,14 +9,13 @@ import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
 import Tax from "../components/form/Tax";
-import TaxForm from '../components/form/TaxForm';
 import Legislation from "../components/form/Legislation"
 
 function PartnerForm() {
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
-   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
+   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_PARTNER; 
           try {
             const result = await SendMail(templateID, refForm.current);
             SimpleAlert ({ icon: 'success', text: "Su petición ha sido enviada con éxito. Revise su email." });
@@ -28,21 +27,18 @@ function PartnerForm() {
         return (
           <div className="w-[80%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
-              <section className="md:h-screen">
+            
+              
                 <TitleAllForm />
                 <FormBlue />
                 <MoneySelect />
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
-                <TaxForm></TaxForm>
-                <SendButtonForm />
-                
-              </section>
+                <Tax/>
+                <Legislation/>
+                <SendButtonForm />             
             </form>
-            <div style={{ height: '100vh' }} />
-            <Tax/>
-            <Legislation/>
           </div>
         );
       }
