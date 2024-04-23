@@ -27,7 +27,8 @@ function PartnerForm() {
         return (
           <div className="w-[80%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
-              <section className="md:h-screen">
+            
+              
                 <TitleAllForm />
                 <FormBlue />
                 <MoneySelect />
@@ -37,9 +38,6 @@ function PartnerForm() {
                 <SendButtonForm />
               </section>
             </form>
-            <div style={{ height: '100vh' }} />
-            <Tax/>
-            <Legislation/>
           </div>
         );
       }
