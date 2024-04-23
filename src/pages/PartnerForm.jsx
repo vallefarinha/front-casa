@@ -15,7 +15,7 @@ function PartnerForm() {
   const refForm = useRef();
   const handleSubmit = async (event) => {
     event.preventDefault();
-   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_TAXES; 
+   const templateID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID_PARTNER; 
           try {
             const result = await SendMail(templateID, refForm.current);
             SimpleAlert ({ icon: 'success', text: "Su petición ha sido enviada con éxito. Revise su email." });
@@ -28,7 +28,7 @@ function PartnerForm() {
           <div className="w-[80%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
             
-              <section className="md:h-screen">
+              
                 <TitleAllForm />
                 <FormBlue />
                 <MoneySelect />
@@ -37,9 +37,7 @@ function PartnerForm() {
                 <DonationOption />
                 <Tax/>
                 <Legislation/>
-                <SendButtonForm />
-                
-              </section>
+                <SendButtonForm />             
             </form>
           </div>
         );
