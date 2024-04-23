@@ -9,30 +9,34 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-white w-full h-auto mx-auto p-4 font-poppins flex flex-col md:flex-row shadow-xl border-t-2 border-gray-200 mt-10">
-      <div className="flex-wrap md:flex md:flex-nowrap max-w-screen-xl mx-auto md:justify-between">
-      <div className="flex w-full md:w-1/6 mx-auto lg:mx-0 md:justify-start">
-        <Link to="/">
-          <img src={LogoNav} className="w-1/2 h-auto mx-auto" alt="Logo" />
-        </Link>
-      </div>
+    <div className="bg-white w-full h-auto font-poppins flex flex-col md:flex-row shadow-xl border-t-2 border-gray-200 mt-10 start-0">
+      <div className="flex-wrap md:flex md:flex-nowrap max-w-screen-xl md:justify-between mx-auto p-3">
+        
+        <div className="flex w-full md:w-1/6 lg:mx-0  wpy-2 px-5 md:px-2  md:items-start ">
+          <Link to="/">
+            <img src={LogoNav} className="w-1/2 h-auto " alt="Logo" />
+          </Link>
+        </div>
+
       <div className="flex text-center w-full flex-wrap md:justify-between md:flex-nowrap md:w-3/4">
         <div className="w-full py-2 px-5 md:px-2 flex flex-col md:items-start md:text-start">
           <p className="text-primaryColor font-semibold">Información de contacto</p>
+          
           <div className="flex gap-1 text-LetterColor hover:text-tertiaryColor">
-            <IoLocationOutline className="size-6" />
+            <IoLocationOutline className="size-6 ml-2" />
             <p className="flex flex-wrap text-sm text-center md:text-start md:ml-2">
               Avda. del profesor Pérez Pimentel 105 Barrio de la Guía 33203
               Gijón - Asturias
             </p>
           </div>
+
           <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor">
             <LuPhone className="size-4 ml-1" />
             <p className="text-sm ml-3 text-center md:text-start md:ml-2"> 985 363 314</p>
           </div>
-          <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor hover:ml-2">
+          <div className="flex justify-center gap-1 text-LetterColor hover:text-tertiaryColor">
             <HiOutlineMail className="size-4 ml-1" />
-            <a href="mailto:casadeacogidaguia@hotmail.es" className="text-sm text-center md:text-start md:ml-2">
+            <a href="mailto:casadeacogidaguia@hotmail.es" className="text-sm ml-3 text-center md:text-start md:ml-2">
               casadeacogidaguia@hotmail.es
             </a>
           </div>
