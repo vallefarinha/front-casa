@@ -1,4 +1,5 @@
 import React from "react";
+import homeimage from "../../assets/images/Homeimage.png"
 
 const TextImage = () => {
   return (
@@ -21,7 +22,7 @@ const TextImage = () => {
 
         <img
           className="md:w-[80%] mx-auto"
-          src="../src/assets/images/Homeimage.png"
+          src={homeimage}
         />
         </div>
       </div>
