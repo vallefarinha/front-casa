@@ -66,10 +66,11 @@ function AboutUs() {
         title={"Responsabilidad y Autonomía:"}
         icon={autonomy}
         alt={"autonomy"}
-        text={
-          "Fomentamos la responsabilidad y autonomía de nuestras residentes, apoyándolas en la toma de decisiones conscientes y en el control de su futuro."
-        }
+        text={""}
       ></OurValorsCard>
+      Fomentamos la responsabilidad y autonomía de nuestras residentes,
+      apoyándolas en la toma de decisiones conscientes y en el control de su
+      futuro.
       <OurValorsCard
         title={"Respeto y Autenticidad:"}
         icon={respect}
