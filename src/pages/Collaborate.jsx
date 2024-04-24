@@ -67,7 +67,7 @@ function Collaborate() {
       </div>
       <Tax />
       <div className="w-[80%] mx-auto">
-        <img src={penform} alt="penForm" className="absolute z-0" />
+        <img src={Penform} alt="penForm" className="absolute z-0" />
         <form ref={refForm} onSubmit={handleSubmit}>
           <TaxForm></TaxForm>
           <SendButtonForm />
