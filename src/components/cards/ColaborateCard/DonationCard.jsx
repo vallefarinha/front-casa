@@ -1,19 +1,21 @@
 import React from "react";
 import CardNumberTitle from "../../title/CardNumberTitle";
 import ClipboardButton from "../../buttons/ClipboardButton";
+import yellowCircle from "../../../assets/images/yellowcircle.png";
+import cubicImage from "../../../assets/images/cubic.png";
 
 const DonationCard = () => {
   return (
     <div className=" flex items-center justify-center pt-16 pb-16 ">
        <img
       className="absolute left-0 top-150 z-100"
-      src="src/assets/images/yellowcircle.png"
+      src={yellowCircle}
       alt="yellow circles"
       />
         
       <img
         className="absolute right-0 top-150 z-100"
-      img src="src/assets/images/cubic.png" alt="cubic imgage"
+      img src={cubicImage} alt="cubic imgage"
       />
      
    

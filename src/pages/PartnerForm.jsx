@@ -8,7 +8,8 @@ import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
-import Legislation from "../components/form/Legislation"
+import Legislation from "../components/form/Legislation";
+import Tax from '../components/form/Tax';
 
 function PartnerForm() {
   const refForm = useRef();
@@ -26,18 +27,16 @@ function PartnerForm() {
         return (
           <div className="w-[80%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
-            
-              
                 <TitleAllForm />
                 <FormBlue />
                 <MoneySelect />
                 <Periodicity />
                 <BankBlue />
                 <DonationOption />
-                <SendButtonForm />
-           
+                <SendButtonForm />  
+                <Tax />
+                <Legislation/>                           
             </form>
-            <Legislation/>
           </div>
         );
       }

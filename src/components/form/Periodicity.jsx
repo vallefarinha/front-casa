@@ -16,10 +16,10 @@ const Periodicity = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-[85%] mx-auto mt-6">
+    <div className="flex flex-col items-center mx-auto mt-6">
         <TitleForm wordBlue="¿Qué periodicidad" wordPink="quieres?" textAlign="center" />
       
-        <div className="flex flex-wrap justify-center space-x-4 mt-8 relative">
+        <div className="flex flex-wrap justify-center space-x-4 md:space-y-2 mt-8 relative">
         <img src={heart} alt="heart"  className="w-[55px] h-[59px] absolute top-[40%] left-[10%] transform -translate-x-1/2 -translate-y-1/2 md:w-[108px] md:h-[100px] md:left-[111%] md:top-[42%]" />
           <BoxSelect amount="MENSUAL" customStyle={{width: '150px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedPeriodicity === "MENSUAL"}/>
           <BoxSelect amount="TRIMESTRAL" customStyle={{width: '150px', height: '50px'}} textSize="lg" className="mb-4 md:mb-0" inputRef={inputRef} onClick={handleSelectClick} isSelected={selectedPeriodicity === "TRIMESTRAL"}/>
