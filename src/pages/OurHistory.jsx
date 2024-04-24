@@ -14,17 +14,27 @@ const OurHistory = () => {
   const handleButtonClick = (sectionId) => {
     const targetSection = document.getElementById(sectionId);
     if (targetSection) {
+      // Salva a posição atual do scroll antes da transição
+      const scrollTopBefore = window.pageYOffset;
+  
       targetSection.scrollIntoView({
         behavior: "smooth",
         block: "nearest",
       });
-
+  
+      // Adiciona classes de animação ao elemento
       targetSection.classList.add("animate__animated", "animate__zoomIn");
-
+  
+      // Remove as classes de animação após 2 segundos
       setTimeout(() => {
         targetSection.classList.remove("animate__animated", "animate__zoomIn");
-      }, 2000); 
-      window.scrollTo({ top: targetSection.offsetTop, behavior: "smooth" });
+        
+        // Verifica se a posição do scroll mudou após a transição
+        if (window.pageYOffset !== scrollTopBefore) {
+          // Se sim, restaura a posição do scroll para o topo do contêiner do slide
+          window.scrollTo({ top: targetSection.offsetTop, behavior: "auto" });
+        }
+      }, 2000);
     }
   };
 
@@ -44,7 +54,7 @@ const OurHistory = () => {
   };
 
   return (
-    <div className=" mx-auto our-history-container relative">
+    <div className=" mx-auto our-history-container">
       <div className="absolute z-20 mt-4">
         <button
           id="dropdownOffsetButton"
