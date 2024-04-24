@@ -48,7 +48,7 @@ function Collaborate() {
         }
       ></RegularText30>
       <DonationCard></DonationCard>
-
+        
       <TitleForm
         wordBlue="¿Cuánto quieres"
         wordPink="aportar?"

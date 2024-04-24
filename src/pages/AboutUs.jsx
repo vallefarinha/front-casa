@@ -47,7 +47,7 @@ function AboutUs() {
         secondword={"valores"}
       ></TitleAboutUs>
       <OurValorsCard
-        title={"Empatia y compromiso"}
+        title={"Empatía y compromiso"}
         icon={compromiso}
         alt={"compromiso"}
         text={

@@ -11,7 +11,7 @@ const TextImage = () => {
           atención para la infancia y la juventud. En la actualidad, se ha
           convertido en un refugio seguro para madres gestantes y/o con hijos
           pequeños que se encuentran en situación de riesgo.<br></br>
-          <br></br>Formando parte de la Congregación religiosa “Madres de
+          <br></br>Formando parte de la Congregación religiosa “Madres de los
           Desamparados y San José de la Montaña”, fundada en 1881 por la Beata
           Petra de San José, nuestra casa está arraigada en una tradición de
           servicio y compasión hacia los más necesitados. La Beata Petra de San
