@@ -44,7 +44,7 @@ const OurHistory = () => {
 
   return (
     <div className=" mx-auto our-history-container">
-      <div className="absolute z-20">
+      <div className="absolute z-20 mt-4">
         <button
           id="dropdownOffsetButton"
           data-dropdown-toggle="dropdownSkidding"
@@ -147,12 +147,12 @@ const OurHistory = () => {
         className="our-history-section bg-inherit h-screen custom-height overflow-y-auto"
         id="Section1"
       >
-        <div className="relative">
+        <div className="relative mt-4">
           <div className="absolute right-4 top-4">
             <ArrowButton onClick={() => handleButtonClick("Section2")} />
           </div>
         </div>
-        <div className="h-screen my-auto flex flex-wrap justify-around w-[80%] mx-auto sm:py-10 md:py-0 custom-height">
+        <div className="h-screen my-auto flex flex-wrap mt-10 justify-around w-[80%] mx-auto sm:py-10 md:py-0 custom-height">
           <div className="lg:w-[45%] my-auto ">
             <TitleHistory wordBlue={"Nuestra "} wordPink={" Historia"} />
             <div className="my-8">
@@ -199,7 +199,7 @@ const OurHistory = () => {
             <ArrowButton onClick={() => handleButtonClick("Section3")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto h-screen  custom-height">
+        <div className="flex flex-wrap mt-10 justify-around w-[80%] mx-auto h-screen  custom-height">
           <div className="md:w-[40%] my-auto">
             <img
               src={ImgCasa1963}
@@ -250,7 +250,7 @@ const OurHistory = () => {
             <ArrowButton onClick={() => handleButtonClick("Section4")} />
           </div>
         </div>
-        <div className="w-[80%] lg:px-10 mx-auto">
+        <div className="w-[80%] lg:px-10 mx-auto mt-10">
           <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
             1967
           </h2>
@@ -266,7 +266,7 @@ const OurHistory = () => {
             ayudaban económicamente con limosnas generosas y pequeños donativos
           </p>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto py-2">
+        <div className="flex flex-wrap mt-10 justify-around w-[80%] mx-auto py-2">
           <div className="lg:w-[45%] my-8">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold">
               1968
@@ -304,7 +304,7 @@ const OurHistory = () => {
           </div>
         </div>
         <div className="border-dashed border-4 border-secondaryColor w-[99%] lg:w-[85%] p-4 mx-auto rounded-lg">
-          <div className="w-[92%] lg:w-[95%] mx-auto flex flex-col gap-5 lg:gap-2">
+          <div className="w-[92%] mt-10 lg:w-[95%] mx-auto flex flex-col gap-5 lg:gap-2">
             <h2 className="text-2xl md:text-4xl text-LetterColor font-poppinsExtraBold mt-5 md:mt-3 lg:mt-0">
               1972
             </h2>
@@ -358,7 +358,7 @@ const OurHistory = () => {
             <ArrowButton onClick={() => handleButtonClick("Section6")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-around w-[80%] mx-auto">
+        <div className="flex flex-wrap mt-16 justify-around w-[80%] mx-auto">
           <div className="lg:w-[40%] my-auto">
             <img
               src={ImgCasa2006}
@@ -467,7 +467,7 @@ const OurHistory = () => {
         </div>
         <div className="flex flex-wrap justify-between w-[90%] lg:w-[80%] mx-auto lg:px-9 px-2">
           <div className="md:w-1/4 mb-4">
-            <div className="shadow-xl shadow-quarteryColor rounded-3xl">
+            <div className="shadow-xl shadow-quarteryColor rounded-3xl mt-12">
               <img
                 src={card1}
                 alt="capilla"
