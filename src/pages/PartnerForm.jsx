@@ -35,8 +35,7 @@ function PartnerForm() {
                 <DonationOption />
                 <SendButtonForm />  
                 <Tax/>
-                <Legislation/>
-                           
+                <Legislation/>                           
             </form>
           </div>
         );
