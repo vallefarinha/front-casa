@@ -19,7 +19,7 @@ const DonationCard = () => {
       />
      
    
-     <div className="relative  h-1/2 mt-2 mb-1 bg-bgColorForm rounded-3xl inline-block p-6" >   
+     <div className="relative h-1/2 mt-2 mb-1 bg-bgColorForm rounded-3xl inline-block p-6" >   
         <CardNumberTitle
           wordBlue={"ENTIDAD BANCARIA:"}
           wordWhite={" CAIXA"}
