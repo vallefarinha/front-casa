@@ -8,7 +8,6 @@ import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
-import Tax from "../components/form/Tax";
 import Legislation from "../components/form/Legislation"
 
 function PartnerForm() {
@@ -37,6 +36,7 @@ function PartnerForm() {
                 <Tax/>
                 <Legislation/>                           
             </form>
+            <Legislation/>
           </div>
         );
       }

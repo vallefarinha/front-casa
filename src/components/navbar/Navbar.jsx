@@ -25,7 +25,7 @@ const Navbar = () => {
     <>
       <nav className="bg-bgColor fixed w-full z-50 top-0 start-0">
 
-        <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3 sm:p-3">
+      <div className="max-w-screen-xl z-50 flex flex-wrap md:flex-nowrap md:text-sm lg:text-base items-center justify-between mx-auto p-3 sm:p-3">
           <Link to="/" className="flex items-center space-x-2 rtl:space-x-reverse">
             <img src={LogoNav} className="w-14 sm:w-20 z-50 " alt="Logo" />
           </Link>

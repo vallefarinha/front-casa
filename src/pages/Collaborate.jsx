@@ -9,8 +9,13 @@ import Legislation from "../components/form/Legislation";
 import Tax from "../components/form/Tax";
 import TaxForm from "../components/form/TaxForm";
 import SimpleAlert from "../components/alerts/SimpleAlert";
-import Penform from "../assets/icons/penForm.svg";
+import penform from "../assets/icons/penForm.svg";
+import heart from "../assets/images/heart.png"
+import octagon from "../assets/images/octagon.png";
 import TitleForm from "../components/form/TitleForm";
+
+
+
 
 function Collaborate() {
   const refForm = useRef();
@@ -70,8 +75,8 @@ function Collaborate() {
       </div>
 
       <div className="flex justify-around" style={{ height: "60px" }}>
-        <img src="src/assets/images/Corazon.png" alt="Corazon" />
-        <img src="src/assets/images/octagono.png" alt="octagono" />
+        <img src={heart} alt="Corazon" />
+        <img src={octagon} alt="octagono" />
       </div>
 
       <Legislation></Legislation>
