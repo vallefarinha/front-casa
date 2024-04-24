@@ -52,14 +52,19 @@ function Collaborate() {
 
       <DonationCard></DonationCard>
 
-      <div className="w-[80%] mx-auto">
-      <RegularText30
-                 text={
-                  "También puedes contrinuir periódicamente haciéndote socio."}
-				 ></RegularText30>
+      <div className=" flex justify-center items-center">
+        <div className="flex flex-col justify-center">
+          <ColaboraRegularText
+            wordone={"Contribuye de forma periódica haciéndote socio"}
+          />
+          <ColaboraRegularText
+            wordone={"Envíanos tu solicitud usando "}
+            wordtwo={"ESTE FORMUALARIO. "}
+          />
         </div>
-
-        <div className="flex flex-col items-center mx-auto">
+      </div>
+      
+        <div className="flex flex-col items-center mx-auto pt-10">
             <TitleForm wordBlue=" ¿Quieres incluirlo en la desgravación" wordPink="fiscal?" textAlign="center" />
       </div>
       <div className="w-[80%] mx-auto">
