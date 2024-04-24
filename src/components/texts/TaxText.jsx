@@ -62,13 +62,13 @@ const TaxText = () => {
                 <p className="text-lg md:text-3xl">80%</p>
               </td>
               <td className="px-4 py-2 border border-gray-400 min-w-26 max-w-60 items-center">
-                <p className=" text-xs text-xs md:text-base">Deducción:</p>{" "}
+                <p className="text-xs md:text-base">Deducción:</p>{" "}
                 <p className="text-lg md:text-3xl">40%</p>
               </td>
               <td className="px-4 py-2 border border-gray-400 min-w-30 max-w-64 items-center ">
                 <div className="flex flex-col md:flex-row items-center">
                   <div>
-                    <p className=" text-xs text-xs md:text-base">Deducción:</p>
+                    <p className="text-xs md:text-base">Deducción:</p>
                     <p className="text-lg md:text-3xl">45%</p>
                   </div>
                   <div>
@@ -107,8 +107,12 @@ const TaxText = () => {
           </thead>
           <tbody>
             <tr>
-              <th className=" px-4 py-2 border border-gray-400">Sin fidelización</th>
-              <th  className="px-4 py-2 border border-gray-400">Con fidelización</th>
+              <th className=" px-4 py-2 border border-gray-400">
+                Sin fidelización
+              </th>
+              <th className="px-4 py-2 border border-gray-400">
+                Con fidelización
+              </th>
             </tr>
             <tr>
               <td className="px-4 py-2 border border-gray-400 min-w-26 max-w-60 items-center">
@@ -118,7 +122,7 @@ const TaxText = () => {
               <td className="px-4 py-2 border border-gray-400 min-w-30 max-w-64 items-center ">
                 <div className="flex flex-col md:flex-row items-center">
                   <div>
-                    <p className=" text-xs text-xs md:text-base">Deducción:</p>
+                    <p className="text-xs md:text-base">Deducción:</p>
                     <p className="text-lg md:text-3xl">50%</p>
                   </div>
                   <div>
@@ -129,7 +133,6 @@ const TaxText = () => {
                   </div>
                 </div>
               </td>
-              
             </tr>
           </tbody>
         </table>
