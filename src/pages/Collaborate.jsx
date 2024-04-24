@@ -55,7 +55,7 @@ function Collaborate() {
       <div className="w-[80%] mx-auto">
       <RegularText30
                  text={
-                  "También puedes contrinuir periódicamente haciéndote socio"}
+                  "También puedes contrinuir periódicamente haciéndote socio."}
 				 ></RegularText30>
         </div>
 
