@@ -10,7 +10,6 @@ import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
 import Legislation from "../components/form/Legislation";
 import Tax from '../components/form/Tax';
-import TitleForm from '../components/form/TitleForm';
 
 function PartnerForm() {
   const refForm = useRef();
@@ -26,7 +25,7 @@ function PartnerForm() {
   };
 
         return (
-          <div className="w-[80%] mx-auto">
+          <div className="md:w-[80%] w-[90%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
                 <TitleAllForm />
                 <FormBlue />

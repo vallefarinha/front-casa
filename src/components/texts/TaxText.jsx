@@ -2,7 +2,7 @@ import React from "react";
 
 const TaxText = () => {
   return (
-    <div className="font-poppinsRegular text-justify mb-4 w-full text-LetterColor text-md lg:text-lg sm:text-xs">
+    <div className="font-poppinsRegular text-justify mb-4 w-full text-LetterColor text-sm md:text:md lg:text-lg sm:text-xs">
       <br />
       <p>
         Tras la entrada en vigor el 1 de enero de 2024 del{" "}
@@ -72,7 +72,7 @@ const TaxText = () => {
                     <p className="text-lg md:text-3xl">45%</p>
                   </div>
                   <div>
-                    <p className="text-xs md:text-base ml-2">
+                    <p className="text-xs md:text-sm ml-2">
                       Si en los dos años anteriores se ha realizado una donación
                       a la misma entidad al menos por el mismo importe
                     </p>
@@ -122,7 +122,7 @@ const TaxText = () => {
               <td className="px-4 py-2 border border-gray-400 min-w-30 max-w-64 items-center ">
                 <div className="flex flex-col md:flex-row items-center">
                   <div>
-                    <p className="text-xs md:text-base">Deducción:</p>
+                    <p className="text-xs md:text-sm">Deducción:</p>
                     <p className="text-lg md:text-3xl">50%</p>
                   </div>
                   <div>
