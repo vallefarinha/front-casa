@@ -3,7 +3,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import casa1 from "../../assets/images/homeBannerSlider.svg";
 import casa2 from "../../assets/images/BannerMadrePetra.svg";
-import casa3 from "../../assets/images/BannerHomeCasa.svg";
+import casa3 from "../../assets/images/BannerHomeCasa.png";
 
 const images = [
   {
