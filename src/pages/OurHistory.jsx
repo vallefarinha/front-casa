@@ -189,13 +189,13 @@ const OurHistory = () => {
         id="Section2"
       >
         <div className="relative">
-          <div className="absolute right-14 top-3">
+          <div className="absolute right-14 top-4">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section1")}
             />
           </div>
-          <div className="absolute right-4 top-3">
+          <div className="absolute right-4 top-4">
             <ArrowButton onClick={() => handleButtonClick("Section3")} />
           </div>
         </div>
@@ -240,13 +240,13 @@ const OurHistory = () => {
         id="Section3"
       >
         <div className="relative">
-          <div className="absolute right-14 -top-6 lg:top-0">
+          <div className="absolute right-14 -top-4 lg:top-0">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section2")}
             />
           </div>
-          <div className="absolute right-4 -top-6 lg:top-0">
+          <div className="absolute right-4 -top-4 lg:top-0">
             <ArrowButton onClick={() => handleButtonClick("Section4")} />
           </div>
         </div>
@@ -348,13 +348,13 @@ const OurHistory = () => {
         id="Section5"
       >
         <div className="relative">
-          <div className="absolute right-14 top-3">
+          <div className="absolute right-14 top-4">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section4")}
             />
           </div>
-          <div className="absolute right-4 top-3">
+          <div className="absolute right-4 top-4">
             <ArrowButton onClick={() => handleButtonClick("Section6")} />
           </div>
         </div>
@@ -407,13 +407,13 @@ const OurHistory = () => {
         id="Section6"
       >
         <div className="relative">
-          <div className="absolute right-14 lg:right-7 lg top-2">
+          <div className="absolute right-14 lg:right-7 lg top-4">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section5")}
             />
           </div>
-          <div className="absolute right-4 lg:-right-3 top-2">
+          <div className="absolute right-4 lg:-right-3 top-4">
             <ArrowButton onClick={() => handleButtonClick("Section7")} />
           </div>
         </div>
@@ -455,19 +455,19 @@ const OurHistory = () => {
         className="our-history-section py-10 h-screen overflow-y-auto custom-height"
       >
         <div className="relative">
-          <div className="absolute right-14 md:-top-10 lg:-top-2">
+          <div className="absolute right-14 -top-4">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section6")}
             />
           </div>
-          <div className="absolute right-4 md:-top-10 lg:-top-2">
+          <div className="absolute right-4 -top-4">
             <ArrowButton onClick={() => handleButtonClick("Section1")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-between w-[90%] lg:w-[80%] mx-auto lg:px-9 px-2">
+        <div className="flex flex-wrap justify-between mt-12 w-[90%] lg:w-[80%] mx-auto lg:px-9 px-2">
           <div className="md:w-1/4 mb-4">
-            <div className="shadow-xl shadow-quarteryColor rounded-3xl mt-12">
+            <div className="shadow-xl shadow-quarteryColor rounded-3xl">
               <img
                 src={card1}
                 alt="capilla"

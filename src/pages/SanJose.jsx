@@ -172,21 +172,21 @@ const SanJose = () => {
         id="Section2"
       >
         <div className="relative">
-          <div className="absolute right-14 top-3">
+          <div className="absolute right-14 top-4">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section1")}
             />
           </div>
-          <div className="absolute right-4 top-3">
+          <div className="absolute right-4 top-4">
             <ArrowButton onClick={() => handleButtonClick("Section3")} />
           </div>
         </div>
-        <div className="flex flex-wrap justify-around mt-10 w-[80%] mx-auto h-screen custom-height">
+        <div className="flex flex-wrap justify-around mt-20 w-[80%] mx-auto h-screen custom-height">
           <div className="md:w-[40%] my-auto">
             <img
               src={sanjose}
-              alt="Imagen de la casa en 1963"
+              alt="Imagen de san jose"
               className="lg:w-[80%] md:mx-auto h-auto"
             />
           </div>
@@ -209,13 +209,13 @@ const SanJose = () => {
         id="Section3"
       >
         <div className="relative">
-          <div className="absolute right-14 -top-6 lg:top-0">
+          <div className="absolute right-14 -top-4 lg:top-0">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section2")}
             />
           </div>
-          <div className="absolute right-4 -top-6 lg:top-0">
+          <div className="absolute right-4 -top-4 lg:top-0">
             <ArrowButton onClick={() => handleButtonClick("Section4")} />
           </div>
         </div>

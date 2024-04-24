@@ -160,7 +160,7 @@ const Petra = () => {
       </div>
 
       <div
-        className="our-history-section mt-4  bg-inherit h-screen custom-height"
+        className="our-history-section mt-4  bg-inherit h-screen custom-height overflow-y-auto"
         id="Section1"
       >
         <div className="relative">
@@ -485,13 +485,13 @@ const Petra = () => {
         id="Section7"
       >
         <div className="relative">
-          <div className="absolute right-14 -top-6 lg:top-0">
+          <div className="absolute right-14 -top-4 lg:top-0">
             <ArrowButton
               rotate={"left"}
               onClick={() => handleButtonClick("Section6")}
             />
           </div>
-          <div className="absolute right-4 -top-6 lg:top-0">
+          <div className="absolute right-4 -top-4 lg:top-0">
             <ArrowButton onClick={() => handleButtonClick("Section8")} />
           </div>
         </div>
