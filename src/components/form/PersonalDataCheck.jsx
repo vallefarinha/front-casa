@@ -7,7 +7,7 @@ const PersonalDataCheck = () => {
           <a 
             href="#personal_data" 
             className="hover:text-gray-500 transition-opacity">
-             tratamiento de datos personales *
+             tratamiento de datos personales. *
           </a> 
         </label>
         <input

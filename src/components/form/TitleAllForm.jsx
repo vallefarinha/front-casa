@@ -8,7 +8,7 @@ function TitleAllForm() {
             <div className="flex flex-col items-center mx-auto">
                 <Title wordBlue="Hazte" wordPink="socio" textAlign="center" />
             </div>
-        <div className="w-[80%] mx-auto">
+        <div className="md:w-[80%] w-[90%] mx-auto">
             <RegularText30
                 text={
                     "Hazte socio  con una donación regular y únete a nuestra misión de cambio. Tu apoyo no solo fortalece nuestra causa, sino que también amplía nuestro alcance, permitiéndonos tocar más vidas."
