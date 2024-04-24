@@ -8,7 +8,7 @@ import TitleAllForm from "../components/form/TitleAllForm";
 import DonationOption from "../components/form/DonationOption";
 import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
-import Legislation from "../components/form/Legislation"
+import Legislation from "../components/form/Legislation";
 
 function PartnerForm() {
   const refForm = useRef();
@@ -33,10 +33,8 @@ function PartnerForm() {
                 <BankBlue />
                 <DonationOption />
                 <SendButtonForm />  
-                <Tax/>
                 <Legislation/>                           
             </form>
-            <Legislation/>
           </div>
         );
       }
