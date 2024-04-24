@@ -65,12 +65,12 @@ const Footer = () => {
           <p className="text-primaryColor font-semibold md:text-start">Redes sociales</p>
           <ul className="flex-col flex-wrap mb-3 text-sm font-medium text-LetterColor sm:mb-0 md:w-1/2 md:items-start">
             <li className="my-1 md:max-w-fit">
-              <a href="#" className="flex justify-center">
+              <a href="https://www.facebook.com/profile.php?id=61557734862062" className="flex justify-center">
                 <FaFacebook className="size-6 hover:text-tertiaryColor ml-1" />
               </a>
             </li>
             <li className="my-1 md:max-w-fit">
-              <a href="#"  className="flex justify-center">
+              <a href="https://www.instagram.com/casadelaguia/"  className="flex justify-center">
                 <FaInstagram className="size-6 hover:text-tertiaryColor ml-1" />
               </a>
             </li>
