@@ -3,7 +3,6 @@ import ImageGallery from "react-image-gallery";
 import InstagramAPI from "../services/InstagramAPI";
 import Pagination from "../components/pagination/Pagination";
 import Help from "../components/banners/Help";
-import TitleHistory from "../components/title/TitleHistory";
 import Title from "../components/title/Title";
 
 const OurBlog = () => {

@@ -25,7 +25,7 @@ function PartnerForm() {
   };
 
         return (
-          <div className="w-[80%] mx-auto">
+          <div className="md:w-[80%] w-[90%] mx-auto">
             <form ref={refForm} onSubmit={handleSubmit}>
                 <TitleAllForm />
                 <FormBlue />
@@ -34,9 +34,11 @@ function PartnerForm() {
                 <BankBlue />
                 <DonationOption />
                 <SendButtonForm />  
+            </form>
+                
+                
                 <Tax />
                 <Legislation/>                           
-            </form>
           </div>
         );
       }

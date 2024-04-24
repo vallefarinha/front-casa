@@ -175,7 +175,7 @@ const Petra = () => {
               <p className="text-LetterColor font-poppinsRegular text-xl md:text-lg  text-justify">
                 Ana Josefa fue un gran apóstol, orante y contemplativa. Supo
                 tocar las fibras más sensibles de los que sufrían cualquiera que
-                fuese la razón de su dolor. A continuación, revisa tu historia
+                fuese la razón de su dolor. A continuación, revisa su historia
                 hermosa e inspiradora.
               </p>
             </div>
