@@ -139,12 +139,7 @@ const TaxText = () => {
       </div>
 
       <br />
-      <p>
-        Para incluir el donativo en la Desgravación Fiscal (Declaración de la
-        Renta) es necesario que cubras el siguiente formulario o nos facilites
-        la información (nombre, apellidos, dirección postal, DNI y email) a
-        través de nuestro email.{" "}
-      </p>
+     
       <br />
       <p>
         Si tiene cualquier duda estamos a su disposición en

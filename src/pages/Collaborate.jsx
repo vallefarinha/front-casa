@@ -38,22 +38,41 @@ function Collaborate() {
 
   return (
     <div className="w-[80%] mx-auto">
-      <div className="my-10">
-        <Title wordBlue={"Haz una"} wordPink={"donación"}></Title>
+      
+      <div className="flex flex-col items-center mx-auto">
+                <Title wordBlue="Haz una" wordPink="donacion" textAlign="center" />
       </div>
 
-      <RegularText30
-        text={
-          "Puedes donar lo que estimes oportuno, mediante ingreso o transferencia en la cuenta corriente de la Casa de Acogida"
-        }
-      ></RegularText30>
+      <div className="w-[80%] mx-auto">
+          <RegularText30
+                 text={
+					"Puedes donar lo que estimes oportuno, mediante ingreso o transferencia en la cuenta 	corriente de la Casa de Acogida."
+				 }></RegularText30>
+        </div>
+
       <DonationCard></DonationCard>
-        
-      <TitleForm
-        wordBlue="¿Cuánto quieres"
-        wordPink="aportar?"
-        textAlign="center"
-      />
+
+      <div className="flex flex-col items-center justify-center mt-5 mb-1">
+            <TitleForm wordBlue="Incluir el donativo en la desgravación" wordPink="fiscal" textAlign="center" />
+      </div>
+      <div className="w-[80%] mx-auto">
+          <RegularText30
+                 text={
+                  "Para incluir el donativo en la Desgravación Fiscal (Declaración de la Renta) es necesario que cubras el siguiente formulario o nos facilites la información (nombre, apellidos, dirección postal, DNI y email) a nuestra cuenta de correo."}
+				 ></RegularText30>
+        </div>
+
+      <div className="w-[80%] mx-auto">
+        <img src={penform} alt="penForm" className="absolute z-0" />
+        <form ref={refForm} onSubmit={handleSubmit}>
+          <TaxForm></TaxForm>
+          <SendButtonForm />
+        </form>
+      </div>  
+      <Tax />
+   
+
+      {/* <TitleForm   wordBlue="¿Cuánto quieres"  wordPink="aportar?"  textAlign="center"  />
       <div className=" flex justify-center items-center">
         <div className="flex flex-col justify-center">
           <ColaboraRegularText
@@ -64,15 +83,11 @@ function Collaborate() {
             wordtwo={"usando este formulario. "}
           />
         </div>
-      </div>
-      <Tax />
-      <div className="w-[80%] mx-auto">
-        <img src={penform} alt="penForm" className="absolute z-0" />
-        <form ref={refForm} onSubmit={handleSubmit}>
-          <TaxForm></TaxForm>
-          <SendButtonForm />
-        </form>
-      </div>
+      </div> */}
+
+
+      
+      
 
       <div className="flex justify-around" style={{ height: "60px" }}>
         <img src={heart} alt="Corazon" />
