@@ -6,7 +6,7 @@ import cubicImage from "../../../assets/images/cubic.png";
 
 const DonationCard = () => {
   return (
-    <div className=" flex items-center justify-center pt-16 pb-16 ">
+    <div className=" flex items-center justify-center pt-7 pb-7 ">
        <img
       className="absolute left-0 top-150 z-100"
       src={yellowCircle}

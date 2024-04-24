@@ -5,9 +5,11 @@ import TitleForm from './TitleForm';
 
 const Tax = () => {
   return (
-    <div className="flex flex-col items-center mx-auto mt-6 mb-4">
+    <div className="flex flex-col items-center mx-auto">
         <TitleForm wordBlue="Conoce los beneficios " wordPink="fiscales" textAlign="center" />
+        <div className="w-[80%] mx-auto">
         <TaxText/>
+        </div>
     </div>
   )
 }

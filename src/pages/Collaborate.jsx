@@ -46,14 +46,21 @@ function Collaborate() {
       <div className="w-[80%] mx-auto">
           <RegularText30
                  text={
-					"Puedes donar lo que estimes oportuno, mediante ingreso o transferencia en la cuenta 	corriente de la Casa de Acogida."
+					"Puedes donar lo que estimes oportuno, mediante un ingreso o transferencia en la cuenta 	corriente de la Casa de Acogida."
 				 }></RegularText30>
         </div>
 
       <DonationCard></DonationCard>
 
-      <div className="flex flex-col items-center justify-center mt-5 mb-1">
-            <TitleForm wordBlue="Incluir el donativo en la desgravación" wordPink="fiscal" textAlign="center" />
+      <div className="w-[80%] mx-auto">
+      <RegularText30
+                 text={
+                  "También puedes contrinuir periódicamente haciéndote socio"}
+				 ></RegularText30>
+        </div>
+
+        <div className="flex flex-col items-center mx-auto">
+            <TitleForm wordBlue=" ¿Quieres incluirlo en la desgravación" wordPink="fiscal?" textAlign="center" />
       </div>
       <div className="w-[80%] mx-auto">
           <RegularText30
@@ -62,37 +69,23 @@ function Collaborate() {
 				 ></RegularText30>
         </div>
 
-      <div className="w-[80%] mx-auto">
+
         <img src={penform} alt="penForm" className="absolute z-0" />
         <form ref={refForm} onSubmit={handleSubmit}>
           <TaxForm></TaxForm>
           <SendButtonForm />
         </form>
-      </div>  
+ 
+       
       <Tax />
-   
 
-      {/* <TitleForm   wordBlue="¿Cuánto quieres"  wordPink="aportar?"  textAlign="center"  />
-      <div className=" flex justify-center items-center">
-        <div className="flex flex-col justify-center">
-          <ColaboraRegularText
-            wordone={"Contribuye de forma periódica con una aportación. "}
-          />
-          <ColaboraRegularText
-            wordone={"Envíanos datos"}
-            wordtwo={"usando este formulario. "}
-          />
-        </div>
-      </div> */}
-
-
-      
       
 
       <div className="flex justify-around" style={{ height: "60px" }}>
         <img src={heart} alt="Corazon" />
         <img src={octagon} alt="octagono" />
       </div>
+
 
       <Legislation></Legislation>
     </div>

@@ -10,6 +10,7 @@ import SendButtonForm from "../components/form/SendButtonForm";
 import SimpleAlert from '../components/alerts/SimpleAlert';
 import Legislation from "../components/form/Legislation";
 import Tax from '../components/form/Tax';
+import TitleForm from '../components/form/TitleForm';
 
 function PartnerForm() {
   const refForm = useRef();
@@ -35,6 +36,8 @@ function PartnerForm() {
                 <DonationOption />
                 <SendButtonForm />  
             </form>
+                
+                
                 <Tax />
                 <Legislation/>                           
           </div>
