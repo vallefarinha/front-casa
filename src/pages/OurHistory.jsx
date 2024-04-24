@@ -43,7 +43,7 @@ const OurHistory = () => {
   };
 
   return (
-    <div className=" mx-auto our-history-container">
+    <div className=" mx-auto our-history-container relative">
       <div className="absolute z-20 mt-4">
         <button
           id="dropdownOffsetButton"
