@@ -24,6 +24,7 @@ const OurHistory = () => {
       setTimeout(() => {
         targetSection.classList.remove("animate__animated", "animate__zoomIn");
       }, 2000); 
+      window.scrollTo({ top: targetSection.offsetTop, behavior: "smooth" });
     }
   };
 
