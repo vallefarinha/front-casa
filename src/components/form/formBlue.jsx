@@ -6,7 +6,7 @@ import PersonalDataCheck from './PersonalDataCheck';
 const FormBlue = () => {
   return (
     <div className="flex items-center justify-center">
-      <div className="relative w-2/3 h-1/2 flex flex-wrap mt-5 mb-1 bg-bgColorForm rounded-3xl">
+      <div className="relative w-90 md:w-2/3 h-1/2 flex flex-wrap mt-5 mb-1 bg-bgColorForm rounded-3xl">
         <div className="w-full p-5 z-15">
           <div className="flex flex-col lg:flex-row z-15">
             <BoxBlue titleBox="Nombre" name="name" squareBlue="Ingrese su nombre" type="text" />
