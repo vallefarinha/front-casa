@@ -1,7 +1,5 @@
 # La Casa De La guía
 
-<img src="../front-casa/src/assets/images/casaacogidaT.png" alt="Logo" width="150" height="140">
-
 # 🧾 Description
 
 ### The web platform will be an informative and participatory resource for a shelter, providing information about its services and encouraging the community to contribute in various ways. It will include sections for donations, membership application as a partner, volunteer opportunities, and a contact form for further inquiries. The design will be clear and appealing, ensuring the confidentiality of data and offering secure options for online transactions. It will be actively promoted to maximize its reach and community participation.
