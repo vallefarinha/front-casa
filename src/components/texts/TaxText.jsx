@@ -2,7 +2,7 @@ import React from "react";
 
 const TaxText = () => {
   return (
-    <div className="font-poppinsRegular text-justify mb-4 w-full text-LetterColor text-md lg:text-lg sm:text-xs">
+    <div className="font-poppinsRegular text-justify mb-4 w-full text-LetterColor text-sm md:text:md lg:text-lg sm:text-xs">
       <br />
       <p>
         Tras la entrada en vigor el 1 de enero de 2024 del{" "}
@@ -62,17 +62,17 @@ const TaxText = () => {
                 <p className="text-lg md:text-3xl">80%</p>
               </td>
               <td className="px-4 py-2 border border-gray-400 min-w-26 max-w-60 items-center">
-                <p className=" text-xs text-xs md:text-base">Deducción:</p>{" "}
+                <p className="text-xs md:text-base">Deducción:</p>{" "}
                 <p className="text-lg md:text-3xl">40%</p>
               </td>
               <td className="px-4 py-2 border border-gray-400 min-w-30 max-w-64 items-center ">
                 <div className="flex flex-col md:flex-row items-center">
                   <div>
-                    <p className=" text-xs text-xs md:text-base">Deducción:</p>
+                    <p className="text-xs md:text-base">Deducción:</p>
                     <p className="text-lg md:text-3xl">45%</p>
                   </div>
                   <div>
-                    <p className="text-xs md:text-base ml-2">
+                    <p className="text-xs md:text-sm ml-2">
                       Si en los dos años anteriores se ha realizado una donación
                       a la misma entidad al menos por el mismo importe
                     </p>
@@ -107,8 +107,12 @@ const TaxText = () => {
           </thead>
           <tbody>
             <tr>
-              <th className=" px-4 py-2 border border-gray-400">Sin fidelización</th>
-              <th  className="px-4 py-2 border border-gray-400">Con fidelización</th>
+              <th className=" px-4 py-2 border border-gray-400">
+                Sin fidelización
+              </th>
+              <th className="px-4 py-2 border border-gray-400">
+                Con fidelización
+              </th>
             </tr>
             <tr>
               <td className="px-4 py-2 border border-gray-400 min-w-26 max-w-60 items-center">
@@ -118,7 +122,7 @@ const TaxText = () => {
               <td className="px-4 py-2 border border-gray-400 min-w-30 max-w-64 items-center ">
                 <div className="flex flex-col md:flex-row items-center">
                   <div>
-                    <p className=" text-xs text-xs md:text-base">Deducción:</p>
+                    <p className="text-xs md:text-sm">Deducción:</p>
                     <p className="text-lg md:text-3xl">50%</p>
                   </div>
                   <div>
@@ -129,19 +133,13 @@ const TaxText = () => {
                   </div>
                 </div>
               </td>
-              
             </tr>
           </tbody>
         </table>
       </div>
 
       <br />
-      <p>
-        Para incluir el donativo en la Desgravación Fiscal (Declaración de la
-        Renta) es necesario que cubras el siguiente formulario o nos facilites
-        la información (nombre, apellidos, dirección postal, DNI y email) a
-        través de nuestro email.{" "}
-      </p>
+     
       <br />
       <p>
         Si tiene cualquier duda estamos a su disposición en

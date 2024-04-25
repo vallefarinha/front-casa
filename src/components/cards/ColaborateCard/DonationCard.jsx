@@ -6,7 +6,7 @@ import cubicImage from "../../../assets/images/cubic.png";
 
 const DonationCard = () => {
   return (
-    <div className=" flex items-center justify-center pt-16 pb-16 ">
+    <div className=" flex items-center justify-center pt-7 pb-7 ">
        <img
       className="absolute left-0 top-150 z-100"
       src={yellowCircle}
@@ -19,7 +19,7 @@ const DonationCard = () => {
       />
      
    
-     <div className="relative  h-1/2 mt-2 mb-1 bg-bgColorForm rounded-3xl inline-block p-6" >   
+     <div className="relative h-1/2 mt-2 mb-1 bg-bgColorForm rounded-3xl inline-block p-6" >   
         <CardNumberTitle
           wordBlue={"ENTIDAD BANCARIA:"}
           wordWhite={" CAIXA"}

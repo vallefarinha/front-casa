@@ -70,7 +70,7 @@ const SanJose = () => {
                 }}
                 className="font-poppinsRegular text-base block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-              La história
+              La historia
               </div>
             </li>
             <li>
@@ -93,7 +93,7 @@ const SanJose = () => {
                 href="#Section3"
                 className="font-poppinsRegular text-base block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
               >
-                El Santuário
+                El Santuario
               </div>
             </li>
             <li>
@@ -133,7 +133,7 @@ const SanJose = () => {
         </div>
         <div className="h-screen  flex flex-wrap mt-10 justify-around w-[80%] mx-auto custom-height">
           <div className="lg:w-[60%] my-auto pt-4">
-            <Title wordBlue={"La história de"} wordPink={"San José"} />
+            <Title wordBlue={"La historia de"} wordPink={"San José"} />
             <div className="my-8">
               <p className="text-LetterColor font-poppinsRegular text-xl md:text-lg  text-justify">
                 San José es una figura central en la tradición cristiana,

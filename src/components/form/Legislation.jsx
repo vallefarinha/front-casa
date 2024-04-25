@@ -6,7 +6,6 @@ const Legislation = () => {
   return (
     <div>
      <LegislationText></LegislationText>
-
     </div>
   )
 }
